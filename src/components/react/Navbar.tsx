@@ -1,39 +1,49 @@
 import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
-import { initializeApp } from "firebase/app";
-import dotenv from "dotenv";
-import * as functions from "firebase/functions";
-import { getAnalytics } from "firebase/analytics";
+import firebase from "firebase/compat/app";
+
+// Import additional Firebase services if needed
+import "firebase/compat/firestore";
+import "firebase/compat/storage";
+
+async function getDownloadUrl() {
+  const data = await db(import.meta.env.FIREBASE_API_KEY);
+  const i = await db(import.meta.env.VITE_FIREBASE_API_KEY);
+  console.log(i);
+  console.log(import.meta.env.FIREBASE_API_KEY);
+  const storage = firebase.storage();
+  const storageRef = storage.ref();
+  const cvRef = storageRef.child("cv.docx");
+  //const data = await cvRef.getDownloadURL();
+}
 //dotenv.config();
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  /*const [cvDownloadUrl, setCvDownloadUrl] = useState(null);
+  const [downloadUrl, setDownloadUrl] = useState(null);
+  const apiKey = import.meta.env.VITE_FIREBASE_API_KEY;
+  const authDomain = import.meta.env.VITE_FIREBASE_AUTH_DOMAIN;
+  const projectId = import.meta.env.VITE_FIREBASE_PROJECT_ID;
+
+  const messagingSenderId = import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID;
+  const appId = import.meta.env.VITE_FIREBASE_APP_ID;
+  const measurementId = import.meta.env.VITE_FIREBASE_MEASUREMENT_ID;
+  const storageBucket = import.meta.env.VITE_FIREBASE_STORAGE_BUCKET;
   useEffect(() => {
     const firebaseConfig = {
-      apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-      authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-      projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-      storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-      messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-      appId: process.env.REACT_APP_FIREBASE_APP_ID,
-      measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+      apiKey: apiKey,
+      authDomain: authDomain,
+      projectId: projectId,
+      storageBucket: storageBucket,
+      messagingSenderId: messagingSenderId,
+      appId: appId,
+      measurementId: measurementId,
     };
+    console.log(firebaseConfig);
+    console.log(apiKey);
+    firebase.initializeApp(firebaseConfig);
+    getDownloadUrl();
+  }, []);
 
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-
-    const storage = app.getStorage(app);
-    const cvRef = ref(storage, "cv.docx");
-
-    storage
-      .getDownloadURL(cvRef)
-      .then((url) => {
-        setCvDownloadUrl(url);
-      })
-      .catch((error) => {
-        console.log("Error getting CV download URL: ", error);
-      });
-  }, []);*/
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
@@ -105,4 +115,8 @@ export default function Navbar() {
       </nav>
     </>
   );
+}
+
+function db(FIREBASE_API_KEY: any) {
+  console.log(FIREBASE_API_KEY);
 }

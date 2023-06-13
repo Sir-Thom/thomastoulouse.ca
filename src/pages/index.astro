@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import ArticleTalents from "../components/ArticleTalents.astro";
 import Hero from "../components/Hero.astro";
 import ArticleExperience from "../components/ArticleExperience.astro";
+export const prerender = true;
 ---
 
 <Layout title="CV Thomas Toulouse">
@@ -12,7 +13,6 @@ import ArticleExperience from "../components/ArticleExperience.astro";
       subtitle="Thomas Toulouse"
       body="Je suis un étudiant de troisième année en informatique du cégep Beauce Appalaches. Je me considère comme étant quelqu’un de discipliné, curieux et ponctuel. Je suis prêt à apprendre plein de nouvelles technologies et à améliorer mes compétences avec votre entreprise. De plus, Je suis quelqu'un en qui on peut avoir totalement confiance. Je suis très travaillant et je suis persuadé que je peux être un employé efficace pour votre compagnie."
       href="apropos"
-      image="/assets/971.jpg"
     />
     <ArticleTalents title="Talents" href="skillSection" />
     <ArticleExperience title="Expérience" href="experienceSection" />
