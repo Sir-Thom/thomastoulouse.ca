@@ -1,0 +1,47 @@
+---
+export interface Props {
+  titleMain: string;
+  body: string;
+  href: string;
+  subtitle: string;
+  image: string;
+}
+import Computer from "./Computer";
+
+const { href, titleMain, subtitle, body, image } = Astro.props;
+---
+
+<section id="apropos">
+  <div class="bg-dark-700 font-futura-pt text-neutral-200 py-20">
+    <div
+      class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24"
+    >
+      <div class="flex flex-col w-full lg:w-1/2 justify-center items-start p-8">
+        <h1
+          class="text-4xl md:text-6xl font-bold text-yellow-300 tracking-tight mb-4"
+        >
+          {titleMain}
+        </h1>
+        <h2
+          class="text-2xl md:text-4xl text-WinterWizard leading-relaxed md:leading-snug mb-6 font-bold"
+        >
+          {subtitle}
+        </h2>
+        <p
+          class="text-lg text-justify text-neutral-200 mb-8 leading-relaxed transition-all duration-200 ease-in-out"
+        >
+          {body}
+        </p>
+      </div>
+      <div
+        class="flex justify-center w-full lg:w-1/2 mt-12 mb-6 md:mb-0 md:mt-0"
+      >
+        <div class="h-auto p-8">
+          <div class="w-64 h-64 xl:w-80 xl:h-80">
+            <Computer client:only />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
