@@ -1,7 +1,10 @@
 ---
 import Navbar from "./react/Navbar";
+console.log(import.meta.env.VITE_FIREBASE_API_KEY);
+console.log(import.meta.env.VITE_FIREBASE_AUTH_DOMAIN);
+console.log(import.meta.env.VITE_FIREBASE_API_KEY);
 ---
 
 <header>
-  <Navbar client:load />
+  <Navbar client:only />
 </header>
