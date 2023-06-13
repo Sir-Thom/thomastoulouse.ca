@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .bg-stripes {
+    background-size: 20px 20px;
+    background-image: linear-gradient(to right, #23262d 1px),
+      linear-gradient(to bottom, #23262d 1px);
+  }
+
+  .cool-bg-pattern {
+    background: linear-gradient(to bottom, #1a237e 25%, transparent 25%),
+      linear-gradient(to bottom, #00acc1 25%, transparent 25%),
+      linear-gradient(to bottom, transparent 75%, #1a237e 75%),
+      linear-gradient(to bottom, transparent 75%, #00acc1 75%);
+    background-size: 40px 40px;
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0;
+  }
+}

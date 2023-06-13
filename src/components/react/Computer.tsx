@@ -37,7 +37,7 @@ export default function Computer() {
   const gltf = useLoader(GLTFLoader, "/assets/source/computer.glb");
 
   return (
-    <Canvas className="h-52 w-52">
+    <Canvas className=" z-10 h-52 w-52">
       <Suspense fallback={null}>
         <ambientLight />
         <Model gltf={gltf} />
