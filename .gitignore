@@ -1,6 +1,6 @@
 # build output
 dist/
-
+.env
 # generated types
 .astro/
 
@@ -19,3 +19,14 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+# Firebase configuration files
+/.firebase
+.firebase/
+firebase-debug.log
+firebase.json
+firebase.js
+firebase.js.map
+firebase.indexes.json
+firebase.rules
+.firebaserc
+storage.rules

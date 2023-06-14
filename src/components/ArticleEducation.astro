@@ -1,0 +1,30 @@
+---
+export interface Props {
+    title: string;
+    href: string;
+}
+import Card from "./react/Card";
+const { title, href } = Astro.props;
+---
+
+<section id={href}>
+    <div class="font-futura-pt text-black dark:text-white pb-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+                    {title}
+                </h1>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <Card
+                        title="Diplôme d'étude secondaire"
+                        description="Polyvalente Saint-Georges | 2017-2021"
+                    />
+                    <Card
+                        title="DEC en informatique"
+                        description="Cégep Beauce Appalaches | 2021-aujourd'hui"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,91 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+}
+
+import Carousel from "../components/react/Carousel";
+
+const cards = [
+  {
+    title: "HTML",
+    description:
+      "HTML (HyperText Markup Language) est le langage de balisage utilisé pour structurer le contenu des pages web. Il définit la structure logique des éléments d'une page, tels que les titres, les paragraphes, les images, les liens, etc. HTML est interprété par les navigateurs web pour afficher le contenu d'une page de manière structurée.",
+    image: "/assets/icons/ProgrammingLanguagesAndTool/HTML5 Logo.webp",
+  },
+  {
+    title: "CSS",
+    description:
+      "CSS (Cascading Style Sheets) est un langage de style utilisé pour décrire la présentation et l'apparence des pages web écrites en HTML. Il permet de définir les couleurs, les polices, les marges, les positions, les animations et bien plus encore. CSS permet de séparer la structure (HTML) de la présentation (CSS), ce qui facilite la gestion et la maintenance des sites web.",
+    image: "/assets/icons/ProgrammingLanguagesAndTool/cssLogo.webp",
+  },
+  {
+    title: "JavaScript",
+    description:
+      "JavaScript est un langage de programmation principalement utilisé pour le développement web. Il permet d'ajouter de l'interactivité et de la dynamique aux pages web en manipulant le contenu HTML et en interagissant avec le navigateur de l'utilisateur. JavaScript est également utilisé côté serveur grâce à des plateformes telles que Node.js. Il est devenu incontournable pour créer des sites web interactifs et des applications web modernes.",
+    image: "/assets/icons/ProgrammingLanguagesAndTool/JavaScriptLogo.webp",
+  },
+  {
+    title: "PHP",
+    description:
+      "PHP est un langage de programmation populaire et largement utilisé pour développer des sites web dynamiques. Il est principalement utilisé côté serveur, ce qui signifie que le code PHP est exécuté sur le serveur avant d'être envoyé au navigateur de l'utilisateur.",
+    image: "/assets/icons/ProgrammingLanguagesAndTool/Official PHP Logo.webp",
+  },
+  {
+    title: "React",
+    description: `React.js est une bibliothèque JavaScript utilisée pour créer des interfaces utilisateur interactives et dynamiques. Elle permet de développer des applications web à interface utilisateur réactive, où les composants peuvent être réutilisés et mis à jour de manière efficace. React.js facilite également la gestion de l'état des composants et l'interactivité en utilisant la notion de "virtual DOM". Il est souvent utilisé dans le développement de sites web complexes et d'applications web à page unique (SPA).`,
+    image: "/assets/icons/ProgrammingLanguagesAndTool/react-logo.webp",
+  },
+  {
+    title: "PowerShell",
+    description:
+      "PowerShell est un puissant shell et langage de script développé par Microsoft. Il est conçu pour l'automatisation des tâches système et l'administration de Windows. PowerShell permet d'interagir avec les services, les processus, les fichiers, les registres, et d'autres composants du système d'exploitation. Il offre également des fonctionnalités avancées telles que la gestion à distance, la manipulation des objets et la création de scripts complexes. PowerShell est largement utilisé dans l'écosystème Windows pour automatiser des tâches, effectuer des configurations système et simplifier l'administration des environnements Windows.",
+    image: "/assets/icons/ProgrammingLanguagesAndTool/PowerShellLogo.webp",
+  },
+  {
+    title: "Bash",
+    description:
+      "Bash est un shell et un langage de script utilisé principalement dans les systèmes d'exploitation Unix et Linux. Il permet d'exécuter des commandes système, de manipuler des fichiers, de contrôler des processus et d'automatiser des tâches. Bash est largement utilisé en raison de sa simplicité et de sa puissance, ce qui en fait un outil essentiel pour les administrateurs système et les développeurs.",
+    image: "/assets/icons/ProgrammingLanguagesAndTool/bashLogo.webp",
+  },
+  {
+    title: "Python",
+    description:
+      "Python est un langage de programmation polyvalent et facile à apprendre. Il se distingue par sa syntaxe lisible et sa grande simplicité d'utilisation. Python est utilisé dans une grande variété de domaines, allant du développement web et de l'analyse de données à l'intelligence artificielle et l'automatisation de tâches. Il est apprécié pour sa lisibilité, sa productivité et sa vaste bibliothèque standard.",
+    image: "/assets/icons/ProgrammingLanguagesAndTool/python-logo-only.webp",
+  },
+  {
+    title: "Rust",
+    description:
+      "Rust est un langage de programmation moderne conçu pour offrir à la fois la performance du langage C/C++ et la sécurité des langages de haut niveau. Il met l'accent sur la prévention des erreurs de programmation, la gestion fine de la mémoire et la concurrence sans faille. Rust est souvent utilisé pour développer des systèmes bas niveau, des applications embarquées et des outils de développement.",
+    image: "/assets/icons/ProgrammingLanguagesAndTool/rust-logo.webp",
+  },
+  {
+    title: "CSharp",
+    description:
+      "C# est un langage de programmation orienté objet développé par Microsoft. Il est principalement utilisé pour développer des applications sur la plateforme .NET. C# offre une syntaxe simple et claire, ainsi qu'une vaste bibliothèque standard, ce qui en fait un choix populaire pour le développement d'applications de bureau, web et mobile.",
+    image: "/assets/icons/ProgrammingLanguagesAndTool/logo-csharp.webp",
+  },
+  {
+    title: "C ++",
+    description:
+      "C++ est un langage de programmation polyvalent et puissant. Il permet un contrôle précis de la mémoire et une exécution efficace des programmes. C++ est largement utilisé pour développer des logiciels à haute performance tels que des jeux, des systèmes embarqués, des moteurs graphiques, et bien plus encore.",
+    image: "/assets/icons/ProgrammingLanguagesAndTool/cpp_logo.webp",
+  },
+];
+const sortedCards = [...cards].sort((a, b) => a.title.localeCompare(b.title));
+const { title, href } = Astro.props;
+---
+
+<section>
+  <div id={href} class="font-futura-pt text-black dark:text-white mb-8 py-40">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col items-center">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+          {title}
+        </h1>
+        <Carousel client:only content={sortedCards} />
+      </div>
+    </div>
+  </div>
+</section>

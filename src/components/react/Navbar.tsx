@@ -1,7 +1,28 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import DownloadButton from "./DownloadButton";
 
-export default function Navbar() {
+interface FirebaseProps {
+  VITE_FIREBASE_API_KEY: string;
+  VITE_FIREBASE_AUTH_DOMAIN: string;
+  VITE_FIREBASE_PROJECT_ID: string;
+  VITE_FIREBASE_STORAGE_BUCKET: string;
+  VITE_FIREBASE_MESSAGING_SENDER_ID: string;
+  VITE_FIREBASE_APP_ID: string;
+  VITE_FIREBASE_MEASUREMENT_ID: string;
+}
+
+export default function Navbar(props: FirebaseProps) {
+  const {
+    VITE_FIREBASE_API_KEY,
+    VITE_FIREBASE_AUTH_DOMAIN,
+    VITE_FIREBASE_PROJECT_ID,
+    VITE_FIREBASE_STORAGE_BUCKET,
+    VITE_FIREBASE_MESSAGING_SENDER_ID,
+    VITE_FIREBASE_APP_ID,
+    VITE_FIREBASE_MEASUREMENT_ID,
+  } = props;
+
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -11,11 +32,11 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className=" font-futura-pt fixed flex w-full flex-wrap items-center justify-between bg-LapisLazuli-500 py-2 text-neutral-200 shadow-lg lg:flex-wrap lg:justify-start lg:py-4"
+        className=" z-30 font-futura-pt fixed top-0 flex w-full flex-wrap items-center justify-between bg-LapisLazuli-500 py-2 text-white lg:flex-wrap lg:justify-start lg:py-4"
         data-te-navbar-ref
       >
         <div className="flex w-full flex-wrap items-center justify-between px-3">
-          <span className=" text-xl font-bold  justify-center font-futura-pt text-center dark:text-neutral-200">
+          <span className=" text-xl font-bold  justify-center font-futura-pt text-center dark:text-white">
             Thomas Toulouse
           </span>
           <button
@@ -34,40 +55,45 @@ export default function Navbar() {
               {/* Add your menu items here */}
               <a
                 href="#apropos"
-                className="block font-semibold font-futura-pt mt-4 lg:inline-block lg:mt-0 hover:text-neutral-100 mr-4"
+                className="block font-semibold font-futura-pt mt-4 lg:inline-block lg:mt-0 hover:text-light-100 mr-4"
               >
                 À propos de moi
               </a>
               <a
-                href="#"
+                href="#skillSection"
                 className="block font-semibold font-futura-pt mt-4 lg:inline-block lg:mt-0 hover:text-neutral-100 mr-4"
               >
                 Talents
               </a>
               <a
-                href="#"
+                href="#experienceSection"
                 className="block font-semibold font-futura-pt mt-4 lg:inline-block lg:mt-0 hover:text-neutral-100 mr-4"
               >
                 Expériences
               </a>
               <a
-                href="#"
+                href="#educationSection"
                 className="block font-semibold font-futura-pt mt-4 lg:inline-block lg:mt-0 hover:text-neutral-100 mr-4"
               >
                 Éducation
               </a>
               <a
-                href="#"
+                href="#projectSection"
                 className="block font-semibold font-futura-pt mt-4 lg:inline-block lg:mt-0 hover:text-neutral-100 mr-4"
               >
                 Projets
               </a>
-              <a
-                href="#"
-                className="block font-semibold font-futura-pt mt-4 lg:inline-block lg:mt-0 hover:text-neutral-100 mr-4"
-              >
-                Projets
-              </a>
+              <DownloadButton
+                VITE_FIREBASE_API_KEY={VITE_FIREBASE_API_KEY}
+                VITE_FIREBASE_APP_ID={VITE_FIREBASE_APP_ID}
+                VITE_FIREBASE_AUTH_DOMAIN={VITE_FIREBASE_AUTH_DOMAIN}
+                VITE_FIREBASE_MEASUREMENT_ID={VITE_FIREBASE_MEASUREMENT_ID}
+                VITE_FIREBASE_MESSAGING_SENDER_ID={
+                  VITE_FIREBASE_MESSAGING_SENDER_ID
+                }
+                VITE_FIREBASE_PROJECT_ID={VITE_FIREBASE_PROJECT_ID}
+                VITE_FIREBASE_STORAGE_BUCKET={VITE_FIREBASE_STORAGE_BUCKET}
+              />
             </div>
           </div>
         </div>
