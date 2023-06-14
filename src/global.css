@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .bg-stripes {
+    background-size: 20px 20px;
+
+    background-image: linear-gradient(to left, #23262d 1px, transparent 1px),
+      linear-gradient(to bottom, #23262d 1px, transparent 1px);
+    background-origin: top left;
+    background-position: top center;
+    image-rendering: auto;
+
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      10%,
+      white,
+      90%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      10%,
+      white,
+      90%,
+      transparent
+    );
+  }
+}
