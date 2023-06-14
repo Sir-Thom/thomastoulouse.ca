@@ -84,7 +84,7 @@ const { title, href } = Astro.props;
         <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
           {title}
         </h1>
-        <Carousel client:visible content={sortedCards} />
+        <Carousel client:only content={sortedCards} />
       </div>
     </div>
   </div>

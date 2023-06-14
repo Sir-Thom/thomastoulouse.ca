@@ -1,42 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import firebase from "firebase/compat/app";
+import DownloadButton from "./DownloadButton";
 
-// Import additional Firebase services if needed
-import "firebase/compat/firestore";
-import "firebase/compat/storage";
-
-async function getDownloadUrl() {
-  const data = await db(import.meta.env.FIREBASE_API_KEY);
-  const i = await db(import.meta.env.VITE_FIREBASE_API_KEY);
-  console.log(i);
-  console.log(import.meta.env.FIREBASE_API_KEY);
-  const storage = firebase.storage();
-  const storageRef = storage.ref();
-  const cvRef = storageRef.child("cv.docx");
-  //const data = await cvRef.getDownloadURL();
+interface FirebaseProps {
+  VITE_FIREBASE_API_KEY: string;
+  VITE_FIREBASE_AUTH_DOMAIN: string;
+  VITE_FIREBASE_PROJECT_ID: string;
+  VITE_FIREBASE_STORAGE_BUCKET: string;
+  VITE_FIREBASE_MESSAGING_SENDER_ID: string;
+  VITE_FIREBASE_APP_ID: string;
+  VITE_FIREBASE_MEASUREMENT_ID: string;
 }
-//dotenv.config();
-export default function Navbar() {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-  const [downloadUrl, setDownloadUrl] = useState(null);
-  const apiKey = import.meta.env.VITE_FIREBASE_API_KEY;
 
-  useEffect(() => {
-    const firebaseConfig = {
-      apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-      authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-      projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-      storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-      messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-      appId: import.meta.env.VITE_FIREBASE_APP_ID,
-      measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
-    };
-    console.log(firebaseConfig);
-    console.log(apiKey);
-    firebase.initializeApp(firebaseConfig);
-    getDownloadUrl();
-  }, []);
+export default function Navbar(props: FirebaseProps) {
+  const {
+    VITE_FIREBASE_API_KEY,
+    VITE_FIREBASE_AUTH_DOMAIN,
+    VITE_FIREBASE_PROJECT_ID,
+    VITE_FIREBASE_STORAGE_BUCKET,
+    VITE_FIREBASE_MESSAGING_SENDER_ID,
+    VITE_FIREBASE_APP_ID,
+    VITE_FIREBASE_MEASUREMENT_ID,
+  } = props;
+
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -96,21 +83,21 @@ export default function Navbar() {
               >
                 Projets
               </a>
-              <a
-                id="cv-link"
-                href={"#"}
-                className="block font-semibold font-futura-pt mt-4 lg:inline-block lg:mt-0 hover:text-neutral-100 mr-4"
-              >
-                Télécharger mon CV
-              </a>
+              <DownloadButton
+                VITE_FIREBASE_API_KEY={VITE_FIREBASE_API_KEY}
+                VITE_FIREBASE_APP_ID={VITE_FIREBASE_APP_ID}
+                VITE_FIREBASE_AUTH_DOMAIN={VITE_FIREBASE_AUTH_DOMAIN}
+                VITE_FIREBASE_MEASUREMENT_ID={VITE_FIREBASE_MEASUREMENT_ID}
+                VITE_FIREBASE_MESSAGING_SENDER_ID={
+                  VITE_FIREBASE_MESSAGING_SENDER_ID
+                }
+                VITE_FIREBASE_PROJECT_ID={VITE_FIREBASE_PROJECT_ID}
+                VITE_FIREBASE_STORAGE_BUCKET={VITE_FIREBASE_STORAGE_BUCKET}
+              />
             </div>
           </div>
         </div>
       </nav>
     </>
   );
-}
-
-function db(FIREBASE_API_KEY: any) {
-  console.log(FIREBASE_API_KEY);
 }
