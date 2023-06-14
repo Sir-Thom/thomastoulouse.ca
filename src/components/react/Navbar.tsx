@@ -45,11 +45,11 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className=" z-30 font-futura-pt fixed top-0 flex w-full flex-wrap items-center justify-between bg-LapisLazuli-500 py-2 text-neutral-200 lg:flex-wrap lg:justify-start lg:py-4"
+        className=" z-30 font-futura-pt fixed top-0 flex w-full flex-wrap items-center justify-between bg-LapisLazuli-500 py-2 text-white lg:flex-wrap lg:justify-start lg:py-4"
         data-te-navbar-ref
       >
         <div className="flex w-full flex-wrap items-center justify-between px-3">
-          <span className=" text-xl font-bold  justify-center font-futura-pt text-center dark:text-neutral-200">
+          <span className=" text-xl font-bold  justify-center font-futura-pt text-center dark:text-white">
             Thomas Toulouse
           </span>
           <button
@@ -68,7 +68,7 @@ export default function Navbar() {
               {/* Add your menu items here */}
               <a
                 href="#apropos"
-                className="block font-semibold font-futura-pt mt-4 lg:inline-block lg:mt-0 hover:text-neutral-100 mr-4"
+                className="block font-semibold font-futura-pt mt-4 lg:inline-block lg:mt-0 hover:text-light-100 mr-4"
               >
                 À propos de moi
               </a>

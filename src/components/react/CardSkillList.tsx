@@ -2,7 +2,7 @@ import React from "react";
 
 const CardList = ({ cards, currentCard }) => {
   return (
-    <div className="flex flex-grow h-auto bg-dark-600 rounded-lg shadow-md border-dark-50 border-2 items-center justify-between gap-4">
+    <div className="flex flex-grow h-auto bg-dark-600 rounded-lg shadow-md p-6 border-dark-50 border-2 items-center justify-between gap-4">
       {cards.map((card, index) => (
         <div
           key={index}
