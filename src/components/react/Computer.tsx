@@ -1,4 +1,4 @@
-import { useEffect, useRef, Suspense } from "react";
+import { useEffect, useRef } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
@@ -37,10 +37,8 @@ export default function Computer() {
 
   return (
     <Canvas className=" z-10 h-52 w-52">
-      <Suspense fallback={null}>
-        <ambientLight />
-        <Model gltf={gltf} />
-      </Suspense>
+      <ambientLight />
+      <Model gltf={gltf} />
     </Canvas>
   );
 }
