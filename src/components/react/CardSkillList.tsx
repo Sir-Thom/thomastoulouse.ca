@@ -1,6 +1,15 @@
-import React from "react";
+interface CardProps {
+  cards: Card[];
+  currentCard: any;
+}
+type Card = {
+  title: string;
+  description: string;
+  image: string;
+};
 
-const CardList = ({ cards, currentCard }) => {
+export default function CardList(CardProps: CardProps) {
+  const { cards, currentCard } = CardProps;
   return (
     <div className="flex flex-grow h-auto bg-light-400 dark:bg-dark-600 rounded-lg shadow-md p-6 border-light-900 dark:border-dark-50 border-2 items-center justify-between gap-4">
       {cards.map((card, index) => (
@@ -27,6 +36,4 @@ const CardList = ({ cards, currentCard }) => {
       ))}
     </div>
   );
-};
-
-export default CardList;
+}

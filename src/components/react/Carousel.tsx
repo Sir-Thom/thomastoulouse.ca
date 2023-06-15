@@ -1,10 +1,20 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import CardList from "./CardSkillList";
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 
-const Carousel = ({ content }) => {
+type Card = {
+  title: string;
+  description: string;
+};
+
+type Content = {
+  content: any;
+};
+
+function Carousel(CarouselProps: Content) {
+  const { content } = CarouselProps;
   const [currentCard, setCurrentCard] = useState(0);
-  const carouselContainerRef = useRef(null);
+  const carouselContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleKeydown = (event) => {
@@ -15,10 +25,10 @@ const Carousel = ({ content }) => {
       }
     };
 
-    carouselContainerRef.current.addEventListener("keydown", handleKeydown);
+    carouselContainerRef.current?.addEventListener("keydown", handleKeydown);
 
     return () => {
-      carouselContainerRef.current.removeEventListener(
+      carouselContainerRef.current?.removeEventListener(
         "keydown",
         handleKeydown
       );
@@ -65,6 +75,6 @@ const Carousel = ({ content }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Carousel;

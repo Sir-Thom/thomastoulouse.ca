@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-const ThemeToggle = () => {
+
+export default function ThemeToggle() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -48,6 +49,4 @@ const ThemeToggle = () => {
       {isDarkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
     </button>
   );
-};
-
-export default ThemeToggle;
+}
