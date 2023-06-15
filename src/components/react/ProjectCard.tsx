@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { AiOutlineGithub } from "react-icons/ai";
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <h2 className="text-xl font-semibold mb-2">{title}</h2>
       <p className="text-gray-600">{description}</p>
 
-      <FaGithub className="inline-block mr-2" />
+      <AiOutlineGithub className="inline-block mr-2" />
     </a>
   );
 };
