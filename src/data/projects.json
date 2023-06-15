@@ -1,0 +1,39 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Magic Eye",
+            "description": "Une application pour appareil qui a comme système d'opération Linux. Cette application permet à unappareil de se connecter à distance à une caméra.",
+            "imageUrl": "/assets/images/projets/Preview-Magic_Eye_Client_smpte.webp",
+            "url": "https://github.com/Sir-Thom/Magic-eye"
+        },
+        {
+            "id": 2,
+            "title": "Mgt-lite",
+            "description": "Une application graphique qui est une version simplifiée du Magic the Gathering.",
+            "imageUrl": "/assets/images/projets/mgt-lite.webp",
+            "url": "https://github.com/Thomas-Toulouse-Cegep/mtg_lite"
+        },
+        {
+            "id": 3,
+            "title": "Dragon Music",
+            "description": "Mon Projet de développement web 3. Un site web qui permet de jouer de la musique et d'en ajouter (Spotify clone).",
+            "imageUrl": "/assets/images/projets/DragonMusic.webp",
+            "url": "https://github.com/Sir-Thom/DragonMusic"
+        },
+        {
+            "id": 4,
+            "title": "Terminaux",
+            "description": "Un émulateur de terminal pour PC fait avec TypeScript et Tauri. ",
+            "imageUrl": "/assets/images/projets/terminaux.webp",
+            "url": "https://github.com/Sir-Thom/Terminaux"
+        },
+        {
+            "id": 5,
+            "title": "Rustyfetch",
+            "description": "Une Application Terminal qui affiche des informations sur le système d'opération. (neofetch clone) ",
+            "imageUrl": "/assets/images/projets/rustyfetch.webp",
+            "url": "https://github.com/Sir-Thom/rustyFetch"
+        }
+    ]
+}

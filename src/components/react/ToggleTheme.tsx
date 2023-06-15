@@ -43,10 +43,10 @@ export default function ThemeToggle() {
   return (
     <button
       aria-label="Toggle Themes"
-      className=" py-2 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded"
+      className={`py-2 px-4 transition-all   active:scale-95 ease-in-out  hover:border-white hover:scale-110 text-white rounded hover:bg-LapisLazuli-400 duration-150`}
       onClick={toggleTheme}
     >
-      {isDarkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
+      {isDarkMode ? <FaSun size={24} /> : <FaMoon size={20} />}
     </button>
   );
 }

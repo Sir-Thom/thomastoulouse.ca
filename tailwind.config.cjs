@@ -10,8 +10,9 @@ module.exports = {
     },
     colors: {
       accent: {
-        1: "#333399",
-        2: "#339999",
+        1: "#663399",
+        2: "#993366",
+        3: "#669933",
       },
       transparent: "transparent",
 
@@ -44,6 +45,12 @@ module.exports = {
         800: "#8c8c8c",
         900: "#737373",
       },
+      IlluminatingEmerald: {
+        pressed: "#246B47",
+        normal: "#339966",
+        hover: "#297A52",
+      },
+      AmaranthDeepPurple: "#990033",
       LapisLazuli: {
         50: "#5B748C",
         100: "#527190",
@@ -56,8 +63,10 @@ module.exports = {
         800: "#153B5F",
         900: "#123150",
       },
+      BlueMagentaViolet: "#483399",
       WinterWizard: "#a4d8fc",
       BabyBlueEye: "#99CCFF",
+      MoonLight: "#CCCC99",
       DigitalOceanBlue: {
         50: "#1A80E6",
         100: "#0080FF",
@@ -71,7 +80,11 @@ module.exports = {
         900: "#000D1A",
       },
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
+    },
   },
   plugins: [],
 };
