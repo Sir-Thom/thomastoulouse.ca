@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import DownloadButton from "./DownloadButton";
-
+import ThemeToggle from "./ToggleTheme";
 interface FirebaseProps {
   VITE_FIREBASE_API_KEY: string;
   VITE_FIREBASE_AUTH_DOMAIN: string;
@@ -32,20 +32,24 @@ export default function Navbar(props: FirebaseProps) {
   return (
     <>
       <nav
-        className=" z-30 font-futura-pt fixed top-0 flex w-full flex-wrap items-center justify-between bg-LapisLazuli-500 py-2 text-white lg:flex-wrap lg:justify-start lg:py-4"
+        className=" z-30 font-futura-pt fixed top-0 flex w-full flex-wrap items-center justify-between bg-LapisLazuli-400 py-2 text-white lg:flex-wrap lg:justify-start lg:py-4"
         data-te-navbar-ref
       >
-        <div className="flex w-full flex-wrap items-center justify-between px-3">
+        <div className="flex w-full flex-wrap  items-center justify-between px-3">
           <span className=" text-xl font-bold  justify-center font-futura-pt text-center dark:text-white">
             Thomas Toulouse
           </span>
+          <div className=" ml-auto  lg:hidden">
+            <ThemeToggle />
+          </div>
           <button
-            className="lg:hidden"
+            className="ml-6 lg:hidden"
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >
             <FaBars className="w-6 h-6" />
           </button>
+
           <div
             className={`${
               isMenuOpen ? "block" : "hidden"
@@ -94,6 +98,9 @@ export default function Navbar(props: FirebaseProps) {
                 VITE_FIREBASE_PROJECT_ID={VITE_FIREBASE_PROJECT_ID}
                 VITE_FIREBASE_STORAGE_BUCKET={VITE_FIREBASE_STORAGE_BUCKET}
               />
+            </div>
+            <div className="md:hidden sm:hidden lg:block">
+              <ThemeToggle />
             </div>
           </div>
         </div>
