@@ -3,7 +3,18 @@ export interface Props {
     title: string;
     href: string;
 }
+interface Project {
+    id: number;
+    title: string;
+    description: string;
+    imageUrl: string;
+    url: string;
+}
 const { title, href } = Astro.props;
+import ProjectList from "../components/react/ProjectList";
+import projectsJson from "../data/projects.json";
+const projects: Array<Project> = projectsJson.projects;
+console.log(projects);
 ---
 
 <section id={href}>
@@ -13,6 +24,7 @@ const { title, href } = Astro.props;
                 <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
                     {title}
                 </h1>
+                <ProjectList projects={projects} client:visible />
             </div>
         </div>
     </div>

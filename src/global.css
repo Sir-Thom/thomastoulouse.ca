@@ -2,30 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-  .bg-stripes {
-    background-size: 20px 20px;
-
-    background-image: linear-gradient(to left, #23262d 1px, transparent 1px),
-      linear-gradient(to bottom, #23262d 1px, transparent 1px);
-    background-origin: top left;
-    background-position: top center;
-    image-rendering: auto;
-
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      transparent,
-      10%,
-      white,
-      90%,
-      transparent
-    );
-    mask-image: linear-gradient(
-      to bottom,
-      transparent,
-      10%,
-      white,
-      90%,
-      transparent
-    );
+  .underline-gradiant {
+    @apply bg-gradient-to-r from-accent-1 to-accent-2 rounded-md bg-[length:100%_6px] shadow-md bg-blend-multiply bg-no-repeat  bg-bottom;
   }
 }

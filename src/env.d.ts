@@ -1,5 +1,4 @@
 /// <reference types="astro/client" />
-
 interface ImportMetaEnv {
   VITE_FIREBASE_API_KEY: string;
   VITE_FIREBASE_AUTH_DOMAIN: string;
