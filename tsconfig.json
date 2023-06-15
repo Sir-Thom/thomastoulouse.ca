@@ -7,7 +7,6 @@
     "exactOptionalPropertyTypes": true,
     "strictNullChecks": true,
     "alwaysStrict": true ,  
-    "resolveJsonModule": true,
 
 
 
