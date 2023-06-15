@@ -36,9 +36,12 @@ export default function Navbar(props: FirebaseProps) {
         data-te-navbar-ref
       >
         <div className="flex w-full flex-wrap  items-center justify-between px-3">
-          <span className=" text-xl font-bold  justify-center font-futura-pt text-center dark:text-white">
+          <a
+            href="/"
+            className=" text-xl font-bold  justify-center font-futura-pt text-center dark:text-white"
+          >
             Thomas Toulouse
-          </span>
+          </a>
           <div className=" ml-auto  lg:hidden">
             <ThemeToggle />
           </div>
