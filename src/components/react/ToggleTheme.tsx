@@ -41,6 +41,7 @@ const ThemeToggle = () => {
 
   return (
     <button
+      aria-label="Toggle Themes"
       className=" py-2 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded"
       onClick={toggleTheme}
     >
