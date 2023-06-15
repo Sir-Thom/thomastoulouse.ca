@@ -30,3 +30,6 @@ firebase.indexes.json
 firebase.rules
 .firebaserc
 storage.rules
+
+# Local Netlify folder
+.netlify
