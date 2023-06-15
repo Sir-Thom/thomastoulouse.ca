@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, Suspense } from "react";
+import { useEffect, useRef, Suspense } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
