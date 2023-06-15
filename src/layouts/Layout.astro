@@ -2,6 +2,7 @@
 export interface Props {
   title: string;
 }
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../global.css";
 const { title } = Astro.props;
@@ -21,4 +22,14 @@ const { title } = Astro.props;
     <Header />
     <slot />
   </body>
+  <Footer
+    title="Thomas Toulouse"
+    subtitle1="apropos"
+    subtitle2="Talents"
+    subtitle3="Expérience"
+    subtitle4="Éducation"
+    subtitle5="Projets"
+    phone="418-957-0141"
+    email="Sir-Thom1702@proton.me"
+  />
 </html>
