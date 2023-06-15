@@ -2,12 +2,17 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
       "futura-pt": ["Futura PT", "sans-serif"],
     },
     colors: {
+      accent: {
+        1: "#333399",
+        2: "#339999",
+      },
       transparent: "transparent",
 
       black: colors.black,
@@ -44,7 +49,7 @@ module.exports = {
         100: "#527190",
         200: "#486E93",
         300: "#3F6B96",
-        400: "#366899",
+        400: "#336699",
         500: "#23629f",
         600: "#1C4E7F",
         700: "#19456F",
@@ -52,6 +57,7 @@ module.exports = {
         900: "#123150",
       },
       WinterWizard: "#a4d8fc",
+      BabyBlueEye: "#99CCFF",
       DigitalOceanBlue: {
         50: "#1A80E6",
         100: "#0080FF",
