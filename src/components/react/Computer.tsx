@@ -11,7 +11,6 @@ function Model({ gltf }: ModelProps) {
 
   useEffect(() => {
     const model = gltf.scene;
-
     // Optional: Scale, position, or manipulate the loaded model as needed
     model.scale.set(2, 2, 2);
     model.position.set(0, -1, 0);
