@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import DownloadButton from "./DownloadButton";
 import ThemeToggle from "./ToggleTheme";
+
 interface FirebaseProps {
   VITE_FIREBASE_API_KEY: string;
   VITE_FIREBASE_AUTH_DOMAIN: string;
