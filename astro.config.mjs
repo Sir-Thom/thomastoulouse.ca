@@ -4,8 +4,6 @@ import react from "@astrojs/react";
 import { loadEnv } from "vite";
 import dotenv from "dotenv";
 import netlify from "@astrojs/netlify/functions";
-
-// Load environment variables from .env file
 dotenv.config();
 const { VITE_FIREBASE_API_KEY } = loadEnv(
   import.meta.env.VITE_FIREBASE_API_KEY,
