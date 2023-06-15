@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-const ThemeToggle = () => {
+
+export default function ThemeToggle() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -41,12 +42,11 @@ const ThemeToggle = () => {
 
   return (
     <button
+      aria-label="Toggle Themes"
       className=" py-2 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded"
       onClick={toggleTheme}
     >
       {isDarkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
     </button>
   );
-};
-
-export default ThemeToggle;
+}
