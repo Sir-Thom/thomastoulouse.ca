@@ -30,7 +30,7 @@
     "react-icons": "^4.9.0",
     "tailwindcss": "^3.0.24",
     "three": "^0.153.0",
-    "three-stdlib": "^2.23.9"
+    "three-stdlib": "^2.23.10"
   },
   "devDependencies": {
     "dotenv-webpack": "^8.0.1"
