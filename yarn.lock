@@ -981,10 +981,10 @@
   resolved "https://registry.npmjs.org/@ljharb/has-package-exports-patterns/-/has-package-exports-patterns-0.0.2.tgz"
   integrity sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==
 
-"@mediapipe/tasks-vision@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.npmjs.org/@mediapipe/tasks-vision/-/tasks-vision-0.10.1.tgz"
-  integrity sha512-/zIKjOAIABx+KVfqe8hA6X2pxBGsBYlEtvD7/gpXecvzKefo/JQO6XaggmJul7+noaqiPYM0CVGZxmFJ2oTdSQ==
+"@mediapipe/tasks-vision@0.10.2-rc2":
+  version "0.10.2-rc2"
+  resolved "https://registry.yarnpkg.com/@mediapipe/tasks-vision/-/tasks-vision-0.10.2-rc2.tgz#e3fa5d84d58b9031a0e975d1e5ef8eb8e4a6fc11"
+  integrity sha512-b9ar6TEUo8I07n/jXSuKDu5HgzkDah9pe4H8BYpcubhCEahlfDD5ixE+9SQyJM4HXHXdF9nN/wRQT7rEnLz7Gg==
 
 "@netlify/functions@^1.0.0":
   version "1.6.0"
@@ -1133,13 +1133,13 @@
   resolved "https://registry.npmjs.org/@react-spring/types/-/types-9.6.1.tgz"
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
-"@react-three/drei@^9.74.12":
-  version "9.74.13"
-  resolved "https://registry.npmjs.org/@react-three/drei/-/drei-9.74.13.tgz"
-  integrity sha512-GwE7aIzkVc0hmq45AsSM56rGpvlwrgAp4qBptPg8AMGP8TsqyxGSb/6caQ2WPC/5d82qBgwNFW3/eMC5uTe0cA==
+"@react-three/drei@^9.77.0":
+  version "9.77.0"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.77.0.tgz#78c5cacdfccb1ba00871706a70af4096b88abbb4"
+  integrity sha512-hAPXkPbmvBB1oKcGgkX+fRfAT9j7+Y2/78pa0xL8jgmkjVbLsrKYh7SOcPuVZ1kUmFFsg75pTZA85KTWqCIzew==
   dependencies:
     "@babel/runtime" "^7.11.2"
-    "@mediapipe/tasks-vision" "^0.10.1"
+    "@mediapipe/tasks-vision" "0.10.2-rc2"
     "@react-spring/three" "~9.6.1"
     "@use-gesture/react" "^10.2.24"
     camera-controls "^2.4.2"
@@ -1164,7 +1164,6 @@
   version "8.13.3"
   resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.13.3.tgz#a46e09bf28b80c6e0228fee9e18dbaec9fd8957c"
   integrity sha512-mCdTUB8D1kwlsOSxGhUg5nuGHt3HN3aNFc0s9I/N7ayk+nzT2ttLdn49c56nrHu+YK+SU1xnrxe6LqftZgIRmQ==
-
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/react-reconciler" "^0.26.7"
@@ -1286,12 +1285,10 @@
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
 
-
 "@types/react-dom@^18.2.6":
   version "18.2.6"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.2.6.tgz#ad621fa71a8db29af7c31b41b2ea3d8a6f4144d1"
   integrity sha512-2et4PDvg6PVCyS7fuTc4gPoksV58bW0RwSxWKcPRcHZf0PRUGq03TKcD/rUHe3azfV6/5/biUBJw+HhCQjaP0A==
-
   dependencies:
     "@types/react" "*"
 
