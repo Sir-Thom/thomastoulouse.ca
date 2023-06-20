@@ -9,17 +9,14 @@ const { title, href } = Astro.props;
 ---
 
 <section id={href}>
-    <div class="font-futura-pt my-24 text-black dark:text-white py-40">
+    <div class="my-24 py-40 font-futura-pt text-black dark:text-white">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col justify-center items-center">
-                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="mb-6 text-4xl font-bold tracking-tight md:text-6xl">
                     {title}
                 </h1>
                 <div class="flex flex-wrap justify-center gap-8">
-                    <Card
-                        title="Walmart"
-                        description="Préposé aux paniers | 09/2020-aujourd'hui"
-                    />
+                    <Card title="Walmart" description="Préposé aux paniers | 09/2020-aujourd'hui" />
                     <Card
                         title="Fromagerie La Pépite d’or"
                         description="Emballage et fabrication de fromage | 06/2019-08/2019"
