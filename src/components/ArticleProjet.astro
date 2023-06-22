@@ -11,17 +11,19 @@ interface Project {
     url: string;
 }
 const { title, href } = Astro.props;
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url).toString();
 import ProjectList from "../components/react/ProjectList";
-import projectsJson from "../data/projects.json";
-const projects: Array<Project> = projectsJson.projects;
-console.log(projects);
+import projectsJson from "../data/ui.json";
+const projects: Array<Project> = projectsJson[lang].project.projectsList;
 ---
 
 <section id={href}>
-    <div class="font-futura-pt mt-10 text-black dark:text-white py-40">
+    <div class="mt-10 py-40 font-futura-pt text-black dark:text-white">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col justify-center items-center">
-                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="mb-6 text-4xl font-bold tracking-tight md:text-6xl">
                     {title}
                 </h1>
                 <ProjectList projects={projects} client:visible />
