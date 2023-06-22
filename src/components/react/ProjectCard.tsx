@@ -11,8 +11,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, url }) => {
-	console.log("Project list: " + title + description + imageUrl + url);
-
 	return (
 		<a
 			href={url}

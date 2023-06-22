@@ -4,7 +4,9 @@ export interface Props {
     href: string;
 }
 import Card from "./Card.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
+const lang = getLangFromUrl(Astro.url).toString();
 const { title, href } = Astro.props;
 ---
 

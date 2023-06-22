@@ -18,20 +18,15 @@ interface ProjectListProps {
 const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
 	return (
 		<div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-			{projects.map(
-				(project) => (
-					console.log("Project Title: " + project.title),
-					(
-						<ProjectCard
-							title={project.title}
-							key={project.id}
-							description={project.description}
-							imageUrl={project.imageUrl}
-							url={project.url}
-						/>
-					)
-				)
-			)}
+			{projects.map((project) => (
+				<ProjectCard
+					title={project.title}
+					key={project.id}
+					description={project.description}
+					imageUrl={project.imageUrl}
+					url={project.url}
+				/>
+			))}
 		</div>
 	);
 };
