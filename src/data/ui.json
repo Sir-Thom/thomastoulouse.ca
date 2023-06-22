@@ -45,10 +45,30 @@
             ]
         },
         "experience": {
-            "title": "Experience"
+            "title": "Experience",
+            "experiencesList": [
+                {
+                    "title": "Walmart",
+                    "description": "shopping cart Attendant | 09/2020-today"
+                },
+                {
+                    "title": "Fromagerie La Pépite d’or",
+                    "description": "Packaging and cheese manufacturing | 06/2019-08/2019"
+                }
+            ]
         },
         "education": {
-            "title": "Education"
+            "title": "Education",
+            "educationsList": [
+                {
+                    "title": "High School Diploma",
+                    "description": "Polyvalente Saint-Georges | 2017-2021"
+                },
+                {
+                    "title": "DEC in computer science",
+                    "description": "Cégep Beauce Appalaches | 2021-today"
+                }
+            ]
         },
         "skills": {
             "title": "Skills",

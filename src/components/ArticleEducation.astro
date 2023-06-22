@@ -7,7 +7,10 @@ export interface Props {
 import Card from "./Card.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
-const lang = getLangFromUrl(Astro.url).toString();
+import uiJson from "../data/ui.json";
+const lang = getLangFromUrl(Astro.url);
+
+const education = uiJson[lang].education.educationsList;
 const { title, href } = Astro.props;
 ---
 
@@ -19,14 +22,8 @@ const { title, href } = Astro.props;
                     {title}
                 </h1>
                 <div class="flex flex-wrap justify-center gap-8">
-                    <Card
-                        title="Diplôme d'étude secondaire"
-                        description="Polyvalente Saint-Georges | 2017-2021"
-                    />
-                    <Card
-                        title="DEC en informatique"
-                        description="Cégep Beauce Appalaches | 2021-aujourd'hui"
-                    />
+                    <Card title={education[0].title} description={education[0].description} />
+                    <Card title={education[1].title} description={education[1].description} />
                 </div>
             </div>
         </div>
