@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-  .underline-gradiant {
-    @apply bg-gradient-to-r from-accent-1 to-accent-2 rounded-md bg-[length:100%_6px] shadow-md bg-blend-multiply bg-no-repeat  bg-bottom;
-  }
+	.underline-gradiant {
+		@apply rounded-md bg-gradient-to-r from-accent-1 to-accent-2 bg-[length:100%_6px] bg-bottom bg-no-repeat bg-blend-multiply  shadow-md;
+	}
 }
