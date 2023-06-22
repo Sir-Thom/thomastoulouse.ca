@@ -3,6 +3,7 @@ import { FaBars } from "react-icons/fa";
 import DownloadButton from "./DownloadButton";
 import ThemeToggle from "./ToggleTheme";
 import ContactMe from "./ContactMe";
+import LanguagesSelector from "./LanguagesSelector";
 import "../../global.css";
 import { getLangFromUrl, getURLFormReact, useTranslations } from "../../i18n/utils";
 const lang = getURLFormReact();
@@ -48,6 +49,10 @@ export default function Navbar(props: FirebaseProps) {
 					<div className="ml-auto lg:hidden">
 						<ThemeToggle />
 					</div>
+					<div className=" lg:hidden">
+						<LanguagesSelector />
+					</div>
+
 					<button className="ml-6 lg:hidden" onClick={toggleMenu} aria-label="Menu">
 						<FaBars className="h-6 w-6" />
 					</button>
@@ -57,7 +62,7 @@ export default function Navbar(props: FirebaseProps) {
 							isMenuOpen ? "block" : "hidden"
 						} w-full lg:flex lg:w-auto lg:items-center`}
 					>
-						<div className="lg:flex-grow">
+						<div className="h-fit w-fit justify-center lg:flex-grow">
 							<a
 								href="#apropos"
 								className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
@@ -99,8 +104,12 @@ export default function Navbar(props: FirebaseProps) {
 							/>
 							<ContactMe />
 						</div>
-						<div className="hidden sm:hidden md:hidden lg:block">
+						<div className="hidden  sm:hidden md:hidden lg:block">
 							<ThemeToggle />
+						</div>
+						<div className="divide-x"> </div>
+						<div className="hidden sm:hidden md:hidden lg:block">
+							<LanguagesSelector />
 						</div>
 					</div>
 				</div>
