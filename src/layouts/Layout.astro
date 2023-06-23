@@ -16,16 +16,20 @@ const t = useTranslations(lang);
 <!DOCTYPE html>
 <html lang={lang}>
   <head>
-    <meta charset="UTF-8" /><meta name="description" content="Astro description" /><meta
-      name="viewport"
-      content="width=device-width"
-    /><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><meta
-      name="generator"
-      content={Astro.generator}
-    /><title>{title}</title>
+    <meta charset="UTF-8" /><meta
+      name="description"
+      property="og:image"
+      content="Cv Thomas Toulouse"
+    /><meta name="viewport" content="width=device-width" />
 
-    <meta name="google-site-verification" content="yRA-BlBZjXi6Xh7VNeVvVYKvq9uML2WzFSde2AirMGQ" />
+    <link rel="image_src" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
   </head>
+
+  <meta name="google-site-verification" content="yRA-BlBZjXi6Xh7VNeVvVYKvq9uML2WzFSde2AirMGQ" />
+
   <body>
     <Header />
     <slot />
