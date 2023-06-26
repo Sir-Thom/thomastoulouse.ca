@@ -10,7 +10,7 @@
                 {
                     "id": 1,
                     "title": "Magic Eye",
-                    "description": "A application for a device wwith Linux operating system. This application allow device to remotely connect to a camera.",
+                    "description": "A application for a device with Linux operating system. This application allow device to remotely connect to a camera.",
                     "imageUrl": "/assets/images/projets/Preview-Magic_Eye_Client_smpte.webp",
                     "url": "https://github.com/Sir-Thom/Magic-eye"
                 },
