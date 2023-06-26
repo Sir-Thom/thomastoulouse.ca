@@ -44,7 +44,7 @@ export default function Navbar(props: FirebaseProps) {
 			<nav className="fixed top-0 z-30 flex w-full flex-wrap items-center justify-between bg-LapisLazuli-400 py-2 font-futura-pt text-white lg:flex-wrap lg:justify-start lg:py-4">
 				<div className="flex w-full flex-wrap items-center justify-between px-3">
 					<a
-						href="./"
+						href={`/${lang}/`}
 						className="hover:underline-gradiant justify-center text-center font-futura-pt text-xl font-bold transition-all duration-300 hover:scale-110 active:scale-90 dark:text-white"
 					>
 						Thomas Toulouse
