@@ -30,11 +30,14 @@ const {
     <div class="container mx-auto px-4">
         <div class="flex flex-col items-center justify-between md:flex-row">
             <div class="mb-4 md:mb-0">
-                <span class="text-2xl font-bold text-black dark:text-white">{title}</span>
-                <div class="mb-2 mt-2 flex items-center">
-                    <p class="text-sm italic text-black dark:text-white">{license}</p>
+                <span
+                    class="justify-center text-center text-2xl font-bold text-black dark:text-white"
+                    >{title}</span
+                >
+                <div class="mb-2 mt-2 flex items-center text-center">
+                    <p class="text-center text-sm italic text-black dark:text-white">{license}</p>
                 </div>
-                <div class="mb-2 mt-2 flex items-center">
+                <div class="mb-2 mt-2 flex items-center text-center">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -48,7 +51,7 @@ const {
                     </svg>
                     <a
                         href={source}
-                        class="ml-2 text-sm italic text-black decoration-LapisLazuli-500 decoration-2 hover:underline dark:text-white"
+                        class="ml-2 text-center text-sm italic text-black decoration-LapisLazuli-500 decoration-2 hover:underline dark:text-white"
                         >{source}</a
                     >
                 </div>
