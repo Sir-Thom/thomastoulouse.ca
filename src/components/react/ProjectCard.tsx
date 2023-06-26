@@ -1,7 +1,6 @@
 import React from "react";
-import { getLangFromUrl, getURLFormReact, useTranslations } from "../../i18n/utils";
+import { getURLFormReact } from "../../i18n/utils";
 const lang = getURLFormReact();
-const t = useTranslations(lang);
 
 interface ProjectCardProps {
 	title: string;
@@ -10,10 +9,10 @@ interface ProjectCardProps {
 	Url: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, url }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, Url }) => {
 	return (
 		<a
-			href={url}
+			href={Url}
 			target="_blank"
 			rel="noopener noreferrer"
 			className=" mb-2 rounded-lg  bg-light-400 p-6 shadow-lg shadow-LapisLazuli-800 transition-all    hover:scale-110 active:scale-90 dark:bg-dark-600"
