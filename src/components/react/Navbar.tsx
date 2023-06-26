@@ -5,7 +5,7 @@ import ThemeToggle from "./ToggleTheme";
 import ContactMe from "./ContactMe";
 import LanguagesSelector from "./LanguagesSelector";
 import "../../global.css";
-import { getLangFromUrl, getURLFormReact, useTranslations } from "../../i18n/utils";
+import { getURLFormReact, useTranslations } from "../../i18n/utils";
 const lang = getURLFormReact();
 const t = useTranslations(lang);
 

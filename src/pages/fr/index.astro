@@ -5,9 +5,8 @@ import Hero from "../../components/Hero.astro";
 import ArticleExperience from "../../components/ArticleExperience.astro";
 import ArticleEducation from "../../components/ArticleEducation.astro";
 import ArticleProjet from "../../components/ArticleProjet.astro";
-import Language from "../../components/Language.astro";
-export const prerender = true;
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+export const prerender = true;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
