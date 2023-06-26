@@ -5,4 +5,4 @@ export const languages = {
 };
 export const defaultLang = "fr";
 
-export const ui = uidetails as const;
+export const ui = uidetails;

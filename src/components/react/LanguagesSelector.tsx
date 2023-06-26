@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { AiOutlineGlobal, AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
+import { AiOutlineGlobal } from "react-icons/ai";
 import { languages } from "../../i18n/ui";
-import { getLangFromUrl, getURLFormReact, useTranslations } from "../../i18n/utils";
+import { getLangFromUrl, getURLFormReact } from "../../i18n/utils";
 
 const langages = getURLFormReact();
 const url = new URL(window.location.href);

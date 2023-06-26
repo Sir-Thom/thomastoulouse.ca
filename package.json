@@ -1,7 +1,7 @@
 {
   "name": "cvwebsite",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev --host",
@@ -21,7 +21,6 @@
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@types/three": "^0.152.1",
-    "D": "^1.0.0",
     "astro": "^2.6.4",
     "astro-icon": "^0.8.1",
     "dotenv": "^16.3.1",

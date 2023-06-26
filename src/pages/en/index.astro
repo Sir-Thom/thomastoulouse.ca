@@ -5,7 +5,6 @@ import Hero from "../../components/Hero.astro";
 import ArticleExperience from "../../components/ArticleExperience.astro";
 import ArticleEducation from "../../components/ArticleEducation.astro";
 import ArticleProjet from "../../components/ArticleProjet.astro";
-import Language from "../../components/Language.astro";
 
 export const prerender = true;
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
@@ -24,7 +23,7 @@ const t = useTranslations(lang);
       body={t("hero.body")}
       href="apropos"
     />
-    <ArticleTalents title={t("skill.title")} href="skillSection" />
+    <ArticleTalents href="skillSection" />
     <ArticleExperience title={t("experience.title")} href="experienceSection" />
     <ArticleEducation title={t("education.title")} href="educationSection" />
     <ArticleProjet title={t("project.title")} href="projectSection" />
