@@ -1,4 +1,4 @@
-import { ui, defaultLang } from "./ui.ts";
+import { ui, defaultLang, license } from "./ui.ts";
 
 export function getLangFromUrl(url: URL) {
 	const [, lang] = url.pathname.split("/");
@@ -15,6 +15,23 @@ export function getURLFormReact(): string {
 
 	console.warn(`Language not found, using default language ${defaultLang}`);
 	return defaultLang;
+}
+export function useTranslationsLicense(lang) {
+	return function t(key) {
+		const nestedKeys = key.split(".");
+		let translation = license[lang];
+
+		for (const nestedKey of nestedKeys) {
+			if (!translation.hasOwnProperty(nestedKey)) {
+				translation = ui[defaultLang];
+				break;
+			}
+
+			translation = translation[nestedKey];
+		}
+
+		return translation;
+	};
 }
 
 export function useTranslations(lang) {

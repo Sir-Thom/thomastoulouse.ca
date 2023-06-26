@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
@@ -26,7 +26,9 @@ function Model({ gltf }: ModelProps) {
 
 	useFrame(() => {
 		// Rotate the model
-		modelRef.current.rotation.y += 0.001;
+		if (modelRef.current) {
+			modelRef.current.rotation.y += 0.001;
+		}
 	});
 
 	return <group ref={modelRef} />;
@@ -36,9 +38,9 @@ export default function Computer() {
 	const gltf = useLoader(GLTFLoader, "/assets/source/computer.glb");
 
 	return (
-		<Canvas className=" z-10 h-52 w-52">
+		<Canvas className="z-10 h-52 w-52">
 			<ambientLight />
-			<Model gltf={gltf} />
+			{gltf && <Model gltf={gltf} />}
 		</Canvas>
 	);
 }
