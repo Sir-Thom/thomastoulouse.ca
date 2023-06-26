@@ -11,7 +11,11 @@ export default function LanguageSelector() {
 		const selectedLanguageCode = event.target.value;
 
 		const url = new URL(window.location.href);
-		url.href = url.href.replace(url.pathname, `/${selectedLanguageCode}`);
+		console.log(url);
+		let parts = window.location.href.split("/");
+		const currentpage = parts[parts.length - 1];
+		console.log(currentpage);
+		url.href = url.href.replace(url.pathname, `/${selectedLanguageCode}/${currentpage}`);
 		window.location.href = url.toString();
 	};
 
