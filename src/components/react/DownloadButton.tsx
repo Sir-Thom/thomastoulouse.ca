@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { FiDownload } from "react-icons/fi";
 import "firebase/compat/firestore";
 import "firebase/compat/storage";
-import { getLangFromUrl, getURLFormReact, useTranslations } from "../../i18n/utils";
+import { getURLFormReact, useTranslations } from "../../i18n/utils";
 
 const lang = getURLFormReact();
 const t = useTranslations(lang);

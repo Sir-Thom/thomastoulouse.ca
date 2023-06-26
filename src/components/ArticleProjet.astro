@@ -10,12 +10,13 @@ interface Project {
     imageUrl: string;
     url: string;
 }
-const { title, href } = Astro.props;
-import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
-const lang = getLangFromUrl(Astro.url).toString();
+import { getLangFromUrl } from "../i18n/utils";
 import ProjectList from "../components/react/ProjectList";
 import projectsJson from "../data/ui.json";
+
+const lang = getLangFromUrl(Astro.url).toString();
+const { title, href } = Astro.props;
 const projects: Array<Project> = projectsJson[lang].project.projectsList;
 ---
 

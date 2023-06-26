@@ -1,8 +1,6 @@
 import React from "react";
-import ProjectCard from "./ProjectCard"; // Assuming you have a ProjectCard component
-import { getLangFromUrl, getURLFormReact, useTranslations } from "../../i18n/utils";
-const lang = getURLFormReact();
-const t = useTranslations(lang);
+import ProjectCard from "./ProjectCard";
+
 interface Project {
 	id: number;
 	title: string;
@@ -24,7 +22,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
 					key={project.id}
 					description={project.description}
 					imageUrl={project.imageUrl}
-					url={project.url}
+					Url={project.url}
 				/>
 			))}
 		</div>

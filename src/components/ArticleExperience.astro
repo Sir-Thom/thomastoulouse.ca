@@ -4,12 +4,11 @@ export interface Props {
     href: string;
 }
 import Card from "./Card.astro";
-import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { getLangFromUrl } from "../i18n/utils";
 import uiJson from "../data/ui.json";
+
 const lang = getLangFromUrl(Astro.url);
-
 const experiences = uiJson[lang].experience.experiencesList;
-
 const { title, href } = Astro.props;
 ---
 

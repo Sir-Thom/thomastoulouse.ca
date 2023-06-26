@@ -1,4 +1,4 @@
-import { getLangFromUrl, getURLFormReact, useTranslations } from "../../i18n/utils";
+import { getURLFormReact, useTranslations } from "../../i18n/utils";
 const lang = getURLFormReact();
 const t = useTranslations(lang);
 export default function ContactMe() {

@@ -8,8 +8,8 @@
     "strictNullChecks": true,
     "alwaysStrict": true ,  
     "resolveJsonModule": true,
-
-
+    "allowImportingTsExtensions":true
 
   }
+
 }
