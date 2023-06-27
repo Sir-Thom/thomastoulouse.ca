@@ -9,10 +9,9 @@ export interface Props {
     phone: string;
     email: string;
     license: string;
-    licenseLink: string;
     source: string;
 }
-import { getLangFromUrl } from "../i18n/utils";
+import { getLangFromUrl, getLicenseURL } from "../i18n/utils";
 
 const {
     title,
@@ -24,10 +23,11 @@ const {
     phone,
     email,
     license,
-    licenseLink,
+
     source
 } = Astro.props;
 const lang = getLangFromUrl(Astro.url).toString();
+const licenseURL = getLicenseURL(lang);
 ---
 
 <footer class="h-auto bg-light-500 py-10 text-black dark:bg-dark-800 dark:text-white">
@@ -50,7 +50,7 @@ const lang = getLangFromUrl(Astro.url).toString();
                         ></path></svg
                     >
                     <a
-                        href={licenseLink}
+                        href={licenseURL}
                         class="ml-2 text-center text-sm italic text-black decoration-LapisLazuli-500 decoration-2 hover:underline dark:text-white"
                     >
                         {license}
@@ -136,3 +136,10 @@ const lang = getLangFromUrl(Astro.url).toString();
         </div>
     </div>
 </footer>
+<script>
+    import { getLangFromUrl } from "../i18n/utils";
+
+    const lang = getLangFromUrl(Astro.url).toString();
+    const licensePath = `/${lang.toString()}/License`;
+    const licenseLinks = `${window.location.origin}${licensePath}`;
+</script>
