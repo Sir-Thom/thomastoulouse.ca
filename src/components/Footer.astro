@@ -136,10 +136,3 @@ const licenseURL = getLicenseURL(lang);
         </div>
     </div>
 </footer>
-<script>
-    import { getLangFromUrl } from "../i18n/utils";
-
-    const lang = getLangFromUrl(Astro.url).toString();
-    const licensePath = `/${lang.toString()}/License`;
-    const licenseLinks = `${window.location.origin}${licensePath}`;
-</script>
