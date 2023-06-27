@@ -1,6 +1,7 @@
 import { AiOutlineGlobal } from "react-icons/ai";
 import { languages } from "../../i18n/ui";
 import { getLangFromUrl } from "../../i18n/utils";
+import DOMPurify from "dompurify";
 
 export default function LanguageSelector() {
 	const url = new URL(window.location.href);
@@ -32,9 +33,12 @@ export default function LanguageSelector() {
 			>
 				{Object.entries(languages)
 					.map(([lang, label]) => (
-						<option aria-label={label} key={lang} value={lang}>
-							{lang}
-						</option>
+						<option
+							aria-label={label}
+							key={lang}
+							value={lang}
+							dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(lang) }} // Sanitize the label
+						/>
 					))
 					.sort()}
 			</select>
