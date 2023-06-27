@@ -51,3 +51,8 @@ export function useTranslations(lang) {
 		return translation;
 	};
 }
+export function getLicenseURL(lang: keyof typeof ui): string {
+	const baseURL = typeof window !== "undefined" ? window.location.origin : "";
+	const licensePath = `/${lang}/License`;
+	return `${baseURL}${licensePath}`;
+}
