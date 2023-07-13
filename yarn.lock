@@ -1337,10 +1337,10 @@
   resolved "https://registry.npmjs.org/@types/stats.js/-/stats.js-0.17.0.tgz"
   integrity sha512-9w+a7bR8PeB0dCT/HBULU2fMqf6BAzvKbxFboYhmDtDkKPiyXYbjoe2auwsXlEFI7CFNMF1dCv3dFH5Poy9R1w==
 
-"@types/three@^0.152.1":
-  version "0.152.1"
-  resolved "https://registry.npmjs.org/@types/three/-/three-0.152.1.tgz"
-  integrity sha512-PMOCQnx9JRmq+2OUGTPoY9h1hTWD2L7/nmuW/SyNq1Vbq3Lwt3MNdl3wYSa4DvLTGv62NmIXD9jYdAOwohwJyw==
+"@types/three@^0.153.0":
+  version "0.153.0"
+  resolved "https://registry.yarnpkg.com/@types/three/-/three-0.153.0.tgz#daab6d2e533f5a7cf1047fb7b0a7932a2b9aef4f"
+  integrity sha512-L9quzIP4lsl6asDCw5zqN5opewCVOKRuB09apw5Acf2AIkoj5gLnUOY5AMB/ntFUt/QfFey0uKZaAd5t+HXSUw==
   dependencies:
     "@tweenjs/tween.js" "~18.6.4"
     "@types/stats.js" "*"
