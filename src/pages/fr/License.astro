@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import.meta.env.BASE_URL
 export const prerender = true;
 import { getLangFromUrl, useTranslationsLicense } from "../../i18n/utils";
-console.log(import.meta.env.BASE_URL);
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslationsLicense(lang);
 ---
