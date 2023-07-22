@@ -36,7 +36,7 @@ const { VITE_FIREBASE_MEASUREMENT_ID } = loadEnv(
 // https://astro.build/config
 export default defineConfig({
 	integrations: [tailwind(), react()],
-	output: "server",
+	output: "hybrid",
 	adapter: netlify(),
 	env: {
 		// Define your environment variables here
