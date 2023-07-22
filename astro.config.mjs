@@ -38,7 +38,7 @@ export default defineConfig({
 	
 	site: 'https://www.thomastoulouse.ca',
 	integrations: [tailwind(), react()],
-	output: "server",
+	output: "hybrid",
 	adapter: netlify(),
 	env: {
 		// Define your environment variables here
