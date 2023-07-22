@@ -37,8 +37,6 @@ const { VITE_FIREBASE_MEASUREMENT_ID } = loadEnv(
 export default defineConfig({
 	
 	site: 'https://www.thomastoulouse.ca',
-	trailingSlash: 'always',
-	base: "/",
 	integrations: [tailwind(), react()],
 	output: "hybrid",
 	adapter: netlify(),
