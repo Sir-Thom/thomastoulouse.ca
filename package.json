@@ -3,6 +3,7 @@
   "type": "module",
   "version": "1.0.1",
   "scripts": {
+    "format": "prettier --write .",
     "dev": "astro dev",
     "start": "astro dev --host",
     "build": "astro build",
@@ -23,7 +24,6 @@
     "@types/three": "^0.154.0",
     "astro": "^2.9.3",
     "astro-icon": "^0.8.1",
-    "dompurify": "^3.0.4",
     "dotenv": "^16.3.1",
     "firebase": "^10.1.0",
     "framer-motion": "^10.13.1",
@@ -38,6 +38,7 @@
     "three-stdlib": "^2.23.13"
   },
   "devDependencies": {
+    "dompurify": "^3.0.4",
     "dotenv-webpack": "^8.0.1"
   }
 }
