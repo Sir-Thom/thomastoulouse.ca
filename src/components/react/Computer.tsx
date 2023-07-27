@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, Suspense } from "react";
+import React, { useEffect, useRef, Suspense, useCallback, useMemo } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import Loader from "./Loader";
@@ -34,18 +34,32 @@ function Model({ gltf }: ModelProps) {
 	return <group ref={modelRef} />;
 }
 
-const LazyModel = ({ gltf }: ModelProps) => (
-	<Suspense fallback={<Loader />}>{gltf ? <Model gltf={gltf} /> : null}</Suspense>
-);
+const LazyModel = ({ gltf }: ModelProps) => useMemo(() => <Model gltf={gltf} />, [gltf]);
 
 export default function Computer() {
 	const gltf = useLoader(GLTFLoader, "/assets/source/computer.glb");
+
+	// Memoized event handler to avoid unnecessary re-creations
+	const handleKeyDown = useCallback((event: KeyboardEvent) => {
+		// Your keyboard event handling logic here
+	}, []);
+
+	// Add event listener outside useEffect to avoid adding/removing on each render
+	useEffect(() => {
+		window.addEventListener("keydown", handleKeyDown);
+
+		return () => {
+			window.removeEventListener("keydown", handleKeyDown);
+		};
+	}, [handleKeyDown]);
 
 	return (
 		<>
 			<Canvas className="z-10 h-52 w-52">
 				<ambientLight />
-				<LazyModel gltf={gltf} />
+				<Suspense fallback={<Loader />}>
+					<LazyModel gltf={gltf} />
+				</Suspense>
 			</Canvas>
 		</>
 	);

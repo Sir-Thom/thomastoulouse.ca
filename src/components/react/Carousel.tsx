@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import CardList from "./CardSkillList";
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 
@@ -8,7 +8,7 @@ type Card = {
 };
 
 type Content = {
-	content: any;
+	content: Card[];
 };
 
 function Carousel(CarouselProps: Content) {
@@ -16,8 +16,18 @@ function Carousel(CarouselProps: Content) {
 	const [currentCard, setCurrentCard] = useState(0);
 	const carouselContainerRef = useRef<HTMLDivElement>(null);
 
+	// Memoized event handlers using useCallback
+	const handleNext = useCallback(() => {
+		setCurrentCard((prevCard) => (prevCard + 1) % content.length);
+	}, [content]);
+
+	const handlePrev = useCallback(() => {
+		setCurrentCard((prevCard) => (prevCard - 1 + content.length) % content.length);
+	}, [content]);
+
+	// Add event listeners outside useEffect to avoid adding/removing on each render
 	useEffect(() => {
-		const handleKeydown = (event) => {
+		const handleKeydown = (event: KeyboardEvent) => {
 			if (event.key === "ArrowRight") {
 				handleNext();
 			} else if (event.key === "ArrowLeft") {
@@ -30,15 +40,13 @@ function Carousel(CarouselProps: Content) {
 		return () => {
 			carouselContainerRef.current?.removeEventListener("keydown", handleKeydown);
 		};
-	}, []);
+	}, [handleNext, handlePrev]);
 
-	const handleNext = () => {
-		setCurrentCard((prevCard) => (prevCard + 1) % content.length);
-	};
-
-	const handlePrev = () => {
-		setCurrentCard((prevCard) => (prevCard - 1 + content.length) % content.length);
-	};
+	// Memoize the card list element to avoid unnecessary re-renders
+	const cardListElement = useMemo(
+		() => <CardList cards={content} currentCard={currentCard} />,
+		[content, currentCard]
+	);
 
 	return (
 		<div ref={carouselContainerRef} tabIndex={0} className="relative focus:outline-none">
@@ -61,9 +69,7 @@ function Carousel(CarouselProps: Content) {
 					/>
 				</button>
 			</div>
-			<div className="flex h-auto w-auto items-center justify-center">
-				<CardList cards={content} currentCard={currentCard} />
-			</div>
+			<div className="flex h-auto w-auto items-center justify-center">{cardListElement}</div>
 		</div>
 	);
 }
