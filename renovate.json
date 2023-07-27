@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  "schedule": "0 0 * * 1-4 * *",
   "automerge": true,
   "labels": ["dependencies", "automated"],
   "commitMessage": "chore(deps): update ${dependencyName} to ${currentValue}",
