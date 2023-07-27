@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a9acd045-2192-4e1f-9594-07dc8678889d/deploy-status)](https://app.netlify.com/sites/thomastoulouseca/deploys)
+
 # Astro Starter Kit: Basics
 
 ```
@@ -12,7 +13,6 @@ npm create astro@latest -- --template basics
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
 
 ## 🚀 Project Structure
 
