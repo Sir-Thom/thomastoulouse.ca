@@ -1,15 +1,13 @@
 {
-  "extends": "astro/tsconfigs/base",
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
-    "pretty": true,
-    "exactOptionalPropertyTypes": true,
-    "strictNullChecks": true,
-    "alwaysStrict": true ,  
-    "resolveJsonModule": true,
-    "allowImportingTsExtensions":true
-
-  }
-
+	"extends": "astro/tsconfigs/base",
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"jsxImportSource": "react",
+		"pretty": true,
+		"exactOptionalPropertyTypes": true,
+		"strictNullChecks": true,
+		"alwaysStrict": true,
+		"resolveJsonModule": true,
+		"allowImportingTsExtensions": true
+	}
 }
