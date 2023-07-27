@@ -8,11 +8,4 @@
   "commitMessageAction": "update",
   "rangeStrategy": "auto",
   "rebaseWhen": "behind-base-branch",
-
-  "github": {
-    "assignees": ["renovate-bot"],
-    "labels": ["renovate"],
-    "useReviewers": false,
-    "useAssignees": true
-  }
 }
