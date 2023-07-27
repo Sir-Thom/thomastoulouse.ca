@@ -1,12 +1,9 @@
 {
-   "useTabs": true,
-   "singleQuote": false,
-   "trailingComma": "none",
-   "semi": true,
-   "printWidth": 100,
-   "plugins": [
-      "prettier-plugin-astro",
-      "prettier-plugin-tailwindcss"
-   ],
-   "pluginSearchDirs": false
+	"useTabs": true,
+	"singleQuote": false,
+	"trailingComma": "none",
+	"semi": true,
+	"printWidth": 100,
+	"plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+	"pluginSearchDirs": true
 }
