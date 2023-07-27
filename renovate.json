@@ -1,7 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base",
-     "automerge": true
-  ]
+  "extends": ["config:base"],
+  "schedule": "0 0 * * 1-4",
+  "automerge": true,
+  "labels": ["dependencies", "automated"],
+  "commitMessage": "chore(deps): update ${dependencyName} to ${currentValue}",
+  "commitMessageTopic": "dependency",
+  "commitMessageAction": "update",
+  "rangeStrategy": "auto",
+  "rebaseWhen": "behind-base-branch",
+  "npm": {
+    "publish": false
+  },
+  "github": {
+    "assignees": ["renovate-bot"],
+    "labels": ["renovate"],
+    "useReviewers": false,
+    "useAssignees": true
+  }
 }
