@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import React from "react";
 
 interface CardProps {
 	cards: Card[];
@@ -11,7 +12,7 @@ type Card = {
 	image: string;
 };
 
-export default function CardList({ cards, currentCard }: CardProps) {
+function CardList({ cards, currentCard }: CardProps) {
 	return (
 		<div className="flex h-auto flex-grow items-center justify-between gap-4  rounded-lg border-2 bg-light-400 p-6 shadow-lg shadow-LapisLazuli-800 dark:border-dark-50 dark:bg-dark-600">
 			{cards.map((card, index) => (
@@ -45,3 +46,4 @@ export default function CardList({ cards, currentCard }: CardProps) {
 		</div>
 	);
 }
+export default React.memo(CardList);
