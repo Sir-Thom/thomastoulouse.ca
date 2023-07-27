@@ -2,9 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "automerge": true,
-  "labels": ["dependencies", "automated"],
-  "commitMessageTopic": "dependency",
-  "commitMessageAction": "update",
-  "rangeStrategy": "auto",
   "rebaseWhen": "behind-base-branch",
 }
