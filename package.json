@@ -35,6 +35,7 @@
     "three": "^0.154.0"
   },
   "devDependencies": {
+    "dompurify": "^3.0.4",
     "dotenv-webpack": "^8.0.1"
   }
 }
