@@ -16,33 +16,56 @@ function Carousel(CarouselProps: Content) {
 	const [currentCard, setCurrentCard] = useState(0);
 	const carouselContainerRef = useRef<HTMLDivElement>(null);
 
-	// Memoized event handlers using useCallback
+	const workerRef = useRef<Worker | null>(null);
+
+	useEffect(() => {
+		// Initialize the Web Worker
+		const worker = new Worker(new URL("./carouselWorker.ts", import.meta.url));
+
+		workerRef.current = worker;
+
+		return () => {
+			// Terminate the Web Worker on unmount
+			if (workerRef.current) {
+				workerRef.current.terminate();
+			}
+		};
+	}, []);
+
 	const handleNext = useCallback(() => {
-		setCurrentCard((prevCard) => (prevCard + 1) % content.length);
-	}, [content]);
+		if (workerRef.current) {
+			workerRef.current.postMessage({ type: "next" });
+		}
+	}, []);
 
 	const handlePrev = useCallback(() => {
-		setCurrentCard((prevCard) => (prevCard - 1 + content.length) % content.length);
-	}, [content]);
+		if (workerRef.current) {
+			workerRef.current.postMessage({ type: "prev" });
+		}
+	}, []);
 
-	// Add event listeners outside useEffect to avoid adding/removing on each render
 	useEffect(() => {
-		const handleKeydown = (event: KeyboardEvent) => {
-			if (event.key === "ArrowRight") {
-				handleNext();
-			} else if (event.key === "ArrowLeft") {
-				handlePrev();
+		const handleMessage = (e: MessageEvent) => {
+			const { type } = e.data;
+
+			if (type === "next") {
+				setCurrentCard((prevCard) => (prevCard + 1) % content.length);
+			} else if (type === "prev") {
+				setCurrentCard((prevCard) => (prevCard - 1 + content.length) % content.length);
 			}
 		};
 
-		carouselContainerRef.current?.addEventListener("keydown", handleKeydown);
+		if (workerRef.current) {
+			workerRef.current.onmessage = handleMessage;
+		}
 
 		return () => {
-			carouselContainerRef.current?.removeEventListener("keydown", handleKeydown);
+			if (workerRef.current) {
+				workerRef.current.onmessage = null;
+			}
 		};
-	}, [handleNext, handlePrev]);
+	}, [content]);
 
-	// Memoize the card list element to avoid unnecessary re-renders
 	const cardListElement = useMemo(
 		() => <CardList cards={content} currentCard={currentCard} />,
 		[content, currentCard]
