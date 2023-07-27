@@ -3,7 +3,6 @@
   "extends": ["config:base"],
   "automerge": true,
   "labels": ["dependencies", "automated"],
-  "commitMessage": "chore(deps): update ${dependencyName} to ${currentValue}",
   "commitMessageTopic": "dependency",
   "commitMessageAction": "update",
   "rangeStrategy": "auto",
