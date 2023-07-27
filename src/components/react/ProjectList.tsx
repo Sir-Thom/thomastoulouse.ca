@@ -29,4 +29,5 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
 	);
 };
 
-export default ProjectList;
+// Memoize the ProjectList component to prevent unnecessary re-renders
+export default React.memo(ProjectList);
