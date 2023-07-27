@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, Suspense } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import Loader from "./Loader";
 
 interface ModelProps {
 	gltf: any;
@@ -11,7 +12,6 @@ function Model({ gltf }: ModelProps) {
 
 	useEffect(() => {
 		const model = gltf.scene;
-		// Optional: Scale, position, or manipulate the loaded model as needed
 		model.scale.set(2, 2, 2);
 		model.position.set(0, -1, 0);
 
@@ -34,13 +34,19 @@ function Model({ gltf }: ModelProps) {
 	return <group ref={modelRef} />;
 }
 
+const LazyModel = ({ gltf }: ModelProps) => (
+	<Suspense fallback={<Loader />}>{gltf ? <Model gltf={gltf} /> : null}</Suspense>
+);
+
 export default function Computer() {
 	const gltf = useLoader(GLTFLoader, "/assets/source/computer.glb");
 
 	return (
-		<Canvas className="z-10 h-52 w-52">
-			<ambientLight />
-			{gltf && <Model gltf={gltf} />}
-		</Canvas>
+		<>
+			<Canvas className="z-10 h-52 w-52">
+				<ambientLight />
+				<LazyModel gltf={gltf} />
+			</Canvas>
+		</>
 	);
 }

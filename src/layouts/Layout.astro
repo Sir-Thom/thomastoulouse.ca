@@ -1,7 +1,6 @@
 ---
-
 export interface Props {
-  title: string;
+	title: string;
 }
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
@@ -16,40 +15,39 @@ const t = useTranslations(lang);
 ---
 
 <!DOCTYPE html>
-<html lang={languages[lang].toLocaleLowerCase().slice(0,2)}>
-  <head>
-    <meta charset="UTF-8" /><meta
-      name="description"
-      property="og:image"
-      content="Cv Thomas Toulouse"
-    /><meta name="viewport" content="width=device-width" />
-    <link href="https://github.com/Sir-Thom" rel="me" />
-    <link rel="webmention" href="https://webmention.io/
+<html lang={languages[lang].toLocaleLowerCase().slice(0, 2)}>
+	<head>
+		<meta charset="UTF-8" /><meta
+			name="description"
+			property="og:image"
+			content="Cv Thomas Toulouse"
+		/><meta name="viewport" content="width=device-width" />
+		<link href="https://github.com/Sir-Thom" rel="me" />
+		<link rel="webmention" href="https://webmention.io/
 .ca_fr_/webmention" />
-    <link rel="webmention" href="https://webmention.io/thomastoulouse.ca_fr_/webmention" />
-    <link rel="image_src" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <meta name="google-site-verification" content="yRA-BlBZjXi6Xh7VNeVvVYKvq9uML2WzFSde2AirMGQ" />
-  </head>
+		<link rel="webmention" href="https://webmention.io/thomastoulouse.ca_fr_/webmention" />
+		<link rel="image_src" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta translate="yes" name="Cv Thomas Toulouse" content="notranslate" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="google-site-verification" content="yRA-BlBZjXi6Xh7VNeVvVYKvq9uML2WzFSde2AirMGQ" />
+	</head>
 
-  
-
-  <body>
-    <Header />
-    <slot />
-  </body>
-  <Footer
-    title="Thomas Toulouse"
-    subtitle1={t("about.title")}
-    subtitle2={t("skills.title")}
-    subtitle3={t("experience.title")}
-    subtitle4={t("education.title")}
-    subtitle5={t("project.title")}
-    phone="418-957-0141"
-    email="Sir-Thom1702@proton.me"
-    license="BSD-3-Clause license"
-    source="https://github.com/Sir-Thom/CvWebsiteAstro"
-  />
+	<body>
+		<Header />
+		<slot />
+	</body>
+	<Footer
+		title="Thomas Toulouse"
+		subtitle1={t("about.title")}
+		subtitle2={t("skills.title")}
+		subtitle3={t("experience.title")}
+		subtitle4={t("education.title")}
+		subtitle5={t("project.title")}
+		phone="418-957-0141"
+		email="Sir-Thom1702@proton.me"
+		license="BSD-3-Clause license"
+		source="https://github.com/Sir-Thom/CvWebsiteAstro"
+	/>
 </html>
