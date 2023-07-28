@@ -1618,9 +1618,9 @@ astro-compress@^1.1.50:
     terser "5.19.2"
 
 astro@^2.9.3:
-  version "2.9.4"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-2.9.4.tgz#b3f2730351529688343bd9f8177b5c3232cd9839"
-  integrity sha512-6mIAFTkfrLn1aAOVO7clTz3NqJNyPdJXLZEkAFTl+s5iuaIdoYnuqItkcjWP1qoEeGPF+0w9rTr0388pkTK+lg==
+  version "2.9.5"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.9.5.tgz#fe33248821fab4eacb578cb7887e1baf2b412068"
+  integrity sha512-F9qi3TzNfnl4wN3ufVRz13lX30krUd6FcEmP5gxFR3pjxk2a6+CghOZP/AgZ077Ws0RSpow29xtMhTSP7J6auQ==
   dependencies:
     "@astrojs/compiler" "^1.6.3"
     "@astrojs/internal-helpers" "^0.1.1"
