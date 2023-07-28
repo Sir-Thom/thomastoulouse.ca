@@ -1618,9 +1618,9 @@ astro-compress@^1.1.50:
     terser "5.19.2"
 
 astro@^2.9.3:
-  version "2.9.5"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-2.9.5.tgz#fe33248821fab4eacb578cb7887e1baf2b412068"
-  integrity sha512-F9qi3TzNfnl4wN3ufVRz13lX30krUd6FcEmP5gxFR3pjxk2a6+CghOZP/AgZ077Ws0RSpow29xtMhTSP7J6auQ==
+  version "2.9.6"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.9.6.tgz#3f70a11c96ce465f465a41bcd6c6d4c099edc7c9"
+  integrity sha512-yvbZQ6YOWYLejyQ4nAcgZLDYQ34enQJ5/LWlXKtUzXzpsUHB75vJMj+XmEq5Q2eVlZOlQrp0lU+nhSRGaOsOUQ==
   dependencies:
     "@astrojs/compiler" "^1.6.3"
     "@astrojs/internal-helpers" "^0.1.1"
@@ -2327,9 +2327,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.431:
-  version "1.4.475"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.475.tgz#2fee0e2a70cc1538b94f7f90aabcc436e4dcc827"
-  integrity sha512-mTye5u5P98kSJO2n7zYALhpJDmoSQejIGya0iR01GpoRady8eK3bw7YHHnjA1Rfi4ZSLdpuzlAC7Zw+1Zu7Z6A==
+  version "1.4.476"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.476.tgz#693df619ce1785ada6d5aec71fd3ce7ace71adc3"
+  integrity sha512-gzWl1m8pNy+5Kj17XcziNcbOhripjTqR2wAQmtdlFUngPYuFy7zUpJScVQAvCvQSFHNk3mS5fetNKW6BSpytFg==
 
 emmet@^2.4.3:
   version "2.4.5"
@@ -4629,9 +4629,9 @@ reusify@^1.0.4:
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
 rollup@^3.25.2:
-  version "3.26.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.26.3.tgz#bbc8818cadd0aebca348dbb3d68d296d220967b8"
-  integrity sha512-7Tin0C8l86TkpcMtXvQu6saWH93nhG3dGQ1/+l5V2TDMceTxO7kDiK6GzbfLWNNxqJXm591PcEZUozZm51ogwQ==
+  version "3.27.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.27.0.tgz#15bd07e2e1cbfa9255bf6a3f04a432621c2f3550"
+  integrity sha512-aOltLCrYZ0FhJDm7fCqwTjIUEVjWjcydKBV/Zeid6Mn8BWgDCUBBWT5beM5ieForYNo/1ZHuGJdka26kvQ3Gzg==
   optionalDependencies:
     fsevents "~2.3.2"
 
