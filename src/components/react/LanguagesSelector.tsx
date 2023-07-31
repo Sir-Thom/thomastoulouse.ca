@@ -5,7 +5,7 @@ import DOMPurify from "dompurify";
 
 export default function LanguageSelector() {
 	const url = new URL(window.location.href);
-	const currentLanguage = getLangFromUrl(url); // Get the current language from the URL
+	const currentLanguage: any = getLangFromUrl(url) || "fr"; // Ensure currentLanguage is a string
 
 	const handleLanguageChange = (event) => {
 		const selectedLanguageCode = event.target.value;
@@ -29,7 +29,7 @@ export default function LanguageSelector() {
 				name="languages"
 				id="lang"
 				onChange={handleLanguageChange}
-				value={currentLanguage}
+				value={currentLanguage} // Ensure currentLanguage is a string
 			>
 				{Object.entries(languages)
 					.map(([lang, label]) => (
@@ -37,6 +37,7 @@ export default function LanguageSelector() {
 							aria-label={label}
 							key={lang}
 							value={lang}
+							className="text-black dark:text-white"
 							dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(lang) }} // Sanitize the label
 						/>
 					))

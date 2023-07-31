@@ -5,6 +5,7 @@ import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 type Card = {
 	title: string;
 	description: string;
+	image: string;
 };
 
 type Content = {
