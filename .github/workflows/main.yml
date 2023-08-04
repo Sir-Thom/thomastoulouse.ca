@@ -15,6 +15,7 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: yarn install
+      - name: run dev
         run: yarn astro dev
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
