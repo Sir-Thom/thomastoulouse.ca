@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
 			href={Url}
 			target="_blank"
 			rel="noopener noreferrer"
-			className=" mb-2 rounded-lg  bg-light-400 p-6 shadow-lg shadow-LapisLazuli-800 transition-all    hover:scale-110 active:scale-90 dark:bg-dark-600"
+			className=" mb-2 rounded-lg  bg-light-400 p-6 shadow-lg shadow-LapisLazuli-800 transition-all    hover:scale-100 active:scale-90 dark:bg-dark-600"a
 		>
 			<img
 				src={imageUrl}
