@@ -9,6 +9,7 @@
     "build": "prettier --config .prettierrc 'src/**/*.tsx' --write && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "test:e2e": "node tests/test-e2e.js",
     "run": "dotenv -e .env astro dev"
   },
   "dependencies": {
@@ -16,28 +17,39 @@
     "@astrojs/netlify": "^2.4.0",
     "@astrojs/react": "^2.2.1",
     "@astrojs/tailwind": "^4.0.0",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
     "@react-three/drei": "^9.79.4",
     "@react-three/fiber": "^8.13.4",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.16",
     "@types/react-dom": "^18.2.6",
     "@types/three": "^0.155.0",
     "astro": "^2.9.3",
     "astro-compress": "^1.1.50",
+    "babel-jest": "^29.6.2",
+    "dompurify": "^3.0.4",
     "dotenv": "^16.3.1",
     "firebase": "^10.1.0",
     "framer-motion": "^10.13.1",
+    "jest": "^29.6.2",
     "prettier": "^3.0.0",
     "prettier-plugin-astro": "^0.11.0",
     "prettier-plugin-tailwindcss": "^0.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.10.1",
+    "react-test-renderer": "^18.2.0",
     "tailwindcss": "^3.3.3",
-    "three": "^0.155.0",
-    "dompurify": "^3.0.4"
+    "three": "^0.155.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.36.2",
+    "cypress": "^12.17.3",
     "dompurify": "^3.0.4",
-    "dotenv-webpack": "^8.0.1"
+    "dotenv-webpack": "^8.0.1",
+    "ts-node": "^10.9.1",
+    "vitest": "^0.31.4"
   }
 }
