@@ -1,7 +1,7 @@
 name: Playwright Tests
 on:
   push:
-    branches: [main, master]
+    branches: [main, maste,Dev]
   pull_request:
     branches: [main, master]
 jobs:
@@ -15,8 +15,7 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: yarn install
-      - name: run dev
-        run: yarn astro dev
+      
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
