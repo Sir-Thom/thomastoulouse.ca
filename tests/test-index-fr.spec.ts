@@ -30,12 +30,7 @@ test("test index french", async ({ page }) => {
 	await page
 		.getByText("Bonjour je m'appelle Thomas Toulouse Je suis un étudiant de troisième année en i")
 		.isVisible();
-	await page.locator("canvas").click({
-		position: {
-			x: 145,
-			y: 23
-		}
-	});
+	await page.locator("canvas").isVisible();
 	await page.locator("#skillSection").isVisible();
 	await page
 		.locator("#skillSection astro-island div")

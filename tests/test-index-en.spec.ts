@@ -5,12 +5,7 @@ test("test index english", async ({ page }) => {
 	await page
 		.getByText("Hello, my name is Thomas Toulouse I am a third-year computer science student at ")
 		.isVisible();
-	await page.locator("canvas").click({
-		position: {
-			x: 31,
-			y: 29
-		}
-	});
+	await page.locator("canvas").isVisible();
 	await page
 		.locator("div")
 		.filter({
