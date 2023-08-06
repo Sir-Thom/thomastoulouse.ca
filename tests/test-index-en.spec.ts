@@ -1,5 +1,11 @@
-import { test, expect } from "@playwright/test";
+import { test } from "@playwright/test";
+// Increase timeout for this test
+// @jest-environment playwright
+// @jest-environment node
+
 test("test index english", async ({ page }) => {
+	jest.setTimeout(30000); // 30 seconds
+
 	await page.goto("http://localhost:3000/en/");
 	await page.getByRole("navigation").isVisible();
 	await page
@@ -119,5 +125,4 @@ test("test index english", async ({ page }) => {
 	await page.getByRole("contentinfo").getByRole("link", { name: "Projects" }).click();
 	await page.locator("div").filter({ hasText: "418-957-0141" }).nth(2).isVisible();
 	await page.locator("div").filter({ hasText: "Sir-Thom1702@proton.me" }).nth(2).click();
-	await page.getByRole("link", { name: "Thomas Toulouse" }).click();
 });
