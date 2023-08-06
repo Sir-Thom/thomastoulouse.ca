@@ -4,8 +4,6 @@ import { test } from "@playwright/test";
 // @jest-environment node
 
 test("test index english", async ({ page }) => {
-	jest.setTimeout(30000); // 30 seconds
-
 	await page.goto("http://localhost:3000/en/");
 	await page.getByRole("navigation").isVisible();
 	await page
