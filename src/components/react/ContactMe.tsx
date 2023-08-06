@@ -1,3 +1,4 @@
+import React from "react";
 import { getURLFormReact, useTranslations } from "../../i18n/utils";
 const lang = getURLFormReact();
 const t = useTranslations(lang);

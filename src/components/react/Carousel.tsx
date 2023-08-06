@@ -1,18 +1,10 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import CardList from "./CardSkillList";
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
+import React from "react";
+import { IContent } from "../../interfaces/ICard";
 
-type Card = {
-	title: string;
-	description: string;
-	image: string;
-};
-
-type Content = {
-	content: Card[];
-};
-
-function Carousel(CarouselProps: Content) {
+function Carousel(CarouselProps: IContent) {
 	const { content } = CarouselProps;
 	const [currentCard, setCurrentCard] = useState(0);
 	const carouselContainerRef = useRef<HTMLDivElement>(null);

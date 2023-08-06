@@ -2,12 +2,13 @@ import { AiOutlineGlobal } from "react-icons/ai";
 import { languages } from "../../i18n/ui";
 import { getLangFromUrl } from "../../i18n/utils";
 import DOMPurify from "dompurify";
+import React from "react";
 
 export default function LanguageSelector() {
 	const url = new URL(window.location.href);
 	const currentLanguage: any = getLangFromUrl(url) || "fr"; // Ensure currentLanguage is a string
 
-	const handleLanguageChange = (event) => {
+	const handleLanguageChange = (event: { target: { value: any } }) => {
 		const selectedLanguageCode = event.target.value;
 		const currentPathname = url.pathname;
 		const currentHash = url.hash;

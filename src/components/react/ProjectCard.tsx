@@ -1,21 +1,13 @@
 import React from "react";
-import { getURLFormReact } from "../../i18n/utils";
-const lang = getURLFormReact();
+import { IProjectCardProps } from "../../interfaces/IProjectCard";
 
-interface ProjectCardProps {
-	title: string;
-	description: string;
-	imageUrl: string;
-	Url: string;
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, Url }) => {
+const ProjectCard: React.FC<IProjectCardProps> = ({ title, description, imageUrl, Url }) => {
 	return (
 		<a
 			href={Url}
 			target="_blank"
 			rel="noopener noreferrer"
-			className=" mb-2 rounded-lg  bg-light-400 p-6 shadow-lg shadow-LapisLazuli-800 transition-all    hover:scale-100 active:scale-90 dark:bg-dark-600"a
+			className=" mb-2 rounded-lg  bg-light-400 p-6 shadow-lg shadow-LapisLazuli-800 transition-all    hover:scale-100 active:scale-90 dark:bg-dark-600"
 		>
 			<img
 				src={imageUrl}
