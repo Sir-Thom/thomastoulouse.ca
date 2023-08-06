@@ -1,8 +1,12 @@
 {
 	"extends": "astro/tsconfigs/base",
-	"compilerOptions": {
+	"compilerOptions": {	
+		"jsx": "react",
+		//"noImplicitAny": false,
+		
 		"target": "ESNext",
-		"module": "CommonJS",
+		"module": "ESNext",
+		"resolveJsonModule": true ,
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,

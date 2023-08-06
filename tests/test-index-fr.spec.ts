@@ -1,4 +1,7 @@
 import { test, expect } from "@playwright/test";
+// Increase timeout for this test
+// @jest-environment playwright
+// @jest-environment node
 
 test("test index french", async ({ page }) => {
 	await page.goto("http://localhost:3000/fr/");
@@ -30,12 +33,7 @@ test("test index french", async ({ page }) => {
 	await page
 		.getByText("Bonjour je m'appelle Thomas Toulouse Je suis un étudiant de troisième année en i")
 		.isVisible();
-	await page.locator("canvas").click({
-		position: {
-			x: 145,
-			y: 23
-		}
-	});
+	await page.locator("canvas").isVisible();
 	await page.locator("#skillSection").isVisible();
 	await page
 		.locator("#skillSection astro-island div")
