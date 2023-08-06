@@ -1,4 +1,4 @@
-import { ui, defaultLang, license } from "./ui.ts";
+import { ui, defaultLang, license } from "./ui";
 
 export function getLangFromUrl(url: URL) {
 	const [, lang] = url.pathname.split("/");
@@ -16,10 +16,10 @@ export function getURLFormReact(): string {
 	console.warn(`Language not found, using default language ${defaultLang}`);
 	return defaultLang;
 }
-export function useTranslationsLicense(lang) {
-	return function t(key) {
-		const nestedKeys = key.split(".");
-		let translation = license[lang];
+export function useTranslationsLicense(lang: string | number) {
+	return function t(key: string) {
+		const nestedKeys: any = key.split(".");
+		let translation: any = license[lang];
 
 		for (const nestedKey of nestedKeys) {
 			if (!translation.hasOwnProperty(nestedKey)) {
@@ -34,10 +34,10 @@ export function useTranslationsLicense(lang) {
 	};
 }
 
-export function useTranslations(lang) {
-	return function t(key) {
-		const nestedKeys = key.split(".");
-		let translation = ui[lang];
+export function useTranslations(lang: string) {
+	return function t(key: string) {
+		const nestedKeys: any = key.split(".");
+		let translation: any = ui[lang as keyof typeof ui];
 
 		for (const nestedKey of nestedKeys) {
 			if (!translation.hasOwnProperty(nestedKey)) {

@@ -35,8 +35,8 @@ storage.rules
 # Local Netlify folder
 .netlify
 /test-results/
-/playwright-report/
+
 /playwright/.cache/
 /test-results/
-/playwright-report/
+
 /playwright/.cache/

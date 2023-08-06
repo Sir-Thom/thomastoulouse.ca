@@ -1,18 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { ICardProps } from "../../interfaces/ICard";
 
-interface CardProps {
-	cards: Card[];
-	currentCard: number;
-}
-
-type Card = {
-	title: string;
-	description: string;
-	image: string;
-};
-
-function CardList({ cards, currentCard }: CardProps) {
+function CardList({ cards, currentCard }: ICardProps) {
 	return (
 		<div className="flex h-auto flex-grow items-center justify-between gap-4  rounded-lg border-2 bg-light-400 p-6 shadow-lg shadow-LapisLazuli-800 dark:border-dark-50 dark:bg-dark-600">
 			{cards.map((card, index) => (

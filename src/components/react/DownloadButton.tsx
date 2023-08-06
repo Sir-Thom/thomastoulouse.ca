@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi";
 import "firebase/compat/firestore";
 import "firebase/compat/storage";
 import { getURLFormReact, useTranslations } from "../../i18n/utils";
+import React from "react";
 
 const lang = getURLFormReact();
 const t = useTranslations(lang);
