@@ -51,7 +51,7 @@
     "ts-node": "^10.9.1",
     "ts-jest": "^29.1.1",
     "jest-environment-jsdom": "^29.6.2",
-    "jsdom": "^14.1.0",
+    "jsdom": "^22.0.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "react-test-renderer": "^18.2.0"
