@@ -66,35 +66,30 @@ export default function Navbar(props: FirebaseProps) {
 				>
 					<div className="h-fit w-fit justify-center lg:flex-grow">
 						<a
-							rel="prefetch-intent"
 							href={`/${lang}#apropos`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("about.title")}
 						</a>
 						<a
-							rel="prefetch-intent"
 							href={`/${lang}#skillSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("skills.title")}
 						</a>
 						<a
-							rel="prefetch-intent"
 							href={`/${lang}#experienceSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("experience.title")}
 						</a>
 						<a
-							rel="prefetch-intent"
 							href={`/${lang}#educationSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("education.title")}
 						</a>
 						<a
-							rel="prefetch-intent"
 							href={`/${lang}#projectSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
