@@ -4,7 +4,6 @@ import react from "@astrojs/react";
 import { loadEnv } from "vite";
 import dotenv from "dotenv";
 import netlify from "@astrojs/netlify/functions";
-import compress from "astro-compress";
 dotenv.config();
 const { VITE_FIREBASE_API_KEY } = loadEnv(import.meta.env.VITE_FIREBASE_API_KEY, process.cwd(), "");
 const { VITE_FIREBASE_AUTH_DOMAIN } = loadEnv(
