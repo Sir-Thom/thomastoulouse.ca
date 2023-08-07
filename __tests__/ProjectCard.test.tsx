@@ -11,6 +11,7 @@ test("renders ProjectCard component with provided props", () => {
 		title: "Test Project",
 		description: "This is a test project.",
 		imageUrl: "test-image.jpg",
+		imageUrlSmall: "test-image-small.jpg",
 		Url: "https://example.com"
 	};
 
