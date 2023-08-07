@@ -1,15 +1,9 @@
 ---
 export interface Props {
-    title: string;
-    href: string;
+	title: string;
+	href: string;
 }
-interface Project {
-    id: number;
-    title: string;
-    description: string;
-    imageUrl: string;
-    url: string;
-}
+import { IProject } from "../interfaces/IProjectCard";
 
 import { getLangFromUrl } from "../i18n/utils";
 import ProjectList from "../components/react/ProjectList";
@@ -17,18 +11,18 @@ import projectsJson from "../data/ui.json";
 
 const lang = getLangFromUrl(Astro.url).toString();
 const { title, href } = Astro.props;
-const projects: Array<Project> = projectsJson[lang].project.projectsList;
+const projects: Array<IProject> = projectsJson[lang].project.projectsList;
 ---
 
 <section id={href}>
-    <div class="mt-10 py-40 font-futura-pt text-black dark:text-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col items-center justify-center">
-                <h1 class="mb-6 text-4xl font-bold tracking-tight md:text-6xl">
-                    {title}
-                </h1>
-                <ProjectList projects={projects} client:visible />
-            </div>
-        </div>
-    </div>
+	<div class="mt-10 py-40 font-futura-pt text-black dark:text-white">
+		<div class="container mx-auto px-4">
+			<div class="flex flex-col items-center justify-center">
+				<h1 class="mb-6 text-4xl font-bold tracking-tight md:text-6xl">
+					{title}
+				</h1>
+				<ProjectList projects={projects} client:visible />
+			</div>
+		</div>
+	</div>
 </section>
