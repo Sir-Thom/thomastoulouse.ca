@@ -19,7 +19,7 @@ function Model({ gltf }: IModelProps) {
 	useFrame(({ clock }) => {
 		if (modelRef.current) {
 			modelRef.current.scale.set(1.8, 1.8, 1.8);
-			modelRef.current.rotation.y = clock.elapsedTime * 0.1; // Adjust the rotation speed here
+			modelRef.current.rotation.y = clock.elapsedTime * 0.1;
 		}
 	});
 
