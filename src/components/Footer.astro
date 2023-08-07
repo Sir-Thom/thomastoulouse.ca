@@ -23,7 +23,6 @@ const {
 	phone,
 	email,
 	license,
-
 	source
 } = Astro.props;
 const lang: any = getLangFromUrl(Astro.url).toString();
@@ -49,7 +48,6 @@ const licenseURL = getLicenseURL(lang);
 						></path></svg
 					>
 					<a
-						rel="prefetch-intent"
 						href={licenseURL}
 						class="ml-2 text-center text-sm italic text-black decoration-LapisLazuli-500 decoration-2 hover:underline dark:text-white"
 					>
@@ -77,31 +75,26 @@ const licenseURL = getLicenseURL(lang);
 			</div>
 			<div class="mx-4 mb-4 mt-4 inline-flex flex-wrap md:mt-0">
 				<a
-					rel="prefetch-intent"
 					href={`/${lang}#apropos`}
 					class="hover:underline-gradiant px-3 py-2 text-black hover:text-LapisLazuli-400 dark:text-white"
 					>{subtitle1}</a
 				>
 				<a
-					rel="prefetch-intent"
 					href={`/${lang}#skillSection`}
 					class="hover:underline-gradiant px-3 py-2 text-black hover:text-LapisLazuli-400 dark:text-white"
 					>{subtitle2}</a
 				>
 				<a
-					rel="prefetch-intent"
 					href={`/${lang}#experienceSection`}
 					class="hover:underline-gradiant px-3 py-2 text-black hover:text-LapisLazuli-400 dark:text-white"
 					>{subtitle3}</a
 				>
 				<a
-					rel="prefetch-intent"
 					href={`/${lang}#educationSection`}
 					class="hover:underline-gradiant px-3 py-2 text-black hover:text-LapisLazuli-400 dark:text-white"
 					>{subtitle4}</a
 				>
 				<a
-					rel="prefetch-intent"
 					href={`/${lang}#projectSection`}
 					class="hover:underline-gradiant px-3 py-2 text-black hover:text-LapisLazuli-400 dark:text-white"
 					>{subtitle5}</a
