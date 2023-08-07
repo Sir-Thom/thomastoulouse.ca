@@ -44,6 +44,7 @@ export default function Navbar(props: FirebaseProps) {
 		<nav className="fixed top-0 z-30 flex w-full flex-wrap items-center justify-between bg-LapisLazuli-400 py-2 font-futura-pt text-white lg:flex-wrap lg:justify-start lg:py-4">
 			<div className="flex w-full flex-wrap items-center justify-between px-3">
 				<a
+					rel="prefetch-intent"
 					href={`/${lang}/`}
 					className="hover:underline-gradiant justify-center text-center font-futura-pt text-xl font-bold transition-all duration-300 hover:scale-110 active:scale-90 dark:text-white"
 				>
@@ -65,30 +66,35 @@ export default function Navbar(props: FirebaseProps) {
 				>
 					<div className="h-fit w-fit justify-center lg:flex-grow">
 						<a
+							rel="prefetch-intent"
 							href={`/${lang}#apropos`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("about.title")}
 						</a>
 						<a
+							rel="prefetch-intent"
 							href={`/${lang}#skillSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("skills.title")}
 						</a>
 						<a
+							rel="prefetch-intent"
 							href={`/${lang}#experienceSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("experience.title")}
 						</a>
 						<a
+							rel="prefetch-intent"
 							href={`/${lang}#educationSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("education.title")}
 						</a>
 						<a
+							rel="prefetch-intent"
 							href={`/${lang}#projectSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
