@@ -2,6 +2,7 @@ export interface IProjectCardProps {
 	title: string;
 	description: string;
 	imageUrl: string;
+	imageUrlSmall: string;
 	Url: string;
 }
 export interface IProject {
@@ -9,6 +10,7 @@ export interface IProject {
 	title: string;
 	description: string;
 	imageUrl: string;
+	imageUrlSmall: string;
 	url: string;
 }
 
