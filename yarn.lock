@@ -2848,15 +2848,15 @@ array-iterate@^2.0.0:
   resolved "https://registry.npmjs.org/array-iterate/-/array-iterate-2.0.1.tgz"
   integrity sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==
 
-astro-compress@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/astro-compress/-/astro-compress-2.0.4.tgz"
-  integrity sha512-Hc+AKfZN4SaR4eIUhLCJWSuMSpTpFTGWp1GUoS6D7DkGfwPDA48/KMfgAdLo59d5lRzlJC5vZw2LORMiFwKqBg==
+astro-compress@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.npmjs.org/astro-compress/-/astro-compress-2.0.5.tgz"
+  integrity sha512-DBWvNkPRt8N9ou76vXwsDtgl4RKSltHjCdSttuWB3MUF87fNkAFsi1Ve6UdXFGvS7YCIcWDCdN5nVRiKdfDOSw==
   dependencies:
     "@types/csso" "5.0.0"
     "@types/html-minifier-terser" "7.0.0"
     csso "5.0.5"
-    files-pipe "2.0.6"
+    files-pipe "2.0.8"
     html-minifier-terser "7.2.0"
     sharp "0.32.4"
     svgo "3.0.2"
@@ -4295,10 +4295,10 @@ fflate@^0.6.9, fflate@~0.6.9:
   resolved "https://registry.npmjs.org/fflate/-/fflate-0.6.10.tgz"
   integrity sha512-IQrh3lEPM93wVCEczc9SaAOvkmcoQn/G8Bo1e8ZPlY3X3bnAxWaBdvTdvM1hP62iZp0BXWDy4vTAy4fF0+Dlpg==
 
-files-pipe@2.0.6:
-  version "2.0.6"
-  resolved "https://registry.npmjs.org/files-pipe/-/files-pipe-2.0.6.tgz"
-  integrity sha512-/pzWMcuOW6RcGv4/yQ/PR7YplRiNfszfqViml/h+VvxMwapsaoDzXOo4VRqt/nceXeyvo4kxfamTCDnDlMDtVA==
+files-pipe@2.0.8:
+  version "2.0.8"
+  resolved "https://registry.npmjs.org/files-pipe/-/files-pipe-2.0.8.tgz"
+  integrity sha512-NnBWou3G2uY+crA2wlDLkGnXH0wAwNzpmLcowSZMI8jfrPPJKR+GXKnU+mEIjKzzBy0QRNH7/mmVqx4MutmWqw==
   dependencies:
     deepmerge-ts "5.1.0"
     fast-glob "3.3.1"
