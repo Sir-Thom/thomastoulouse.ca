@@ -8,7 +8,7 @@ import ArticleProjet from "../../components/ArticleProjet.astro";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 export const prerender = true;
 
-const lang = getLangFromUrl(Astro.url);
+const lang: any = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
