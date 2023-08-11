@@ -2,9 +2,10 @@ import React, { useRef, Suspense } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { IModelProps } from "../../interfaces/IModel";
+import Loader from "./Loader";
 
-// Create a Loader component
-function Loader() {
+// Create a simple placeholder mesh for suspense fallback
+function PlaceholderMesh() {
 	return (
 		<mesh>
 			<boxGeometry args={[1, 1, 1]} />
@@ -13,7 +14,8 @@ function Loader() {
 	);
 }
 
-function Model({ gltf }: IModelProps) {
+// The model component that will be animated
+function ModelComponent({ gltf }: IModelProps) {
 	const modelRef = useRef();
 
 	useFrame(({ clock }) => {
@@ -30,11 +32,13 @@ export default function Computer() {
 	const gltf = useLoader(GLTFLoader, "/assets/source/computer.glb");
 
 	return (
-		<Canvas className="z-10 h-56 w-52">
-			<ambientLight />
-			<Suspense fallback={<Loader />}>
-				<Model gltf={gltf} />
-			</Suspense>
-		</Canvas>
+		<Suspense fallback={<Loader />}>
+			<Canvas className="z-10 h-56 w-52">
+				<ambientLight />
+				<Suspense fallback={<PlaceholderMesh />}>
+					<ModelComponent gltf={gltf} />
+				</Suspense>
+			</Canvas>
+		</Suspense>
 	);
 }
