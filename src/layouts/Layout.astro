@@ -8,31 +8,34 @@ import "../global.css";
 import { languages } from "../i18n/ui";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const { title } = Astro.props;
-
-const lang = getLangFromUrl(Astro.url);
-
+const lang: any = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <!DOCTYPE html>
 <html lang={languages[lang].toLocaleLowerCase().slice(0, 2)}>
 	<head>
-		<meta charset="UTF-8" /><meta
-			name="description"
-			property="og:image"
-			content="Cv Thomas Toulouse"
-		/><meta name="viewport" content="width=device-width" />
-		<meta http-equiv="Content-Security-Policy: default-src 'self' *.google-analytics.com ajax.googleapis.com cdnjs.cloudflare.com cdnjs.com code.jquery.com unpkg.com; style-src 'self' use.fontawesome.com; font-src 'self' fonts.googleapis.com fonts.gstatic.com;">
-		<link  href="https://github.com/Sir-Thom" rel="me" />
-		<link  rel="webmention" href="https://webmention.io/
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Cv Thomas Toulouse" />
+		<meta property="og:title" content={title} />
+		<meta property="og:image" content="Cv Thomas Toulouse" />
+		<meta name="robots" content="all" />
+		<meta
+			http-equiv="Content-Security-Policy: default-src 'self' *.google-analytics.com ajax.googleapis.com cdnjs.cloudflare.com cdnjs.com code.jquery.com unpkg.com; style-src 'self' use.fontawesome.com; font-src 'self' fonts.googleapis.com fonts.gstatic.com;"
+		/>
+		<link href="https://github.com/Sir-Thom" rel="me" />
+		<link rel="manifest" href="/manifest.json" />
+		<link rel="webmention" href="https://webmention.io/
 .ca_fr_/webmention" />
-		<link  rel="webmention" href="https://webmention.io/thomastoulouse.ca_fr_/webmention" />
+		<link rel="webmention" href="https://webmention.io/thomastoulouse.ca_fr_/webmention" />
 		<link rel="image_src" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta translate="yes" name="Cv Thomas Toulouse" content="notranslate" />
-<meta name="robots" content="all">
+		<meta name="robots" content="all" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
 		<meta name="google-site-verification" content="yRA-BlBZjXi6Xh7VNeVvVYKvq9uML2WzFSde2AirMGQ" />
 	</head>
 
