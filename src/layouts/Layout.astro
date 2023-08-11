@@ -2,9 +2,11 @@
 export interface Props {
 	title: string;
 }
+import { SEO } from "astro-seo";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../global.css";
+import { seoConfig } from "../utils/seoConfig";
 import { languages } from "../i18n/ui";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const { title } = Astro.props;
@@ -15,6 +17,23 @@ const t = useTranslations(lang);
 <!DOCTYPE html>
 <html lang={languages[lang].toLocaleLowerCase().slice(0, 2)}>
 	<head>
+		<SEO
+			title={title}
+			description={seoConfig.description}
+			openGraph={{
+				basic: {
+					title: seoConfig.siteName,
+					type: "website",
+					image: seoConfig.image.url
+				},
+
+				optional: {
+					siteName: seoConfig.siteName,
+					description: seoConfig.description
+				}
+			}}
+		/>
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Cv Thomas Toulouse" />
@@ -25,7 +44,7 @@ const t = useTranslations(lang);
 			http-equiv="Content-Security-Policy: default-src 'self' *.google-analytics.com ajax.googleapis.com cdnjs.cloudflare.com cdnjs.com code.jquery.com unpkg.com; style-src 'self' use.fontawesome.com; font-src 'self' fonts.googleapis.com fonts.gstatic.com;"
 		/>
 		<link href="https://github.com/Sir-Thom" rel="me" />
-		<link rel="manifest" href="/manifest.json" />
+
 		<link rel="webmention" href="https://webmention.io/
 .ca_fr_/webmention" />
 		<link rel="webmention" href="https://webmention.io/thomastoulouse.ca_fr_/webmention" />
@@ -35,24 +54,29 @@ const t = useTranslations(lang);
 		<meta name="robots" content="all" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-
+		<script is:inline src="/registerSW.js"></script>
+		<link rel="manifest" href="/manifest.webmanifest" />
 		<meta name="google-site-verification" content="yRA-BlBZjXi6Xh7VNeVvVYKvq9uML2WzFSde2AirMGQ" />
 	</head>
 
 	<body>
 		<Header />
 		<slot />
+		<Footer
+			title="Thomas Toulouse"
+			subtitle1={t("about.title")}
+			subtitle2={t("skills.title")}
+			subtitle3={t("experience.title")}
+			subtitle4={t("education.title")}
+			subtitle5={t("project.title")}
+			phone="418-957-0141"
+			email="Sir-Thom1702@proton.me"
+			license="BSD-3-Clause license"
+			source="https://github.com/Sir-Thom/thomastoulouse.ca"
+		/>
+		<script>
+			// This is a hack to get vite-plugin-pwa to generate a sw.js file.
+			// Do not remove this script tag.
+		</script>
 	</body>
-	<Footer
-		title="Thomas Toulouse"
-		subtitle1={t("about.title")}
-		subtitle2={t("skills.title")}
-		subtitle3={t("experience.title")}
-		subtitle4={t("education.title")}
-		subtitle5={t("project.title")}
-		phone="418-957-0141"
-		email="Sir-Thom1702@proton.me"
-		license="BSD-3-Clause license"
-		source="https://github.com/Sir-Thom/thomastoulouse.ca"
-	/>
 </html>
