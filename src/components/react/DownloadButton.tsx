@@ -3,23 +3,14 @@ import { useState, useEffect } from "react";
 import { FiDownload } from "react-icons/fi";
 import "firebase/compat/firestore";
 import "firebase/compat/storage";
+import { IFirebaseProps } from "../../interfaces/IInterface";
 import { getURLFormReact, useTranslations } from "../../i18n/utils";
 import React from "react";
 
 const lang = getURLFormReact();
 const t = useTranslations(lang);
 
-interface FirebaseProps {
-	VITE_FIREBASE_API_KEY: string;
-	VITE_FIREBASE_AUTH_DOMAIN: string;
-	VITE_FIREBASE_PROJECT_ID: string;
-	VITE_FIREBASE_STORAGE_BUCKET: string;
-	VITE_FIREBASE_MESSAGING_SENDER_ID: string;
-	VITE_FIREBASE_APP_ID: string;
-	VITE_FIREBASE_MEASUREMENT_ID: string;
-}
-
-function DownloadButton(props: FirebaseProps) {
+function DownloadButton(props: IFirebaseProps) {
 	const {
 		VITE_FIREBASE_API_KEY,
 		VITE_FIREBASE_AUTH_DOMAIN,
@@ -44,14 +35,33 @@ function DownloadButton(props: FirebaseProps) {
 		if (!firebase.apps.length) {
 			firebase.initializeApp(firebaseConfig);
 		}
+
+		return () => {
+			firebase.app().delete();
+		};
 	}, []);
 
-	const getDownloadUrl = async () => {
-		const storage = firebase.storage().ref();
-		const cvUrl = await storage.child("cv.docx").getDownloadURL();
+	const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
 
-		setDownloadUrl(cvUrl);
-	};
+	useEffect(() => {
+		const getDownloadUrl = async () => {
+			const storage = firebase.storage().ref();
+			const cvUrl = await storage.child("cv.docx").getDownloadURL();
+
+			setDownloadUrl(cvUrl);
+		};
+
+		getDownloadUrl();
+	}, []);
+
+	useEffect(() => {
+		if (downloadUrl) {
+			const prefetchLink = document.createElement("link");
+			prefetchLink.href = downloadUrl;
+			prefetchLink.rel = "prefetch";
+			document.head.appendChild(prefetchLink);
+		}
+	}, [downloadUrl]);
 
 	const handleDownload = () => {
 		const link = document.createElement("a");
@@ -59,15 +69,10 @@ function DownloadButton(props: FirebaseProps) {
 		link.setAttribute("download", "cv.docx");
 		link.style.display = "none";
 		document.body.appendChild(link);
-		link.click();
+		link?.click();
 		document.body.removeChild(link);
 	};
 
-	useEffect(() => {
-		getDownloadUrl();
-	}, []);
-
-	const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
 	return (
 		<>
 			<button
