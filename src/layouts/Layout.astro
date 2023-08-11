@@ -2,11 +2,11 @@
 export interface Props {
 	title: string;
 }
-import { SEO } from "astro-seo";
+
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../global.css";
-import { seoConfig } from "../utils/seoConfig";
+
 import { languages } from "../i18n/ui";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const { title } = Astro.props;
@@ -17,23 +17,6 @@ const t = useTranslations(lang);
 <!DOCTYPE html>
 <html lang={languages[lang].toLocaleLowerCase().slice(0, 2)}>
 	<head>
-		<SEO
-			title={title}
-			description={seoConfig.description}
-			openGraph={{
-				basic: {
-					title: seoConfig.siteName,
-					type: "website",
-					image: seoConfig.image.url
-				},
-
-				optional: {
-					siteName: seoConfig.siteName,
-					description: seoConfig.description
-				}
-			}}
-		/>
-
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Cv Thomas Toulouse" />
