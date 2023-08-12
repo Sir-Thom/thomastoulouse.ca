@@ -1,16 +1,12 @@
-import firebase from "firebase/compat/app";
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
-import "firebase/compat/firestore";
-import "firebase/compat/storage";
 import { IFirebaseProps } from "../../interfaces/IInterface";
 import { getURLFormReact, useTranslations } from "../../i18n/utils";
-import React from "react";
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
+import "firebase/compat/storage";
 
-const lang = getURLFormReact();
-const t = useTranslations(lang);
-
-function DownloadButton(props: IFirebaseProps) {
+const DownloadButton: React.FC<IFirebaseProps> = (props) => {
 	const {
 		VITE_FIREBASE_API_KEY,
 		VITE_FIREBASE_AUTH_DOMAIN,
@@ -20,6 +16,9 @@ function DownloadButton(props: IFirebaseProps) {
 		VITE_FIREBASE_APP_ID,
 		VITE_FIREBASE_MEASUREMENT_ID
 	} = props;
+
+	const lang = getURLFormReact();
+	const t = useTranslations(lang);
 
 	useEffect(() => {
 		const firebaseConfig = {
@@ -47,7 +46,6 @@ function DownloadButton(props: IFirebaseProps) {
 		const getDownloadUrl = async () => {
 			const storage = firebase.storage().ref();
 			const cvUrl = await storage.child("cv.docx").getDownloadURL();
-
 			setDownloadUrl(cvUrl);
 		};
 
@@ -74,18 +72,16 @@ function DownloadButton(props: IFirebaseProps) {
 	};
 
 	return (
-		<>
-			<button
-				className="mr-4 mt-4  flex items-center rounded bg-IlluminatingEmerald-normal px-6 py-2 font-semibold transition-all duration-300 hover:scale-110 hover:bg-IlluminatingEmerald-hover hover:text-white active:scale-90 active:bg-IlluminatingEmerald-pressed lg:mt-0 lg:inline-flex"
-				onClick={handleDownload}
-			>
-				{t("btn.downloadcv")}
-				<span className="ml-2">
-					<FiDownload />
-				</span>
-			</button>
-		</>
+		<button
+			className="mr-4 mt-4 flex items-center rounded bg-IlluminatingEmerald-normal px-6 py-2 font-semibold transition-all duration-300 hover:scale-110 hover:bg-IlluminatingEmerald-hover hover:text-white active:scale-90 active:bg-IlluminatingEmerald-pressed lg:mt-0 lg:inline-flex"
+			onClick={handleDownload}
+		>
+			{t("btn.downloadcv")}
+			<span className="ml-2">
+				<FiDownload />
+			</span>
+		</button>
 	);
-}
+};
 
 export default DownloadButton;
