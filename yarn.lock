@@ -85,9 +85,9 @@
     unist-util-visit "^4.1.0"
     vfile "^5.3.2"
 
-"@astrojs/netlify@^2.6.0":
+"@astrojs/netlify@^2.4.0":
   version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/netlify/-/netlify-2.6.0.tgz#d00b64b873b2fbbfd4a13c6a2ebeb7ec3c7f58bc"
+  resolved "https://registry.npmjs.org/@astrojs/netlify/-/netlify-2.6.0.tgz"
   integrity sha512-72w0ZIrk9rfrDqsX2YclAOssTPYuoKML7SVPZIkC+7pbG+skOqkuaZswsgOfjSLZ2CA1yOC7cYiiPL/jdHRq/Q==
   dependencies:
     "@astrojs/underscore-redirects" "^0.2.0"
@@ -135,12 +135,12 @@
 
 "@astrojs/underscore-redirects@^0.2.0":
   version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/underscore-redirects/-/underscore-redirects-0.2.0.tgz#17e686188bae8837e0b8df5f383501147c58b3da"
+  resolved "https://registry.npmjs.org/@astrojs/underscore-redirects/-/underscore-redirects-0.2.0.tgz"
   integrity sha512-TP+uEdqMGNC7Lyci6WmbHvvMElBDSyHlTsvGH9E9/2duvD/n4KJVyr59klycEroaZJiAi5tzlXL8Jsl9/R32gQ==
 
 "@astrojs/webapi@^2.2.0":
   version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/webapi/-/webapi-2.2.0.tgz#fd142a468d5d690bc5ab884b532ef4db44f090b2"
+  resolved "https://registry.npmjs.org/@astrojs/webapi/-/webapi-2.2.0.tgz"
   integrity sha512-mHAOApWyjqSe5AQMOUD9rsZJqbMQqe3Wosb1a40JV6Okvyxj1G6GTlthwYadWCymq/lbgwh0PLiY8Fr4eFxtuQ==
   dependencies:
     undici "^5.22.0"
@@ -2110,7 +2110,7 @@
 
 "@netlify/functions@^1.6.0":
   version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@netlify/functions/-/functions-1.6.0.tgz#c373423e6fef0e6f7422ac0345e8bbf2cb692366"
+  resolved "https://registry.npmjs.org/@netlify/functions/-/functions-1.6.0.tgz"
   integrity sha512-6G92AlcpFrQG72XU8YH8pg94eDnq7+Q0YJhb8x4qNpdGsvuzvrfHWBmqFGp/Yshmv4wex9lpsTRZOocdrA2erQ==
   dependencies:
     is-promise "^4.0.0"
@@ -2561,10 +2561,10 @@
   dependencies:
     "@types/unist" "^2"
 
-"@types/node@*", "@types/node@>=12.12.47", "@types/node@>=13.7.0":
-  version "20.4.8"
-  resolved "https://registry.npmjs.org/@types/node/-/node-20.4.8.tgz"
-  integrity sha512-0mHckf6D2DiIAzh8fM8f3HQCvMKDpK94YQ0DSVkfWTG9BZleYIWudw9cJxX8oCk9bM+vAkDyujDV6dmKHbvQpg==
+"@types/node@*", "@types/node@20.4.10", "@types/node@>=12.12.47", "@types/node@>=13.7.0":
+  version "20.4.10"
+  resolved "https://registry.npmjs.org/@types/node/-/node-20.4.10.tgz"
+  integrity sha512-vwzFiiy8Rn6E0MtA13/Cxxgpan/N6UeNYR9oUu6kuJWxu6zCk98trcDp8CBhbtaeuq9SykCmXkFr2lWLoPcvLg==
 
 "@types/offscreencanvas@^2019.6.4":
   version "2019.7.0"
@@ -2848,15 +2848,15 @@ array-iterate@^2.0.0:
   resolved "https://registry.npmjs.org/array-iterate/-/array-iterate-2.0.1.tgz"
   integrity sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==
 
-astro-compress@2.0.5:
-  version "2.0.5"
-  resolved "https://registry.npmjs.org/astro-compress/-/astro-compress-2.0.5.tgz"
-  integrity sha512-DBWvNkPRt8N9ou76vXwsDtgl4RKSltHjCdSttuWB3MUF87fNkAFsi1Ve6UdXFGvS7YCIcWDCdN5nVRiKdfDOSw==
+astro-compress@2.0.6:
+  version "2.0.6"
+  resolved "https://registry.npmjs.org/astro-compress/-/astro-compress-2.0.6.tgz"
+  integrity sha512-bE0BwYsYigg5nhwWgfzrCsj9WSJUMm4qxx93J4LS6oO6ZEBM14K2L8AKZidcRQKMqg34ZQjroIRkFA8eUGvimw==
   dependencies:
     "@types/csso" "5.0.0"
     "@types/html-minifier-terser" "7.0.0"
     csso "5.0.5"
-    files-pipe "2.0.8"
+    files-pipe "2.0.9"
     html-minifier-terser "7.2.0"
     sharp "0.32.4"
     svgo "3.0.2"
@@ -3182,7 +3182,7 @@ bundle-name@^3.0.0:
 
 busboy@^1.6.0:
   version "1.6.0"
-  resolved "https://registry.yarnpkg.com/busboy/-/busboy-1.6.0.tgz#966ea36a9502e43cdb9146962523b92f531f6893"
+  resolved "https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz"
   integrity sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==
   dependencies:
     streamsearch "^1.1.0"
@@ -3966,7 +3966,7 @@ esbuild-linux-32@0.15.18:
 
 esbuild-linux-64@0.15.18:
   version "0.15.18"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-64/-/esbuild-linux-64-0.15.18.tgz#532738075397b994467b514e524aeb520c191b6c"
+  resolved "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.15.18.tgz"
   integrity sha512-hNSeP97IviD7oxLKFuii5sDPJ+QHeiFTFLoLm7NZQligur8poNOWGIgpQ7Qf8Balb69hptMZzyOBIPtY09GZYw==
 
 esbuild-linux-arm64@0.15.18:
@@ -4031,7 +4031,7 @@ esbuild-windows-arm64@0.15.18:
 
 esbuild@^0.15.18:
   version "0.15.18"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.15.18.tgz#ea894adaf3fbc036d32320a00d4d6e4978a2f36d"
+  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.15.18.tgz"
   integrity sha512-x/R72SmW3sSFRm5zrrIjAhCeQSAWoni3CmHEqfQrZIQTM3lVCdehdwuIqaOtfC2slvpdlLa62GYoN8SxT23m6Q==
   optionalDependencies:
     "@esbuild/android-arm" "0.15.18"
@@ -4295,11 +4295,12 @@ fflate@^0.6.9, fflate@~0.6.9:
   resolved "https://registry.npmjs.org/fflate/-/fflate-0.6.10.tgz"
   integrity sha512-IQrh3lEPM93wVCEczc9SaAOvkmcoQn/G8Bo1e8ZPlY3X3bnAxWaBdvTdvM1hP62iZp0BXWDy4vTAy4fF0+Dlpg==
 
-files-pipe@2.0.8:
-  version "2.0.8"
-  resolved "https://registry.npmjs.org/files-pipe/-/files-pipe-2.0.8.tgz"
-  integrity sha512-NnBWou3G2uY+crA2wlDLkGnXH0wAwNzpmLcowSZMI8jfrPPJKR+GXKnU+mEIjKzzBy0QRNH7/mmVqx4MutmWqw==
+files-pipe@2.0.9:
+  version "2.0.9"
+  resolved "https://registry.npmjs.org/files-pipe/-/files-pipe-2.0.9.tgz"
+  integrity sha512-MeB7Rw2C7FnNQKGrgpDopCNB/nGEfVBJcoSjwq0ZtTdZRJk2UH/+oahGTuF9HHF+LMtxOyDYm9uCjA5zkH5fGg==
   dependencies:
+    "@types/node" "20.4.10"
     deepmerge-ts "5.1.0"
     fast-glob "3.3.1"
 
@@ -4976,7 +4977,7 @@ is-potential-custom-element-name@^1.0.1:
 
 is-promise@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-4.0.0.tgz#42ff9f84206c1991d26debf520dd5c01042dd2f3"
+  resolved "https://registry.npmjs.org/is-promise/-/is-promise-4.0.0.tgz"
   integrity sha512-hvpoI6korhJMnej285dSg6nu1+e6uxs7zG3BYAm5byqDsgJNWwxzM6z6iZiAgQR4TJ30JmBTOwqZUw3WlyH3AQ==
 
 is-regex@^1.1.4:
@@ -7517,7 +7518,7 @@ stop-iteration-iterator@^1.0.0:
 
 streamsearch@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/streamsearch/-/streamsearch-1.1.0.tgz#404dd1e2247ca94af554e841a8ef0eaa238da764"
+  resolved "https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz"
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
 streamx@^2.15.0:
@@ -8008,7 +8009,7 @@ typescript@*:
 
 undici@^5.22.0:
   version "5.23.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-5.23.0.tgz#e7bdb0ed42cebe7b7aca87ced53e6eaafb8f8ca0"
+  resolved "https://registry.npmjs.org/undici/-/undici-5.23.0.tgz"
   integrity sha512-1D7w+fvRsqlQ9GscLBwcAJinqcZGHUKjbOmXdlE/v8BvEGXjeWAax+341q44EuTcHXXnfyKNbKRq4Lg7OzhMmg==
   dependencies:
     busboy "^1.6.0"
