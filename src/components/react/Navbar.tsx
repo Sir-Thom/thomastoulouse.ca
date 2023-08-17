@@ -1,4 +1,4 @@
- React, { useState, lazy, Suspense } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { FaBars } from "react-icons/fa";
 import { useTranslations, getURLFormReact } from "../../i18n/utils";
 import "../../global.css";
