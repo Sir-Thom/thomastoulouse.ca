@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense } from "react";
+ React, { useState, lazy, Suspense } from "react";
 import { FaBars } from "react-icons/fa";
 import { useTranslations, getURLFormReact } from "../../i18n/utils";
 import "../../global.css";
@@ -95,7 +95,7 @@ export default function Navbar(props: FirebaseProps) {
 						>
 							{t("project.title")}
 						</a>
-						<Suspense fallback={<div>Loading...</div>}
+						<Suspense fallback={<div>Loading...</div>}>
 							<LazyContactMe />
 						</Suspense>
 					</div>
