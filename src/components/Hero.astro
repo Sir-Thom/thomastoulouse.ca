@@ -5,7 +5,7 @@ export interface Props {
 	href: string;
 	subtitle: string;
 }
-import Computer from "./react/Computer";
+import ComputerViewer from "./react/ComputerViewer";
 
 const { href, titleMain, subtitle, body } = Astro.props;
 ---
@@ -33,7 +33,7 @@ const { href, titleMain, subtitle, body } = Astro.props;
 			<div class="mb-6 mt-6 flex w-full justify-center md:mb-0 md:mt-0 lg:w-1/2">
 				<div class="h-auto px-8">
 					<div class="h-64 w-64 xl:h-80 xl:w-80">
-						<Computer client:only="react" />
+						<ComputerViewer client:only />
 					</div>
 				</div>
 			</div>
