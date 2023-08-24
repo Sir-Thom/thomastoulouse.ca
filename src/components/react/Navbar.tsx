@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense } from "react";
+import { useState, lazy, Suspense } from "react";
 import { FaBars } from "react-icons/fa";
 import { useTranslations, getURLFormReact } from "../../i18n/utils";
 import "../../global.css";
@@ -7,16 +7,6 @@ import LanguagesSelector from "./LanguagesSelector";
 import { IENVProps } from "../../interfaces/IEnv";
 
 const lang = getURLFormReact();
-
-interface FirebaseProps {
-	VITE_FIREBASE_API_KEY: string;
-	VITE_FIREBASE_AUTH_DOMAIN: string;
-	VITE_FIREBASE_PROJECT_ID: string;
-	VITE_FIREBASE_STORAGE_BUCKET: string;
-	VITE_FIREBASE_MESSAGING_SENDER_ID: string;
-	VITE_FIREBASE_APP_ID: string;
-	VITE_FIREBASE_MEASUREMENT_ID: string;
-}
 
 export default function Navbar(props: IENVProps) {
 	const { DOWNLOAD_URL } = props;

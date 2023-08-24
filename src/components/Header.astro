@@ -3,5 +3,5 @@ import Navbar from "./react/Navbar";
 ---
 
 <header>
-	<Navbar DOWNLOAD_URL="{{ $page->download_url }}" client:only />
+	<Navbar DOWNLOAD_URL={import.meta.env.DOWNLOAD_URL} client:only />
 </header>
