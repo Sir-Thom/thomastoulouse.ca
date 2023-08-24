@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 test("test license french", async ({ page }) => {
-	await page.goto("http://localhost:3000/fr/License");
+	await page.goto("http://localhost:8080/fr/License");
 	await page
 		.getByRole("link", { name: "https://github.com/Sir-Thom/thomastoulouse.ca" })
 		.isVisible();

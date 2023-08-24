@@ -1,4 +1,4 @@
-import React, { useRef, Suspense } from "react";
+import { useRef, Suspense } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { IModelProps } from "../../interfaces/IModel";
@@ -21,7 +21,7 @@ function ModelComponent({ gltf }: IModelProps) {
 	useFrame(({ clock }) => {
 		if (modelRef.current) {
 			modelRef.current.scale.set(1.8, 1.8, 1.8);
-			modelRef.current.rotation.y = clock.elapsedTime * 0.1;
+			modelRef.current.rotation = clock.elapsedTime * 0.1;
 		}
 	});
 

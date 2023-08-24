@@ -4,7 +4,7 @@ import { test, expect } from "@playwright/test";
 // @jest-environment node
 
 test("test index french", async ({ page }) => {
-	await page.goto("http://localhost:3000/fr/");
+	await page.goto("http://localhost:8080/fr/");
 	await page.getByRole("navigation").isVisible();
 	await page.getByRole("link", { name: "Thomas Toulouse" }).click();
 	await page.getByRole("navigation").getByRole("link", { name: "À propos de moi" }).click();

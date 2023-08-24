@@ -4,7 +4,7 @@ import { test } from "@playwright/test";
 // @jest-environment node
 
 test("test index english", async ({ page }) => {
-	await page.goto("http://localhost:3000/en/");
+	await page.goto("http://localhost:8080/en/");
 	await page.getByRole("navigation").isVisible();
 	await page
 		.getByText("Hello, my name is Thomas Toulouse I am a third-year computer science student at ")
