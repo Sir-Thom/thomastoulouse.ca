@@ -89,7 +89,7 @@ export default function Navbar(props: IENVProps) {
 							{t("project.title")}
 						</a>
 						<Suspense fallback={<div>Loading...</div>}>
-							<LazyDownloadButton />
+							<LazyDownloadButton DOWNLOAD_URL={DOWNLOAD_URL} />
 							<LazyContactMe />
 						</Suspense>
 					</div>
