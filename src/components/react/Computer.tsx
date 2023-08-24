@@ -1,6 +1,6 @@
-import React, { useRef, Suspense } from "react";
+import { useRef, Suspense } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { GLTF, GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { IModelProps } from "../../interfaces/IModel";
 import Loader from "./Loader";
 
@@ -16,12 +16,12 @@ function PlaceholderMesh() {
 
 // The model component that will be animated
 function ModelComponent({ gltf }: IModelProps) {
-	const modelRef = useRef();
+	const modelRef: any | null = useRef();
 
 	useFrame(({ clock }) => {
 		if (modelRef.current) {
 			modelRef.current.scale.set(1.8, 1.8, 1.8);
-			modelRef.current.rotation.y = clock.elapsedTime * 0.1;
+			modelRef.current.rotation = clock.elapsedTime * 0.1;
 		}
 	});
 
