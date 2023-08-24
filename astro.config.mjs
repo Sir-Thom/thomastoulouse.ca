@@ -5,6 +5,7 @@ import { loadEnv } from "vite";
 import dotenv from "dotenv";
 import netlify from "@astrojs/netlify/functions";
 dotenv.config();
+const { DOWNLOAD_URL } = loadEnv(import.meta.env.DOWNLOAD_URL, process.cwd(), "");
 const { VITE_FIREBASE_API_KEY } = loadEnv(import.meta.env.VITE_FIREBASE_API_KEY, process.cwd(), "");
 const { VITE_FIREBASE_AUTH_DOMAIN } = loadEnv(
 	import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
@@ -39,7 +40,12 @@ export default defineConfig({
 	integrations: [tailwind(), react()],
 	output: "hybrid",
 	adapter: netlify(),
+	server: {
+		host: "127.0.0.1",
+		port: 8080
+	},
 	env: {
+		DOWNLOAD_URL: DOWNLOAD_URL,
 		// Define your environment variables here
 		API_KEY: VITE_FIREBASE_API_KEY,
 		AUTH_DOMAIN: VITE_FIREBASE_AUTH_DOMAIN,
