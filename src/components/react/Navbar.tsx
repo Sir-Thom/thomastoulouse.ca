@@ -4,6 +4,7 @@ import { useTranslations, getURLFormReact } from "../../i18n/utils";
 import "../../global.css";
 import ThemeToggle from "./ToggleTheme";
 import LanguagesSelector from "./LanguagesSelector";
+import { IENVProps } from "../../interfaces/IEnv";
 
 const lang = getURLFormReact();
 
@@ -17,16 +18,8 @@ interface FirebaseProps {
 	VITE_FIREBASE_MEASUREMENT_ID: string;
 }
 
-export default function Navbar(props: FirebaseProps) {
-	const {
-		VITE_FIREBASE_API_KEY,
-		VITE_FIREBASE_AUTH_DOMAIN,
-		VITE_FIREBASE_PROJECT_ID,
-		VITE_FIREBASE_STORAGE_BUCKET,
-		VITE_FIREBASE_MESSAGING_SENDER_ID,
-		VITE_FIREBASE_APP_ID,
-		VITE_FIREBASE_MEASUREMENT_ID
-	} = props;
+export default function Navbar(props: IENVProps) {
+	const { DOWNLOAD_URL } = props;
 
 	const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -96,6 +89,7 @@ export default function Navbar(props: FirebaseProps) {
 							{t("project.title")}
 						</a>
 						<Suspense fallback={<div>Loading...</div>}>
+							<LazyDownloadButton />
 							<LazyContactMe />
 						</Suspense>
 					</div>
