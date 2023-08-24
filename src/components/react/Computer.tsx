@@ -1,44 +1,49 @@
-import { useRef, Suspense } from "react";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { GLTF, GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { IModelProps } from "../../interfaces/IModel";
-import Loader from "./Loader";
+import * as THREE from "three";
+import React, { useRef, useMemo, useContext, createContext } from "react";
+import { useGLTF, Merged } from "@react-three/drei";
+import { GLTF } from "three-stdlib";
 
-// Create a simple placeholder mesh for suspense fallback
-function PlaceholderMesh() {
+type GLTFResult = GLTF & {
+	nodes: {
+		PC: THREE.Mesh;
+		Monitor: THREE.Mesh;
+		Mouse: THREE.Mesh;
+		Keyboard: THREE.Mesh;
+	};
+	materials: {
+		TextureGrid: THREE.MeshStandardMaterial;
+	};
+};
+
+const context = createContext(null);
+export function Instances({ children, ...props }: any) {
+	const { nodes } = useGLTF("/assets/source/computer.glb") as GLTFResult;
+	const instances = useMemo(
+		() => ({
+			PC: nodes.PC,
+			Monitor: nodes.Monitor,
+			Mouse: nodes.Mouse,
+			Keyboard: nodes.Keyboard
+		}),
+		[nodes]
+	);
 	return (
-		<mesh>
-			<boxGeometry args={[1, 1, 1]} />
-			<meshBasicMaterial color="gray" wireframe />
-		</mesh>
+		<Merged meshes={instances} {...props}>
+			{(instances: unknown) => <context.Provider value={instances as any} children={children} />}
+		</Merged>
 	);
 }
 
-// The model component that will be animated
-function ModelComponent({ gltf }: IModelProps) {
-	const modelRef: any | null = useRef();
-
-	useFrame(({ clock }) => {
-		if (modelRef.current) {
-			modelRef.current.scale.set(1.8, 1.8, 1.8);
-			modelRef.current.rotation = clock.elapsedTime * 0.1;
-		}
-	});
-
-	return <primitive object={gltf.scene.clone()} ref={modelRef} />;
-}
-
-export default function Computer() {
-	const gltf = useLoader(GLTFLoader, "/assets/source/computer.glb");
-
+export function Model(props: JSX.IntrinsicElements["group"]) {
+	const instances: any | null = useContext(context);
 	return (
-		<Suspense fallback={<Loader />}>
-			<Canvas className="z-10 h-56 w-52">
-				<ambientLight />
-				<Suspense fallback={<PlaceholderMesh />}>
-					<ModelComponent gltf={gltf} />
-				</Suspense>
-			</Canvas>
-		</Suspense>
+		<group {...props} dispose={null}>
+			<instances.PC name="PC" position={[0, 0, -0.031]} rotation={[0.087, 0, 0]} />
+			<instances.Monitor name="Monitor" position={[0, 0.5, 0.031]} rotation={[0.087, 0, 0]} />
+			<instances.Mouse name="Mouse" position={[0.875, 0.063, 0.75]} rotation={[0.087, 0, 0]} />
+			<instances.Keyboard name="Keyboard" position={[0, 0.062, 0.813]} rotation={[0.087, 0, 0]} />
+		</group>
 	);
 }
+
+useGLTF.preload("/assets/source/computer.glb");
