@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 test("test", async ({ page }) => {
-	await page.goto("http://localhost:3000/en/License");
+	await page.goto("http://localhost:8080/en/License");
 	await page
 		.getByText("The 3-Clause BSD License Copyright © 2023, Thomas Toulouse Redistribution and us")
 		.isVisible();

@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 

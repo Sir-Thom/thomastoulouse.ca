@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
 import { IENVProps } from "../../interfaces/IEnv";
 import { getURLFormReact, useTranslations } from "../../i18n/utils";
@@ -6,7 +6,7 @@ import { getURLFormReact, useTranslations } from "../../i18n/utils";
 /*import "firebase/compat/firestore";
 import "firebase/compat/storage";*/
 
-function DownloadButton(props: { DOWNLOAD_URL: any }) {
+function DownloadButton(props: IENVProps) {
 	const { DOWNLOAD_URL } = props;
 
 	const lang = getURLFormReact();

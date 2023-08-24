@@ -37,6 +37,6 @@ storage.rules
 /test-results/
 
 /playwright/.cache/
-/test-results/
-
+test-results/*
+playwright-report/*
 /playwright/.cache/
