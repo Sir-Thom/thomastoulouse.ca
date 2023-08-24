@@ -1,7 +1,7 @@
 {
 	"extends": "astro/tsconfigs/base",
 	"compilerOptions": {	
-		"jsx": "react",
+		"jsx": "react-jsx",
 		//"noImplicitAny": false,
 		
 		"target": "ESNext",

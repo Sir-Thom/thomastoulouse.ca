@@ -1,26 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
-import { IFirebaseProps } from "../../interfaces/IInterface";
+import { IENVProps } from "../../interfaces/IEnv";
 import { getURLFormReact, useTranslations } from "../../i18n/utils";
-import firebase from "firebase/compat/app";
-import "firebase/compat/firestore";
-import "firebase/compat/storage";
+//import firebase from "firebase/compat/app";
+/*import "firebase/compat/firestore";
+import "firebase/compat/storage";*/
 
-const DownloadButton: React.FC<IFirebaseProps> = (props) => {
-	const {
-		VITE_FIREBASE_API_KEY,
-		VITE_FIREBASE_AUTH_DOMAIN,
-		VITE_FIREBASE_PROJECT_ID,
-		VITE_FIREBASE_STORAGE_BUCKET,
-		VITE_FIREBASE_MESSAGING_SENDER_ID,
-		VITE_FIREBASE_APP_ID,
-		VITE_FIREBASE_MEASUREMENT_ID
-	} = props;
+function DownloadButton(props: { DOWNLOAD_URL: any }) {
+	const { DOWNLOAD_URL } = props;
 
 	const lang = getURLFormReact();
 	const t = useTranslations(lang);
 
-	useEffect(() => {
+	/*useEffect(() => {
 		const firebaseConfig = {
 			apiKey: VITE_FIREBASE_API_KEY,
 			authDomain: VITE_FIREBASE_AUTH_DOMAIN,
@@ -38,14 +30,14 @@ const DownloadButton: React.FC<IFirebaseProps> = (props) => {
 		return () => {
 			firebase.app().delete();
 		};
-	}, []);
-
+	}, []);*/
 	const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
 
 	useEffect(() => {
 		const getDownloadUrl = async () => {
-			const storage = firebase.storage().ref();
-			const cvUrl = await storage.child("cv.docx").getDownloadURL();
+			//onst storage = firebase.storage().ref();
+			//const cvUrl = await storage.child("cv.docx").getDownloadURL();
+			const cvUrl = DOWNLOAD_URL;
 			setDownloadUrl(cvUrl);
 		};
 
@@ -53,6 +45,14 @@ const DownloadButton: React.FC<IFirebaseProps> = (props) => {
 	}, []);
 
 	useEffect(() => {
+		const getDownloadUrl = async () => {
+			//onst storage = firebase.storage().ref();
+			//const cvUrl = await storage.child("cv.docx").getDownloadURL();
+			const cvUrl = DOWNLOAD_URL;
+			setDownloadUrl(cvUrl);
+		};
+
+		getDownloadUrl();
 		if (downloadUrl) {
 			const prefetchLink = document.createElement("link");
 			prefetchLink.href = downloadUrl;
@@ -82,6 +82,6 @@ const DownloadButton: React.FC<IFirebaseProps> = (props) => {
 			</span>
 		</button>
 	);
-};
+}
 
 export default DownloadButton;
