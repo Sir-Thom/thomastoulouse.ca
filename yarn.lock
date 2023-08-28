@@ -1861,9 +1861,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.79.4":
-  version "9.80.8"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.80.8.tgz#09f52369a6fb6aad71eaa86561caf016972e4120"
-  integrity sha512-T089hn4rZX08ytJ7xjS8U2cbsKEsPgXK0OTLQiV3kcB9yFI/jM0ujUAbkHhtCERzvpNsCfEcKw0zHFO9iNTy5Q==
+  version "9.80.9"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.80.9.tgz#2a8d3bc24fbaaddd5e950efbf456933bd57d9645"
+  integrity sha512-VyOpmAkFfV/OVZXeHtOJXrVH0t0oDuaZb4wYAsffoLOIlOKkngpE+esAMa7kf0IQi6K+OGM2ipH3g8ZCxLj6ZQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.2"
@@ -6881,9 +6881,9 @@ stack-utils@^2.0.3:
     escape-string-regexp "^2.0.0"
 
 stats-gl@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/stats-gl/-/stats-gl-1.0.4.tgz#a6fb1a9605545558857895c743978ed44258f0b8"
-  integrity sha512-oxo13HHonoMWIYcrIu4xCk8IcFEFaqAOkMOMIyfvZFxNZzGy+jnW8sy0W3VfEjKQd5JX0Kp2KhePAKhtI6/TSw==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/stats-gl/-/stats-gl-1.0.5.tgz#7f2b6688cc37b3d4bc79749ab122c063528be9c3"
+  integrity sha512-XimMxvwnf1Qf5KwebhcoA34kcX+fWEkIl0QjNkCbu4IpoyDMMsOajExn7FIq5w569k45+LhmsuRlGSrsvmGdNw==
 
 stats.js@^0.17.0:
   version "0.17.0"
@@ -7174,9 +7174,9 @@ thenify-all@^1.0.0:
     any-promise "^1.0.0"
 
 three-mesh-bvh@^0.6.0:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.6.3.tgz#c387d6ae7faf1c5a1caf0643c19535dab27d707b"
-  integrity sha512-xjuGLSI9nBATIsWcT/DnnNma5xXYyvBiXfUbhGLAFqItOlOKYF5JWsUOX+cuSAnSWovEoHzd5Emx23qKiByrlw==
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.6.4.tgz#a545a85bb201ea9adf6e172031d6ceb6250ff7fc"
+  integrity sha512-NegGez6MOJIqNrZRPYQ0ZcTEVU0OyqNudTTVxNPlhjKuWC2wyw7c0QfAEnakoU7ciNgL7HWNvCsbhIPbtSelDA==
 
 three-stdlib@^2.22.4, three-stdlib@^2.23.9:
   version "2.25.0"
