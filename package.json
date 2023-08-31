@@ -14,15 +14,14 @@
     "run": "dotenv -e .env astro dev"
   },
   "dependencies": {
-    "@astrojs/image": "^0.18.0",
-    "@astrojs/netlify": "^3.0.0",
-    "@astrojs/react": "^3.0.0",
-    "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/netlify": "^2.4.0",
+    "@astrojs/react": "^2.2.1",
+    "@astrojs/tailwind": "^4.0.0",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "@react-three/drei": "^9.79.4",
     "@react-three/fiber": "^8.13.4",
-    "astro": "^3.0.0",
+    "astro": "^2.9.3",
     "babel-jest": "^29.6.2",
     "dompurify": "^3.0.4",
     "dotenv": "^16.3.1",
@@ -38,7 +37,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.36.2",
-    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/dompurify": "^3.0.2",
