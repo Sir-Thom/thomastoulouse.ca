@@ -14,7 +14,6 @@
     "run": "dotenv -e .env astro dev"
   },
   "dependencies": {
-    "@astrojs/image": "^0.17.0",
     "@astrojs/netlify": "^2.4.0",
     "@astrojs/react": "^2.2.1",
     "@astrojs/tailwind": "^4.0.0",
@@ -38,7 +37,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.36.2",
-    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/dompurify": "^3.0.2",
