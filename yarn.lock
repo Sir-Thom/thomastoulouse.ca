@@ -1789,15 +1789,16 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.79.4":
-  version "9.82.0"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.82.0.tgz#e05204f262cf503ecd1d5a5ac4c5c7484245c088"
-  integrity sha512-3CUCfuyXgug47UyM9wv9Zug6Ly4RzvGcM9//w2sFXHQXrR/oxlAD+uD8Pvqt/jsszPUtj4pfLJCucC+FtyigIw==
+  version "9.83.3"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.83.3.tgz#8f1f650946dd2febe7644b6fd511a9cf1d2cb509"
+  integrity sha512-cuqShZ7IAqq/sa0jFWEWZ7d9R/v0YRNqWqNYeTz2Ln3lqJd5tNNBNfLIYLnqVTvb/gVBm78qiu4vZ2ZZ82uo1w==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.2"
     "@react-spring/three" "~9.6.1"
     "@use-gesture/react" "^10.2.24"
     camera-controls "^2.4.2"
+    cross-env "^7.0.3"
     detect-gpu "^5.0.28"
     glsl-noise "^0.0.0"
     lodash.clamp "^4.0.3"
@@ -2933,7 +2934,14 @@ create-require@^1.1.0:
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
 
-cross-spawn@^7.0.3:
+cross-env@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
+  integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
+  dependencies:
+    cross-spawn "^7.0.1"
+
+cross-spawn@^7.0.1, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
   integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
@@ -7176,9 +7184,9 @@ thenify-all@^1.0.0:
     any-promise "^1.0.0"
 
 three-mesh-bvh@^0.6.0:
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.6.6.tgz#2e74c04212e5b3375e17987ea6c0e8d9f72fdfc8"
-  integrity sha512-EQykIpm7gDZQVhkoiOb/vfXPlfuagVRYmviNulbMsjFwXISJGmXrj1ktPncnGBFqWO3g2fX7GRwc9wLhLyX3MQ==
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.6.7.tgz#6491876f5bf0c0d67be81a4402f2abdbb2266d76"
+  integrity sha512-RYdjMsH+vZvjLwA+ehI4+ZqTaTehAz4iho2yfL5PdGsIHyxpB78g0iy4Emj8079m/9KBX02TzddkvPSKSruQjg==
 
 three-stdlib@^2.22.4, three-stdlib@^2.25.1:
   version "2.25.1"
