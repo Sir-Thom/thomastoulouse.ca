@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^2.4.0",
-    "@astrojs/react": "^2.2.1",
+    "@astrojs/react": "^3.0.2",
     "@astrojs/tailwind": "^4.0.0",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
