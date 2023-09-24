@@ -1861,9 +1861,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.83.9":
-  version "9.84.2"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.84.2.tgz#c09f044b6a9a5f91ebf794fa5c66a55657cfb2f4"
-  integrity sha512-2r9mA22hxgLcamtIz42brcLqYsDzlPnfqglXgIXIbZsQJoaiBkhOYAeVG3cphCr7b9CEw11jA7O0qDSx3nUGYw==
+  version "9.84.3"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.84.3.tgz#a6bc500c66f358708d8ae831b3cede20aa6be9c0"
+  integrity sha512-cKwHTezpNjZ4HQ3bBCFjClc8zwvYkWz3KuL5ISvaqQgcfsmyHKynAKPH0Td4EWAJXJTk6la4jGDkl/hn5ngQCg==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.2"
@@ -1884,7 +1884,7 @@
     stats.js "^0.17.0"
     suspend-react "^0.1.3"
     three-mesh-bvh "^0.6.0"
-    three-stdlib "^2.25.1"
+    three-stdlib "^2.26.6"
     troika-three-text "^0.47.2"
     utility-types "^3.10.0"
     zustand "^3.5.13"
@@ -2048,9 +2048,9 @@
     "@types/trusted-types" "*"
 
 "@types/draco3d@^1.4.0":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@types/draco3d/-/draco3d-1.4.4.tgz#40dda9b31da4c0fe1b21aed372212ca4179c45e7"
-  integrity sha512-qmFieVcgNRvXphmSjnQnJGXbKq2ymE38L/22GlDD/IIzyA0dHQNI0za+RLSfyW6aG/lOoYWkGudFZnrs9PmqCw==
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/@types/draco3d/-/draco3d-1.4.5.tgz#cb78109d7641b7c23c7c1d9a645eb4f93754a9e9"
+  integrity sha512-JdcOl2fwoCZOHGZErjnrku3h6hF/8D21VBCclyP4m9Kggh+vMXsLyAmfEiOXwUXZ1jpv2jdfWV/a5NCgw/g/Kg==
 
 "@types/graceful-fs@^4.1.3":
   version "4.1.6"
@@ -7326,10 +7326,10 @@ three-stdlib@^2.22.4:
     potpack "^1.0.1"
     zstddec "^0.0.2"
 
-three-stdlib@^2.25.1:
-  version "2.26.0"
-  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.26.0.tgz#a9e9ad4098d80ff6764f86e390af081caed2e589"
-  integrity sha512-zfae1OrUx7cLnH9GGW9PyIKwu7qCfEbWUk/GIT6JmEn7JZOu153mIPQxVXaJCAD6rDxb0Sr14Ab/vOIcJ7RpsA==
+three-stdlib@^2.26.6:
+  version "2.26.6"
+  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.26.6.tgz#0ab23a6c4c4a74365e54dc0a69db7bb9589391b4"
+  integrity sha512-93XercNU5UBVXOXrzekL3eltt4fR0yvXN8r4rPSMNPAjwFdHYgc8o7SqylCNLPNetB9eAHGtI3Tx7WUMRM6lMg==
   dependencies:
     "@types/draco3d" "^1.4.0"
     "@types/offscreencanvas" "^2019.6.4"
