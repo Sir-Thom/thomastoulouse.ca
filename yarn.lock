@@ -1868,9 +1868,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.83.9":
-  version "9.85.2"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.85.2.tgz#18935abc97248b0e38af8d70019218c0c2584d3b"
-  integrity sha512-27ROecSLYBJ9P8u3c6vUtMH0+O2V0gTmufCTwS4O+4MEu6K44zlzoArGM/92FCam6+q69ccTFc+4DVFus8ZWTA==
+  version "9.86.0"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.86.0.tgz#aad033774c414105b72ef02df7a7d140942e7fc3"
+  integrity sha512-7QfieQwDe8zgLbGtr/rdusj/zQQXK0D8yA0U+bv+VJZrTtXEl1fYJtHxsxWcS95N+sgff5k6QyxwCUy2q3bHCg==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.2"
