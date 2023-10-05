@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
 import { IENVProps } from "../../interfaces/IEnv";
 import { getURLFormReact, useTranslations } from "../../i18n/utils";
-//import firebase from "firebase/compat/app";
-/*import "firebase/compat/firestore";
-import "firebase/compat/storage";*/
 
 function DownloadButton(props: IENVProps) {
 	const { DOWNLOAD_URL } = props;
@@ -12,33 +9,18 @@ function DownloadButton(props: IENVProps) {
 	const lang = getURLFormReact();
 	const t = useTranslations(lang);
 
-	/*useEffect(() => {
-		const firebaseConfig = {
-			apiKey: VITE_FIREBASE_API_KEY,
-			authDomain: VITE_FIREBASE_AUTH_DOMAIN,
-			projectId: VITE_FIREBASE_PROJECT_ID,
-			storageBucket: VITE_FIREBASE_STORAGE_BUCKET,
-			messagingSenderId: VITE_FIREBASE_MESSAGING_SENDER_ID,
-			appId: VITE_FIREBASE_APP_ID,
-			measurementId: VITE_FIREBASE_MEASUREMENT_ID
-		};
-
-		if (!firebase.apps.length) {
-			firebase.initializeApp(firebaseConfig);
-		}
-
-		return () => {
-			firebase.app().delete();
-		};
-	}, []);*/
 	const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
-
+	// improve performance by prefetching the download url
 	useEffect(() => {
 		const getDownloadUrl = async () => {
-			//onst storage = firebase.storage().ref();
-			//const cvUrl = await storage.child("cv.docx").getDownloadURL();
-			const cvUrl = DOWNLOAD_URL;
-			setDownloadUrl(cvUrl);
+			if (lang === "en") {
+				const cvUrl = DOWNLOAD_URL + "/cv-EN.docx";
+				setDownloadUrl(cvUrl);
+				return;
+			} else if (lang === "fr") {
+				const cvUrl = DOWNLOAD_URL + "/cv-FR.docx";
+				setDownloadUrl(cvUrl);
+			}
 		};
 
 		getDownloadUrl();
@@ -46,10 +28,14 @@ function DownloadButton(props: IENVProps) {
 
 	useEffect(() => {
 		const getDownloadUrl = async () => {
-			//onst storage = firebase.storage().ref();
-			//const cvUrl = await storage.child("cv.docx").getDownloadURL();
-			const cvUrl = DOWNLOAD_URL;
-			setDownloadUrl(cvUrl);
+			if (lang === "en") {
+				const cvUrl = DOWNLOAD_URL + "/cv-EN.docx";
+				setDownloadUrl(cvUrl);
+				return;
+			} else if (lang === "fr") {
+				const cvUrl = DOWNLOAD_URL + "/cv-FR.docx";
+				setDownloadUrl(cvUrl);
+			}
 		};
 
 		getDownloadUrl();
