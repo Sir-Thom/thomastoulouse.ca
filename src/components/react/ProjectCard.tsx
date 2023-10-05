@@ -1,18 +1,7 @@
 import React from "react";
 import { IProjectCardProps } from "../../interfaces/IProjectCard";
-import {
-	SiCplusplus,
-	SiCsharp,
-	SiCss3,
-	SiGnubash,
-	SiHtml5,
-	SiJavascript,
-	SiPhp,
-	SiPowershell,
-	SiPython,
-	SiRust,
-	SiTypescript
-} from "react-icons/si";
+import pkg from "react-icons/si";
+
 
 const ProjectCard: React.FC<IProjectCardProps> = ({
 	title,
@@ -22,6 +11,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 	Url,
 	languages
 }) => {
+	const { SiPython, SiJavascript, SiHtml5, SiCss3, SiTypescript, SiCsharp, SiGnubash, SiPowershell, SiCplusplus, SiPhp, SiRust } = pkg;
 	const languageIcons: Record<string, JSX.Element> = {
 		Python: <SiPython />,
 		JavaScript: <SiJavascript />,
