@@ -4,6 +4,7 @@ export interface IProjectCardProps {
 	imageUrl: string;
 	imageUrlSmall: string;
 	Url: string;
+	languages: string[];
 }
 export interface IProject {
 	id: number;
@@ -12,6 +13,7 @@ export interface IProject {
 	imageUrl: string;
 	imageUrlSmall: string;
 	url: string;
+	languages: string[];
 }
 
 export interface IProjectListProps {

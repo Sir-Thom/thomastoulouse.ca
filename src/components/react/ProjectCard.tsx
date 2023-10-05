@@ -1,13 +1,49 @@
 import React from "react";
 import { IProjectCardProps } from "../../interfaces/IProjectCard";
+import {
+	SiCplusplus,
+	SiCsharp,
+	SiCss3,
+	SiGnubash,
+	SiHtml5,
+	SiJavascript,
+	SiPhp,
+	SiPowershell,
+	SiPython,
+	SiRust,
+	SiTypescript
+} from "react-icons/si";
 
 const ProjectCard: React.FC<IProjectCardProps> = ({
 	title,
 	description,
 	imageUrl,
 	imageUrlSmall,
-	Url
+	Url,
+	languages
 }) => {
+	const languageIcons: Record<string, JSX.Element> = {
+		Python: <SiPython />,
+		JavaScript: <SiJavascript />,
+		HTML: <SiHtml5 />,
+		CSS: <SiCss3 />,
+		TypeScript: <SiTypescript />,
+		CSharp: <SiCsharp />,
+		Bash: <SiGnubash />,
+		PowerShell: <SiPowershell />,
+		CPlusPlus: <SiCplusplus />,
+		PHP: <SiPhp />,
+		Rust: <SiRust />
+	};
+
+	const languageIconsList =
+		languages && Array.isArray(languages)
+			? languages.map((language, index) => (
+					<span key={index} className="m-2" title={language}>
+						{languageIcons[language]}
+					</span>
+			  ))
+			: null;
 	return (
 		<a
 			href={Url}
@@ -26,6 +62,10 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 			/>
 			<h2 className="mb-2 text-xl font-semibold">{title}</h2>
 			<p className="text-gray-600">{description}</p>
+
+			<div className="rounded-mdl absolute bottom-0  right-0 m-2 p-2   text-white">
+				<div className="flex text-xl font-semibold text-white">{languageIconsList}</div>
+			</div>
 
 			<svg
 				className="mr-2 mt-2 inline-block h-6 w-6"

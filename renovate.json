@@ -2,5 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "automerge": false,
-  "rebaseWhen": "behind-base-branch",
+  "rebaseWhen": "behind-base-branch"
 }
