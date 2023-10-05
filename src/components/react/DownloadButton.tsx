@@ -14,11 +14,11 @@ function DownloadButton(props: IENVProps) {
 	useEffect(() => {
 		const getDownloadUrl = async () => {
 			if (lang === "en") {
-				const cvUrl = DOWNLOAD_URL + "/cv-EN.docx";
+				const cvUrl = DOWNLOAD_URL + "cv-EN.docx";
 				setDownloadUrl(cvUrl);
 				return;
 			} else if (lang === "fr") {
-				const cvUrl = DOWNLOAD_URL + "/cv-FR.docx";
+				const cvUrl = DOWNLOAD_URL + "cv-FR.docx";
 				setDownloadUrl(cvUrl);
 			}
 		};
@@ -29,11 +29,11 @@ function DownloadButton(props: IENVProps) {
 	useEffect(() => {
 		const getDownloadUrl = async () => {
 			if (lang === "en") {
-				const cvUrl = DOWNLOAD_URL + "/cv-EN.docx";
+				const cvUrl = DOWNLOAD_URL + "cv-EN.docx";
 				setDownloadUrl(cvUrl);
 				return;
 			} else if (lang === "fr") {
-				const cvUrl = DOWNLOAD_URL + "/cv-FR.docx";
+				const cvUrl = DOWNLOAD_URL + "cv-FR.docx";
 				setDownloadUrl(cvUrl);
 			}
 		};
