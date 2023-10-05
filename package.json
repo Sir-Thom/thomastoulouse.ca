@@ -3,10 +3,10 @@
   "type": "module",
   "version": "1.3.0",
   "scripts": {
-    "format": "prettier --config .prettierrc 'src/**/*.tsx' --write",
+    "format": "prettier --config .prettierrc 'src/**/*.*' --write",
     "dev": "astro dev",
-    "start": "prettier --config .prettierrc 'src/**/*.tsx' --write && yarn astro dev --host",
-    "build": "prettier --config .prettierrc 'src/**/*.tsx' --write && astro build",
+    "start": "prettier --config .prettierrc 'src/**/*.*' --write && yarn astro dev --host",
+    "build": "prettier --config .prettierrc 'src/**/*.*' --write && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "test": "jest",

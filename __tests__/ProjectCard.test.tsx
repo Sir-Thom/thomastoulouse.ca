@@ -12,7 +12,8 @@ test("renders ProjectCard component with provided props", () => {
 		description: "This is a test project.",
 		imageUrl: "test-image.jpg",
 		imageUrlSmall: "test-image-small.jpg",
-		Url: "https://example.com"
+		Url: "https://example.com",
+		languages: ["JavaScript", "TypeScript"]
 	};
 
 	const { getByText, getByAltText } = render(<ProjectCard {...props} />);
