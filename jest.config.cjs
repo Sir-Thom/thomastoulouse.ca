@@ -2,6 +2,8 @@
 module.exports = {
 	preset: "ts-jest",
 	testEnvironment: "jsdom",
+	
+	 
 	testPathIgnorePatterns: ["/node_modules/", "/dist/", "/tests/"],
 
 	// Jest transformations -- this adds support for TypeScript

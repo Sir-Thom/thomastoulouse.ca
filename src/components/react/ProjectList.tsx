@@ -13,6 +13,7 @@ const ProjectList: React.FC<IProjectListProps> = ({ projects }) => {
 					imageUrl={project.imageUrl}
 					imageUrlSmall={project.imageUrlSmall}
 					Url={project.url}
+					languages={project.languages}
 				/>
 			))}
 		</div>

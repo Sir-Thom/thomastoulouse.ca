@@ -1,3 +1,3 @@
-export interface IENVProps{
-    DOWNLOAD_URL: string;
+export interface IENVProps {
+	DOWNLOAD_URL: string;
 }
