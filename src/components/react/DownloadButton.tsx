@@ -50,7 +50,7 @@ function DownloadButton(props: IENVProps) {
 	const handleDownload = () => {
 		const link = document.createElement("a");
 		link.href = downloadUrl!;
-		link.setAttribute("download", "CV/");
+		link.setAttribute("download", "cv.docx");
 		link.style.display = "none";
 		document.body.appendChild(link);
 		link?.click();
