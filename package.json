@@ -23,6 +23,7 @@
     "@react-three/fiber": "^8.14.4",
     "astro": "^2.9.3",
     "babel-jest": "^29.6.2",
+    "devicons-react": "^1.2.6",
     "dompurify": "^3.0.4",
     "dotenv": "^16.3.1",
     "framer-motion": "^10.15.2",

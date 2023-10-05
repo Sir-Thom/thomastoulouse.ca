@@ -1,7 +1,17 @@
 import React from "react";
 import { IProjectCardProps } from "../../interfaces/IProjectCard";
-import pkg from "react-icons/si";
-
+import {
+	PythonPlain,
+	BashPlain,
+	CplusplusPlain,
+	PhpPlain,
+	CsharpPlain,
+	Html5Plain,
+	RustPlain,
+	JavascriptPlain,
+	TypescriptPlain,
+	Css3Plain
+} from "devicons-react";
 
 const ProjectCard: React.FC<IProjectCardProps> = ({
 	title,
@@ -11,25 +21,23 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 	Url,
 	languages
 }) => {
-	const { SiPython, SiJavascript, SiHtml5, SiCss3, SiTypescript, SiCsharp, SiGnubash, SiPowershell, SiCplusplus, SiPhp, SiRust } = pkg;
-	const languageIcons: Record<string, JSX.Element> = {
-		Python: <SiPython />,
-		JavaScript: <SiJavascript />,
-		HTML: <SiHtml5 />,
-		CSS: <SiCss3 />,
-		TypeScript: <SiTypescript />,
-		CSharp: <SiCsharp />,
-		Bash: <SiGnubash />,
-		PowerShell: <SiPowershell />,
-		CPlusPlus: <SiCplusplus />,
-		PHP: <SiPhp />,
-		Rust: <SiRust />
+	const languageIcons: Record<string, any> = {
+		Python: <PythonPlain />,
+		JavaScript: <JavascriptPlain size={20} />,
+		HTML: <Html5Plain size={20} />,
+		CSS: <Css3Plain size={20} />,
+		TypeScript: <TypescriptPlain size={20} />,
+		CSharp: <CsharpPlain size={20} />,
+		Bash: <BashPlain size={20} />,
+		CPlusPlus: <CplusplusPlain size={20} />,
+		PHP: <PhpPlain size={20} />,
+		Rust: <RustPlain size={20} />
 	};
 
 	const languageIconsList =
 		languages && Array.isArray(languages)
 			? languages.map((language, index) => (
-					<span key={index} className="m-2" title={language}>
+					<span key={index} className="m-2 text-white" title={language}>
 						{languageIcons[language]}
 					</span>
 			  ))
@@ -54,7 +62,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 			<p className="text-gray-600">{description}</p>
 
 			<div className="rounded-mdl absolute bottom-0  right-0 m-2 p-2   text-white">
-				<div className="flex text-xl font-semibold text-white">{languageIconsList}</div>
+				<div className="text-xxl flex font-semibold text-white">{languageIconsList}</div>
 			</div>
 
 			<svg
