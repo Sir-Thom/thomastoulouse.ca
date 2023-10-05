@@ -32,6 +32,9 @@ dependencies:
   babel-jest:
     specifier: ^29.6.2
     version: 29.6.2(@babel/core@7.23.0)
+  devicons-react:
+    specifier: ^1.2.6
+    version: 1.2.6(react@18.0.0)
   dompurify:
     specifier: ^3.0.4
     version: 3.0.4
@@ -3899,6 +3902,14 @@ packages:
 
   /devalue@4.3.2:
     resolution: {integrity: sha512-KqFl6pOgOW+Y6wJgu80rHpo2/3H07vr8ntR9rkkFIRETewbf5GaYYcakYfiKz89K+sLsuPkQIZaXDMjUObZwWg==}
+    dev: false
+
+  /devicons-react@1.2.6(react@18.0.0):
+    resolution: {integrity: sha512-C9mnEcT13HLiVOKk+xeO1jDJ5LPFv3xE13yvtrxaJ9zpNIa91xVUORkqK12GTyvSP8R4RhU0woBpFjRxNUVEKA==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.0.0
     dev: false
 
   /didyoumean@1.2.2:
