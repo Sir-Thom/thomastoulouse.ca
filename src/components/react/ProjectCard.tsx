@@ -6,7 +6,7 @@ import {
 	CsharpOriginal,
 	RustPlain,
 	JavascriptOriginal,
-	TypescriptOriginal,
+	TypescriptOriginal
 } from "devicons-react";
 
 const ProjectCard: React.FC<IProjectCardProps> = ({
