@@ -10,7 +10,7 @@ To get started with this project, you can use the following commands:
 
 ```bash
 # Clone the repository
-git clone[ https://github.com/Sir-Thom/thomastoulouse.ca.git](https://github.com/Sir-Thom/thomastoulouse.ca.git)
+git clone https://github.com/Sir-Thom/thomastoulouse.ca.git](https://github.com/Sir-Thom/thomastoulouse.ca.git)
 
 # Navigate to the project folder
 cd thomastoulouse.ca

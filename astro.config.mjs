@@ -5,7 +5,7 @@ import { loadEnv } from "vite";
 import dotenv from "dotenv";
 import netlify from "@astrojs/netlify/functions";
 dotenv.config();
-const { VITE_DOWNLOAD_URL } = loadEnv(import.meta.env.DOWNLOAD_URL, process.cwd(), "");
+const { DOWNLOAD_URL } = loadEnv(import.meta.env.DOWNLOAD_URL, process.cwd(), "");
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,6 +18,6 @@ export default defineConfig({
 		port: 8080
 	},
 	env: {
-		DOWNLOAD_URL: VITE_DOWNLOAD_URL,
+		DOWNLOAD_URL: DOWNLOAD_URL,
 	}
 });
