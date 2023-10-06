@@ -68,6 +68,9 @@ dependencies:
   three:
     specifier: ^0.157.0
     version: 0.157.0
+  three-stdlib:
+    specifier: ^2.26.13
+    version: 2.26.13(three@0.157.0)
   vite:
     specifier: ^4.4.11
     version: 4.4.11(@types/node@20.8.2)
@@ -3820,6 +3823,7 @@ packages:
 
   /dompurify@3.0.6:
     resolution: {integrity: sha512-ilkD8YEnnGh1zJ240uJsW7AzE+2qpbOUYjacomn3AvJ6J4JhKGSZ2nh4wUIXPZrEPppaCLx5jFe8T89Rk8tQ7w==}
+    dev: false
 
   /dotenv-defaults@2.0.2:
     resolution: {integrity: sha512-iOIzovWfsUHU91L5i8bJce3NYK5JXeAwH50Jh6+ARUdLiiGlYWfGw6UkzsYqaXZH/hjE/eCd/PlfM/qqyK0AMg==}
