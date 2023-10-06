@@ -68,7 +68,9 @@ dependencies:
   three:
     specifier: ^0.157.0
     version: 0.157.0
-
+  vite:
+    specifier: ^4.4.11
+    version: 4.4.11(@types/node@20.8.2)
 
 devDependencies:
   '@playwright/test':
