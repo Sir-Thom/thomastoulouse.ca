@@ -2,15 +2,11 @@ import React from "react";
 import { IProjectCardProps } from "../../interfaces/IProjectCard";
 import {
 	PythonPlain,
-	BashPlain,
-	CplusplusPlain,
 	PhpPlain,
-	CsharpPlain,
-	Html5Plain,
+	CsharpOriginal,
 	RustPlain,
-	JavascriptPlain,
-	TypescriptPlain,
-	Css3Plain
+	JavascriptOriginal,
+	TypescriptOriginal,
 } from "devicons-react";
 
 const ProjectCard: React.FC<IProjectCardProps> = ({
@@ -23,15 +19,11 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 }) => {
 	const languageIcons: Record<string, any> = {
 		Python: <PythonPlain />,
-		JavaScript: <JavascriptPlain size={20} />,
-		HTML: <Html5Plain size={20} />,
-		CSS: <Css3Plain size={20} />,
-		TypeScript: <TypescriptPlain size={20} />,
-		CSharp: <CsharpPlain size={20} />,
-		Bash: <BashPlain size={20} />,
-		CPlusPlus: <CplusplusPlain size={20} />,
+		JavaScript: <JavascriptOriginal size={20} />,
+		TypeScript: <TypescriptOriginal size={20} />,
+		CSharp: <CsharpOriginal size={24} />,
 		PHP: <PhpPlain size={20} />,
-		Rust: <RustPlain size={20} />
+		Rust: <RustPlain size={24} />
 	};
 
 	const languageIconsList =
