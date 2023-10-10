@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
-import { IENVProps } from "../../interfaces/IEnv";
+import type { IENVProps } from "../../interfaces/IEnv";
 import { getURLFormReact, useTranslations } from "../../i18n/utils";
 
 function DownloadButton(props: IENVProps) {

@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { IProjectListProps } from "../../interfaces/IProjectCard";
+import type { IProjectListProps } from "../../interfaces/IProjectCard";
 
 const ProjectList: React.FC<IProjectListProps> = ({ projects }) => {
 	return (

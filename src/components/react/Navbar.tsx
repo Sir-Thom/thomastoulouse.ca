@@ -4,7 +4,7 @@ import { useTranslations, getURLFormReact } from "../../i18n/utils";
 import "../../global.css";
 import ThemeToggle from "./ToggleTheme";
 import LanguagesSelector from "./LanguagesSelector";
-import { IENVProps } from "../../interfaces/IEnv";
+import type { IENVProps } from "../../interfaces/IEnv";
 
 const lang = getURLFormReact();
 

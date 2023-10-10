@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import React, { useRef, useMemo, useContext, createContext } from "react";
 import { useGLTF, Merged } from "@react-three/drei";
-import { GLTF } from "three-stdlib";
+import type { GLTF } from "three-stdlib";
 
 type GLTFResult = GLTF & {
 	nodes: {
