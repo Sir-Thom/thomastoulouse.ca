@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import CardList from "./CardSkillList";
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
-import { IContent } from "../../interfaces/ICard";
+import type { IContent } from "../../interfaces/ICard";
 
 function Carousel(CarouselProps: IContent) {
 	const { content } = CarouselProps;

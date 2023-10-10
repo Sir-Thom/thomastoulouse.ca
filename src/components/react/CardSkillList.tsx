@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import type { ICardProps } from "../../interfaces/ICard";
 import React from "react";
-import { ICardProps } from "../../interfaces/ICard";
+
 
 function CardList({ cards, currentCard }: ICardProps) {
 	return (
