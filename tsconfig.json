@@ -3,13 +3,14 @@
 	"compilerOptions": {	
 		"jsx": "react-jsx",
 		//"noImplicitAny": false,
-		
+
 		"target": "ESNext",
 		"module": "ESNext",
 		"resolveJsonModule": true ,
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
+		"verbatimModuleSyntax": false,
 		"forceConsistentCasingInFileNames": true,
 		"outDir": "./dist",
 		"baseUrl": "./src",
