@@ -1,5 +1,5 @@
 import React from "react";
-import { IProjectCardProps } from "../../interfaces/IProjectCard";
+import type { IProjectCardProps } from "../../interfaces/IProjectCard";
 import {
 	PythonPlain,
 	PhpPlain,
