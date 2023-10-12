@@ -7318,9 +7318,9 @@ three-mesh-bvh@^0.6.7:
   integrity sha512-EGebF9DZx1S8+7OZYNNTT80GXJZVf+UYXD/HyTg/e2kR/ApofIFfUS4ZzIHNnUVIadpnLSzM4n96wX+l7GMbnQ==
 
 three-stdlib@^2.22.4, three-stdlib@^2.26.6, three-stdlib@^2.27.1:
-  version "2.27.1"
-  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.27.1.tgz#201629bde7e31323545c98a9add18ed47a30817a"
-  integrity sha512-KmYNLaWhTfGX+GhALE2jPLb73gL5o8a5p2sGsabRshUE00L8JvTwECMg/6e1InuDOYLGinxmrCR2DdRKlzlBXg==
+  version "2.27.2"
+  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.27.2.tgz#d9fb6e8341ad93aa12b71bec2b3480528d6e42bf"
+  integrity sha512-yjHaY4QHRqMi1yGIt5RzWtRFbcCj2YHoCaAY4pldphI5CMf9PoCc9N2UFuVbHqgITQRKnVoCo+OCMU2rIZTXjg==
   dependencies:
     "@types/draco3d" "^1.4.0"
     "@types/offscreencanvas" "^2019.6.4"
