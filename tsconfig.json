@@ -1,25 +1,23 @@
 {
 	"extends": "astro/tsconfigs/base",
-	"compilerOptions": {	
-		"jsx": "react-jsx",
-		//"noImplicitAny": false,
-
-		"target": "ESNext",
-		"module": "ESNext",
-		"resolveJsonModule": true ,
-		"strict": true,
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"verbatimModuleSyntax": false,
-		"forceConsistentCasingInFileNames": true,
-		"outDir": "./dist",
-		"baseUrl": "./src",
-		"paths": {
-		  "*": ["node_modules/*", "src/types/*"]
-		}
-	  },
-	  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],
-	  "exclude": [
-		"**/*.spec.ts"
-	  ]
-}
+	"compilerOptions": {
+	  "jsx": "react-jsx",
+	  "target": "esnext",
+	  "module": "esnext",
+	  "moduleResolution": "Node16", // Set this to "esnext"
+	  "resolveJsonModule": true,
+	  "strict": true,
+	  "esModuleInterop": true,
+	  "skipLibCheck": true,
+	  "verbatimModuleSyntax": false,
+	  "forceConsistentCasingInFileNames": true,
+	  "outDir": "./dist",
+	  "baseUrl": "./src",
+	  "paths": {
+		"*": ["node_modules/*", "src/types/*"]
+	  }
+	},
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],
+	"exclude": ["**/*.spec.ts"]
+  }
+  

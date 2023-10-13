@@ -13,6 +13,9 @@
     "E2E": "playwright test",
     "run": "dotenv -e .env astro dev"
   },
+ 
+  
+  
   "dependencies": {
     "@astrojs/check": "^0.2.0",
     "@astrojs/netlify": "^3.0.2",

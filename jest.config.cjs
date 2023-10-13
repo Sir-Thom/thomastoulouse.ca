@@ -3,7 +3,9 @@ module.exports = {
 	preset: "ts-jest",
 	testEnvironment: "jsdom",
 	
-	 
+       // Ignore error code 1343 related to import.meta
+      
+		
 	testPathIgnorePatterns: ["/node_modules/", "/dist/", "/tests/"],
 
 	// Jest transformations -- this adds support for TypeScript
