@@ -4,6 +4,7 @@ import { FaMoon, FaSun } from "react-icons/fa";
 export default function ThemeToggle() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
 
+
 	useEffect(() => {
 		localStorage.removeItem("theme");
 		const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
