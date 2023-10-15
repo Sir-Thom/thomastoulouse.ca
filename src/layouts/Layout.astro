@@ -17,6 +17,17 @@ const t = useTranslations(lang);
 <!doctype html>
 <html lang={languages[lang].toLocaleLowerCase().slice(0, 2)}>
 	<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7577W4Q17K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7577W4Q17K');
+</script>
+
 		<script is:inline>
 			const theme = (() => {
 			  if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
