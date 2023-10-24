@@ -1854,9 +1854,9 @@
     zustand "^3.5.13"
 
 "@react-three/fiber@^8.14.4":
-  version "8.15.4"
-  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.15.4.tgz#d276d8c10b1505f60ef408179f0bdd7aff620a9f"
-  integrity sha512-Wee6fBKD++jF3dMC1nPOYdUwFMnIkWPCb6D7PxoEhmYj7hnDDDEZJN7jigoNt2985fFD72bq6BpvML1GSb7qHA==
+  version "8.15.5"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.15.5.tgz#0f9bfc04c1a8a2f86bcb3e2338e3a93e1c220bc3"
+  integrity sha512-wcc01pORsSGkmd7EvqmhHUR23y64EzDxwDRCzuO5/UpJV1r1Ck+QWGphFNbc6T91S5LNlLLJApF/b1y8G8wT+g==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/react-reconciler" "^0.26.7"
@@ -2220,7 +2220,12 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.8.tgz#bb197b9639aa1a04cf464a617fe800cccd92ad5c"
   integrity sha512-d0XxK3YTObnWVp6rZuev3c49+j4Lo8g4L1ZRm9z5L0xpoZycUPshHgczK5gsUMaZOstjVYYi09p5gYvUtfChYw==
 
-"@types/webxr@*", "@types/webxr@^0.5.2":
+"@types/webxr@*":
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.7.tgz#7a3aaaf1ceeaaad13f1dda66d6571852405bb221"
+  integrity sha512-Rcgs5c2eNFnHp53YOjgtKfl/zWX1Y+uFGUwlSXrWcZWu3yhANRezmph4MninmqybUYT6g9ZE0aQ9QIdPkLR3Kg==
+
+"@types/webxr@^0.5.2":
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.6.tgz#835c7ac9983a732e2e849d0d302bc735aa455126"
   integrity sha512-/uWg82/WT+Pl18b2kkG6nlbiiaNIb8RN2mvvcGexGvwLvUrEhDhGBzYHiwa5nQPtin0hISyrXkKOKVScTK+kKg==
