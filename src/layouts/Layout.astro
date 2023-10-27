@@ -7,6 +7,7 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../global.css";
 
+
 import { languages } from "../i18n/ui";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const { title } = Astro.props;
@@ -73,6 +74,7 @@ const t = useTranslations(lang);
 	</head>
 
 	<body>
+
 		<Header />
 		<slot />
 		<Footer
