@@ -1,5 +1,8 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+
 export const prerender = false;
-return Astro.redirect("/fr/");
+
+// get the current locale
+const lang = Astro.request.headers.get('accept-language')?.split(',')[0].split('-')[0];
+return Astro.redirect(`/${lang}/`);
 ---
