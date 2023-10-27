@@ -5,7 +5,7 @@ import Hero from "../../components/Hero.astro";
 import ArticleExperience from "../../components/ArticleExperience.astro";
 import ArticleEducation from "../../components/ArticleEducation.astro";
 import ArticleProjet from "../../components/ArticleProjet.astro";
-
+import { ViewTransitions } from 'astro:transitions';
 export const prerender = true;
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
@@ -14,10 +14,11 @@ const t = useTranslations(lang);
 ---
 
 <Layout title="Thomas Toulouse">
-	<main
+	<ViewTransitions/>
+	<main transition:animate="fade" 
 		class="bg-gradient-to-b from-light-100 to-light-400 bg-center text-black dark:bg-gradient-to-b dark:from-dark-900 dark:to-dark-700 dark:text-white"
 	>
-		<Hero
+		<Hero 
 			titleMain={t("hero.titleMain")}
 			subtitle="Thomas Toulouse"
 			body={t("hero.body")}
