@@ -49,31 +49,31 @@ export default function Navbar(props: IENVProps) {
 				>
 					<div className="h-fit w-fit justify-center lg:flex-grow">
 						<a
-							href={`/${lang}#apropos`}
+							href={`#apropos`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("about.title")}
 						</a>
 						<a
-							href={`/${lang}#skillSection`}
+							href={`#skillSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("skills.title")}
 						</a>
 						<a
-							href={`/${lang}#experienceSection`}
+							href={`#experienceSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("experience.title")}
 						</a>
 						<a
-							href={`/${lang}#educationSection`}
+							href={`#educationSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("education.title")}
 						</a>
 						<a
-							href={`/${lang}#projectSection`}
+							href={`#projectSection`}
 							className="hover:underline-gradiant mr-4 mt-4 block font-futura-pt font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("project.title")}
