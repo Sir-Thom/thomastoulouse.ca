@@ -20,28 +20,23 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@astrojs/check@^0.2.0":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/check/-/check-0.2.1.tgz#51f35afdd376db044a0819781418afe22f88bd42"
-  integrity sha512-s85uBS/qjnqsKAeM0VKNWKvNaqvR06ZJupEwr2oT5/6Bti7qB5Vd8KekWIRAu2/WqOXHMFaDJz5D+qSizFnq5g==
+"@astrojs/check@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/check/-/check-0.3.0.tgz#b4e59de456293980257edfb4ad04bc34d983783a"
+  integrity sha512-S4R9baTTK34K5aFNCj4hn3g1nJRt3bioSG6S4fgborBn0DzU8DqvpctTCF+gUf/x/l1OolVSsYm+N7b1iXrhig==
   dependencies:
-    "@astrojs/language-server" "^2.4.0"
+    "@astrojs/language-server" "^2.5.0"
     chokidar "^3.5.3"
     fast-glob "^3.3.1"
     kleur "^4.1.5"
     yargs "^17.7.2"
-
-"@astrojs/compiler@1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.5.7.tgz#8c377f30bc4542631d4adc11f48896d78f79a8ac"
-  integrity sha512-dFU7GAMbpTUGPkRoCoMQrGFlTe3qIiQMSOxIXp/nB1Do4My9uogjEmBHdR5Cwr4i6rc5/1R3Od9v8kU/pkHXGQ==
 
 "@astrojs/compiler@^1.5.5":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.8.2.tgz#f305d5724c45a9932a8ef4e87b2e7227d15d1c2b"
   integrity sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==
 
-"@astrojs/compiler@^2.1.0":
+"@astrojs/compiler@^2.1.0", "@astrojs/compiler@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-2.2.1.tgz#1403f270e40e14043b7cf16d8e18083537348bda"
   integrity sha512-NJ1lWKzMkyEjE3W5NpPNAVot4/PLF5om/P6ekxNu3iLS05CaYFTcp7WpYMjdCC252b7wkNVAs45FNkVQ+RHW/g==
@@ -51,12 +46,12 @@
   resolved "https://registry.yarnpkg.com/@astrojs/internal-helpers/-/internal-helpers-0.2.1.tgz#4e2e6aabaa9819f17119aa10f413c4d6122c94cf"
   integrity sha512-06DD2ZnItMwUnH81LBLco3tWjcZ1lGU9rLCCBaeUCGYe9cI0wKyY2W3kDyoW1I6GmcWgt1fu+D1CTvz+FIKf8A==
 
-"@astrojs/language-server@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.4.0.tgz#ccdd155bf1ab9a222b8db233681b82c04c04d09d"
-  integrity sha512-L5lbTt1zZiCYGxahGhbJ1m2THaZxBBuA3MrwvhwZ+xVy6/k13W0Xy4nVe0gUBoCizZdKEDL3puoW615waJaTBQ==
+"@astrojs/language-server@^2.5.0":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.5.1.tgz#f05dc91b72d39a280776f7b048714bd171ec317f"
+  integrity sha512-CBSGC3lsGnauVloVWq7+8N8F+IRsyiVe/3WevYf0TmmO8aPhmSzbAAF3vhYWfja3/HLtwNJsm6ltfRkMyYOyaQ==
   dependencies:
-    "@astrojs/compiler" "1.5.7"
+    "@astrojs/compiler" "^2.2.1"
     "@jridgewell/sourcemap-codec" "^1.4.15"
     "@volar/kit" "~1.10.3"
     "@volar/language-core" "~1.10.3"
