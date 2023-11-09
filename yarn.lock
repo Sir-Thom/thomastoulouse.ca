@@ -1819,9 +1819,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.83.9":
-  version "9.88.11"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.88.11.tgz#fab469da27a9de0bd63005cca0f134d2e456efa0"
-  integrity sha512-BEK8t/B0yf4E4iHZ84iD7wAFEazE4gPu2Kywo3UroMAaYg3rA7rOmQh0GOvhTV2+g5/AqS4KJcwOFVnlvBrS5Q==
+  version "9.88.12"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.88.12.tgz#7ad60a4c68361be5ce04282d886d61e4662e2a17"
+  integrity sha512-ALMz7Xws/8H6ARBRv+dppmpExFj5kvNx4dxwNrfP7RwW44rek9IW/e1sCp5J0khheTBfK8ixaFnqVMctpGKYNA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.2"
@@ -2011,9 +2011,9 @@
     "@types/trusted-types" "*"
 
 "@types/draco3d@^1.4.0":
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/@types/draco3d/-/draco3d-1.4.7.tgz#364adb25e8a623401d59a3b309827ce66d999216"
-  integrity sha512-sjx6hQ8UArRZf+2ZhpPkjJW8iCkyxar69/IElc9NHuGE40n0U9SuvxX59CHvF4xUH7qfJDQ2lIbANZ0HHJg+BQ==
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/@types/draco3d/-/draco3d-1.4.8.tgz#294c9a63f61537aed407f13b765065381f6668fa"
+  integrity sha512-hdA2gODc+1X5gG+buH8gMRnQdRTa3vep8+PyGFK9xDQmbdudobP//yXLK+C/SnjGLWHiER2QL+xWjq7qkFuivA==
 
 "@types/estree@^1.0.0":
   version "1.0.4"
@@ -2126,9 +2126,9 @@
   integrity sha512-ehPtgRgaULsFG8x0NeYJvmyH1hmlfsNLujHe9dQEia/7MAJYdzMSi19JtchUHjmBA6XC/75dK55mzZH+RyieSg==
 
 "@types/offscreencanvas@^2019.6.4":
-  version "2019.7.2"
-  resolved "https://registry.yarnpkg.com/@types/offscreencanvas/-/offscreencanvas-2019.7.2.tgz#0b518a609c34d58f06c76fdf3b536ad2643e1eca"
-  integrity sha512-ujCjOxeA07IbEBQYAkoOI+XFw5sT3nhWJ/xZfPR6reJppDG7iPQPZacQiLTtWH1b3a2NYXWlxvYqa40y/LAixQ==
+  version "2019.7.3"
+  resolved "https://registry.yarnpkg.com/@types/offscreencanvas/-/offscreencanvas-2019.7.3.tgz#90267db13f64d6e9ccb5ae3eac92786a7c77a516"
+  integrity sha512-ieXiYmgSRXUDeOntE1InxjWyvEelZGP63M+cGuquuRLuIKKT1osnkXjxev9B7d1nXSug5vpunx+gNlbVxMlC9A==
 
 "@types/parse5@^6.0.0":
   version "6.0.3"
@@ -2215,10 +2215,15 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.9.tgz#72e164381659a49557b0a078b28308f2c6a3e1ce"
   integrity sha512-zC0iXxAv1C1ERURduJueYzkzZ2zaGyc+P2c95hgkikHPr3z8EdUZOlgEQ5X0DRmwDZn+hekycQnoeiiRVrmilQ==
 
-"@types/webxr@*", "@types/webxr@^0.5.2":
+"@types/webxr@*":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.7.tgz#7a3aaaf1ceeaaad13f1dda66d6571852405bb221"
   integrity sha512-Rcgs5c2eNFnHp53YOjgtKfl/zWX1Y+uFGUwlSXrWcZWu3yhANRezmph4MninmqybUYT6g9ZE0aQ9QIdPkLR3Kg==
+
+"@types/webxr@^0.5.2":
+  version "0.5.8"
+  resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.8.tgz#904535c778318d434d9236872404fca47ce43260"
+  integrity sha512-9vRpV4nMzuZIdJiu/nHUk1AQV0cguaBI32DIauJXBxpvG3wiXk3VD+kQKx111V7I/YvAoGyJZTyhaWODYEbZ0w==
 
 "@types/yargs-parser@*":
   version "21.0.2"
