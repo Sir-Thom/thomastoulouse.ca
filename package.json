@@ -41,7 +41,7 @@
     "three": "^0.158.0",
     "typescript": "^5.2.2",
     "three-stdlib": "^2.27.1",
-    "vite": "^4.4.11"
+    "vite": "^5.0.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.36.2",
