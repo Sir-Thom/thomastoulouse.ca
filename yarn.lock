@@ -1223,10 +1223,10 @@
   resolved "https://registry.yarnpkg.com/@babel/regjsgen/-/regjsgen-0.8.0.tgz#f0ba69b075e1f05fb2825b7fad991e7adbb18310"
   integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
-"@babel/runtime@^7.11.2":
-  version "7.23.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.4.tgz#36fa1d2b36db873d25ec631dcc4923fdc1cf2e2e"
-  integrity sha512-2Yv65nlWnWlSpe3fXEyX5i7fx5kIKo4Qbcj+hMO0odwaneFjfXw5fdum+4yL20O0QiaHpia0cYQ9xpNMqrBwHg==
+"@babel/runtime@^7.11.2", "@babel/runtime@^7.17.8", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+  version "7.23.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.5.tgz#11edb98f8aeec529b82b211028177679144242db"
+  integrity sha512-NdUTHcPe4C99WxPub+K9l9tK5/lV4UXIoaHSYgzco9BCyjKAAwzdBI+wWtYqHt7LJdbo74ZjRPJgzVweq1sz0w==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -1234,13 +1234,6 @@
   version "7.23.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.2.tgz#062b0ac103261d68a966c4c7baf2ae3e62ec3885"
   integrity sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==
-  dependencies:
-    regenerator-runtime "^0.14.0"
-
-"@babel/runtime@^7.17.8", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
-  version "7.23.5"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.5.tgz#11edb98f8aeec529b82b211028177679144242db"
-  integrity sha512-NdUTHcPe4C99WxPub+K9l9tK5/lV4UXIoaHSYgzco9BCyjKAAwzdBI+wWtYqHt7LJdbo74ZjRPJgzVweq1sz0w==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -2090,9 +2083,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.83.9":
-  version "9.89.0"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.89.0.tgz#ab35a93bc22867522d9c981e1f28bdd3a7a6faf7"
-  integrity sha512-iddG7OAfng3a99nAO7erzb1wlwaY1Zlaz9EVfnW9ZiLm4rM322vXHnLX1zhrH5/AeRB/1t4bEu8uAHvXX3XwWA==
+  version "9.89.1"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.89.1.tgz#b139eccd87cc1ad8db1b72881e297b7615d4f2c6"
+  integrity sha512-lsSt3w7k2PwSCh0lps9jg4da3DKLp/wMKUQ4SO4b2vpDBn9JaSeIH/rAE3mzc+KEKxAtPTCybo5622abhdeL9w==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.8"
