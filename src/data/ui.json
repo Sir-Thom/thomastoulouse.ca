@@ -86,7 +86,7 @@
 				{
 					"title": "HTML",
 					"description": "HTML (HyperText Markup Language) is the markup language used to structure the content of web pages. It defines the logical structure of page elements such as headings, paragraphs, images, links, and so on. HTML is interpreted by web browsers to display the content of a page in a structured manner.",
-					"image": "/assets/icons/ProgrammingLanguagesAndTool/HTML5 Logo.webp"
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/HTML5Logo.webp"
 				},
 				{
 					"title": "CSS",
@@ -101,7 +101,7 @@
 				{
 					"title": "PHP",
 					"description": "PHP is a popular and widely used programming language for developing dynamic websites. It is primarily used on the server side, which means that PHP code is executed on the server before being sent to the user's browser.",
-					"image": "/assets/icons/ProgrammingLanguagesAndTool/Official PHP Logo.webp"
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/OfficialPHPLogo.webp"
 				},
 				{
 					"title": "React",
@@ -235,7 +235,7 @@
 				{
 					"title": "HTML",
 					"description": "HTML (HyperText Markup Language) est le langage de balisage utilisé pour structurer le contenu des pages web. Il définit la structure logique des éléments d'une page, tels que les titres, les paragraphes, les images, les liens, etc. HTML est interprété par les navigateurs web pour afficher le contenu d'une page de manière structurée.",
-					"image": "/assets/icons/ProgrammingLanguagesAndTool/HTML5 Logo.webp"
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/HTML5Logo.webp"
 				},
 				{
 					"title": "CSS",
@@ -250,7 +250,7 @@
 				{
 					"title": "PHP",
 					"description": "PHP est un langage de programmation populaire et largement utilisé pour développer des sites web dynamiques. Il est principalement utilisé côté serveur, ce qui signifie que le code PHP est exécuté sur le serveur avant d'être envoyé au navigateur de l'utilisateur.",
-					"image": "/assets/icons/ProgrammingLanguagesAndTool/Official PHP Logo.webp"
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/OfficialPHPLogo.webp"
 				},
 				{
 					"title": "React",

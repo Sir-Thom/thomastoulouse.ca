@@ -1,8 +1,7 @@
 ---
-
 export const prerender = false;
 
 // get the current locale
-const lang = Astro.request.headers.get('accept-language')?.split(',')[0].split('-')[0];
+const lang = Astro.request.headers.get("accept-language")?.split(",")[0].split("-")[0];
 return Astro.redirect(`/${lang}/`);
 ---

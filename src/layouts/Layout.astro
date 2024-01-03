@@ -7,7 +7,6 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../global.css";
 
-
 import { languages } from "../i18n/ui";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const { title } = Astro.props;
@@ -18,35 +17,36 @@ const t = useTranslations(lang);
 <!doctype html>
 <html lang={languages[lang].toLocaleLowerCase().slice(0, 2)}>
 	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7577W4Q17K"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7577W4Q17K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7577W4Q17K');
-</script>
+			gtag("config", "G-7577W4Q17K");
+		</script>
 
 		<script is:inline>
 			const theme = (() => {
-			  if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-				return localStorage.getItem("theme");
-			  }
-			  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-				return "dark";
-			  }
-			  return "light";
+				if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+					return localStorage.getItem("theme");
+				}
+				if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+					return "dark";
+				}
+				return "light";
 			})();
-		  
+
 			if (theme === "light") {
-			  document.documentElement.classList.remove("dark");
+				document.documentElement.classList.remove("dark");
 			} else {
-			  document.documentElement.classList.add("dark");
+				document.documentElement.classList.add("dark");
 			}
 			window.localStorage.setItem("theme", theme);
-		  </script>
+		</script>
 		<link rel="preload" href="/styles/global.css" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,7 +57,7 @@ const t = useTranslations(lang);
 		<meta
 			http-equiv="Content-Security-Policy: default-src 'self' *.google-analytics.com ajax.googleapis.com cdnjs.cloudflare.com cdnjs.com code.jquery.com unpkg.com; style-src 'self' use.fontawesome.com; font-src 'self' fonts.googleapis.com fonts.gstatic.com;"
 		/>
-		<link  href="https://github.com/Sir-Thom" rel="me" />
+		<link href="https://github.com/Sir-Thom" rel="me" />
 
 		<link rel="webmention" href="https://webmention.io/
 .ca_fr_/webmention" />
@@ -74,7 +74,6 @@ const t = useTranslations(lang);
 	</head>
 
 	<body>
-
 		<Header />
 		<slot />
 		<Footer
