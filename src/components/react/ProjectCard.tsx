@@ -32,7 +32,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 					<span key={index} className="m-2 text-white" title={language}>
 						{languageIcons[language]}
 					</span>
-			  ))
+				))
 			: null;
 	return (
 		<a
