@@ -91,9 +91,9 @@
     vfile "^6.0.1"
 
 "@astrojs/netlify@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/netlify/-/netlify-4.0.2.tgz#efd9f863c804124f3fe086380f5942b32a6e8bfc"
-  integrity sha512-4wN0GhfBErHGG1vHZmTHxQAW0e1jgBWur4q9IQz0oUT0cSQU2ReoXwzvgxymGS3Fi6GSV1n1C26uokwxaXHQIw==
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/netlify/-/netlify-4.1.0.tgz#763ec3af39603f98f6e126810bc4823c668497bd"
+  integrity sha512-xK+Oc/TTfxiUVtOe5plkiSwOrXiZ3GRXOSQYtsMrOHmM79dd4Gv17G4vMVVR5L/vgH6F4n0Cvr+tglyyvMbZJg==
   dependencies:
     "@astrojs/underscore-redirects" "^0.3.3"
     "@netlify/functions" "^2.0.1"
@@ -3674,7 +3674,7 @@ es-module-lexer@^1.4.1:
   resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.4.1.tgz#41ea21b43908fe6a287ffcbe4300f790555331f5"
   integrity sha512-cXLGjP0c4T3flZJKQSuziYoq7MlT+rnvfZjfp7h+I7K9BNX54kP9nyWvdbwjQ4u1iWbOL4u96fgeZLToQlZC7w==
 
-esbuild@^0.19.3, esbuild@^0.19.5:
+esbuild@^0.19.3:
   version "0.19.10"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.19.10.tgz#55e83e4a6b702e3498b9f872d84bfb4ebcb6d16e"
   integrity sha512-S1Y27QGt/snkNYrRcswgRFqZjaTG5a5xM3EQo97uNBnH505pdzSNe/HLBq1v0RO7iK/ngdbhJB6mDAp0OK+iUA==
@@ -3703,7 +3703,7 @@ esbuild@^0.19.3, esbuild@^0.19.5:
     "@esbuild/win32-ia32" "0.19.10"
     "@esbuild/win32-x64" "0.19.10"
 
-esbuild@^0.19.6:
+esbuild@^0.19.5, esbuild@^0.19.6:
   version "0.19.11"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.19.11.tgz#4a02dca031e768b5556606e1b468fe72e3325d96"
   integrity sha512-HJ96Hev2hX/6i5cDVwcqiJBBtuo9+FeIJOtZ9W1kA5M6AMJRHUZlpYZ1/SbEwtO0ioNAW8rUooVpC/WehY2SfA==
