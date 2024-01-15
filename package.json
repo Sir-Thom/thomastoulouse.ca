@@ -28,7 +28,7 @@
     "dompurify": "^3.0.6",
     "dotenv": "^16.3.1",
     "framer-motion": "^10.16.16",
-    "prettier": "^3.1.1",
+    "prettier": "^3.2.2",
     "prettier-plugin-astro": "^0.12.3",
     "prettier-plugin-tailwindcss": "^0.5.10",
     "react": "^18.2.0",
