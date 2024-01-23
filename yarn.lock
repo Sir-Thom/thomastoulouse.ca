@@ -3867,9 +3867,9 @@ fraction.js@^4.3.6:
   integrity sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==
 
 framer-motion@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.0.0.tgz#2a8f55ac80524fe8e6470f504b3fa4322f1c2c8a"
-  integrity sha512-aRJ7v/upEoorZcgQLE5RvLkYrK2SNGMJ8w+Cwa1pGSFIBxmIJtZT48jcvKduxiFWYskD6pc8bFA6aSmhJLBxzA==
+  version "11.0.2"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.0.2.tgz#b4e244afa36c1d90b29b58e93d8e56a7b8e87096"
+  integrity sha512-bLVO4kDavsfzXIObZ6Smzn2119nOiwI0mj99aQpY+3RbNAWR1mm9EiIWYETSbUrIZ8Ij5pPlZqbAwnKj43CKbw==
   dependencies:
     tslib "^2.4.0"
   optionalDependencies:
