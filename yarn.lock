@@ -1918,9 +1918,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.92.7":
-  version "9.97.3"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.97.3.tgz#56156bf4f761d71c4248c9d0b43dda2b810857a6"
-  integrity sha512-3LEQEeSmxplF4xhVc0FPn4fvw8ddLkL+t6FymQ+HPvx/Aq3uMTi0wM2o2114l4yvq9HPw6ngTX3Rr9g/1t5qsQ==
+  version "9.97.5"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.97.5.tgz#76cdd3a11d48fcb9f817bdbaf0c2509e3d71aaf3"
+  integrity sha512-+l8I8xht1jAQ7SRFA1hVzASL5zqrbKt+DztBW+/EPNN6ELg7DJiZpL+ImE6V7cfAA7hKsyYdtGR5k5QJ195jfg==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.8"
@@ -2359,9 +2359,9 @@
   integrity sha512-+6LV7bN17XUWy4wIMILsGQX6ucawf64lYLG9jaGKSvOnKaJzWjcKXAkO0dZaC8MfoEqYQC7gl1GQnfITjBcazw==
 
 "@types/webxr@^0.5.2":
-  version "0.5.13"
-  resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.13.tgz#5fd07863819c30869d66b765926d0b5a53a7e9e0"
-  integrity sha512-Hi4K3aTEoaa31Cep75AA9wK5q2iZgC1L70serPbI11L4YieoZpu5LvLr6FZXyIdqkkGPh1WMuDf6oSPHJXBkoA==
+  version "0.5.14"
+  resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.14.tgz#9a03121a4912ea113b31e5c9c17f164d4fff8a1f"
+  integrity sha512-UEMMm/Xn3DtEa+gpzUrOcDj+SJS1tk5YodjwOxcqStNhCfPcwgyC5Srg2ToVKyg2Fhq16Ffpb0UWUQHqoT9AMA==
 
 "@types/yargs-parser@*":
   version "21.0.3"
