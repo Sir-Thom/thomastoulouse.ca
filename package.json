@@ -14,8 +14,11 @@
     "run": "dotenv -e .env astro dev"
   },
   "dependencies": {
+
+    "@astrojs/netlify": "^5.1.1",
+
     "@astrojs/check": "^0.5.3",
-    "@astrojs/netlify": "^5.0.0",
+
     "@astrojs/react": "^3.0.9",
     "@astrojs/tailwind": "^5.1.0",
     "@babel/preset-env": "^7.23.6",
