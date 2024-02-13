@@ -13,10 +13,7 @@ export default defineConfig({
 	integrations: [tailwind(), react()],
 	output: "hybrid",
 	adapter: netlify(),
-	server: {
-		host: "127.0.0.1",
-		port: 8080
-	},
+
 	env: {
 		DOWNLOAD_URL: DOWNLOAD_URL,
 	}
