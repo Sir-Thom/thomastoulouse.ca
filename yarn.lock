@@ -30,11 +30,11 @@
     is-potential-custom-element-name "^1.0.1"
 
 "@astrojs/check@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@astrojs/check/-/check-0.5.3.tgz#b142b308d8df682ff47482da2220e3d27d72fbc0"
-  integrity sha512-+1zmcYOq0x5YM0ixFk+he/Px16b8eGDl9teAfmeXOsU3ZB1EtRvvanoF7CUYdxuNKirDXuzJn1Zn3WsN9fvAaw==
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/@astrojs/check/-/check-0.5.4.tgz#76365c56df3b400215095bbcf62c152841e3b858"
+  integrity sha512-BFClaLEuRzpfF9wrmh9KDS5gmRHGhkVN7qvm6tWPBvUxOADXiNz+hzrYFvZVqXTXhHjS0Ern1g3yHifgu0zsmw==
   dependencies:
-    "@astrojs/language-server" "^2.7.3"
+    "@astrojs/language-server" "^2.7.4"
     chokidar "^3.5.3"
     fast-glob "^3.3.1"
     kleur "^4.1.5"
@@ -55,18 +55,18 @@
   resolved "https://registry.yarnpkg.com/@astrojs/internal-helpers/-/internal-helpers-0.2.1.tgz#4e2e6aabaa9819f17119aa10f413c4d6122c94cf"
   integrity sha512-06DD2ZnItMwUnH81LBLco3tWjcZ1lGU9rLCCBaeUCGYe9cI0wKyY2W3kDyoW1I6GmcWgt1fu+D1CTvz+FIKf8A==
 
-"@astrojs/language-server@^2.7.3":
-  version "2.7.3"
-  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.7.3.tgz#dce7d6a5fb5a04da989459c94c6bd32089e61af2"
-  integrity sha512-1atGw+HjWl7KIE85vwpFuxb9wu6phmrRjCzgkVuyLb6JPWg0A002wlbrLzkGyIV4OmwzSpPPT/esSO9cUs6BGA==
+"@astrojs/language-server@^2.7.4":
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.7.4.tgz#5edc8032966969a6a11f3150d2d8277202ae22c8"
+  integrity sha512-U317ZKx5VXg2Sy6iPgYOliOZ10Ji/eo8MGFCry2/yT+rYTfb81HbrSWUu9nsZzpFK66So5aprQutRWWM/m7mPQ==
   dependencies:
     "@astrojs/compiler" "^2.4.0"
     "@jridgewell/sourcemap-codec" "^1.4.15"
-    "@volar/kit" "~2.0.3"
-    "@volar/language-core" "~2.0.3"
-    "@volar/language-server" "~2.0.3"
-    "@volar/language-service" "~2.0.3"
-    "@volar/typescript" "~2.0.3"
+    "@volar/kit" "~2.0.4"
+    "@volar/language-core" "~2.0.4"
+    "@volar/language-server" "~2.0.4"
+    "@volar/language-service" "~2.0.4"
+    "@volar/typescript" "~2.0.4"
     fast-glob "^3.2.12"
     volar-service-css "0.0.29"
     volar-service-emmet "0.0.29"
@@ -2309,7 +2309,7 @@
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.14.0"
 
-"@volar/kit@~2.0.3":
+"@volar/kit@~2.0.4":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@volar/kit/-/kit-2.0.4.tgz#213d163d60639bbd2dfa9da162f3330ae52d02df"
   integrity sha512-USRx/o0jKz7o8+lEKWMxWqbqvC46XFrf3IE6CZBYzRo9kM7RERQLwUYaoT2bOcHt5DQWublpnTgdgHMm37Gysg==
@@ -2320,14 +2320,14 @@
     vscode-languageserver-textdocument "^1.0.11"
     vscode-uri "^3.0.8"
 
-"@volar/language-core@2.0.4", "@volar/language-core@~2.0.3":
+"@volar/language-core@2.0.4", "@volar/language-core@~2.0.4":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@volar/language-core/-/language-core-2.0.4.tgz#5a037428f4520d04179ce26c721d82e90bf5aedd"
   integrity sha512-VhC8i03P0x9LKGLTBi81xNTNWm40yxQ/Iba8IpH+LFr+Yb7c/D7fF90Cvf31MzPDM4G5rjIOlCfs+eQKPBkwQw==
   dependencies:
     "@volar/source-map" "2.0.4"
 
-"@volar/language-server@~2.0.3":
+"@volar/language-server@~2.0.4":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@volar/language-server/-/language-server-2.0.4.tgz#bafc1cdd1d6e65f1003a49ddffeb3ac2b5a560c8"
   integrity sha512-VnljhooQjT6RhmvwwJK9+3YYs2ovFmav4IVNHiQgnTMfiOiyABzcghwvJrJrI39rJDI6LNOWF7BYUJq7K07BKQ==
@@ -2344,7 +2344,7 @@
     vscode-languageserver-textdocument "^1.0.11"
     vscode-uri "^3.0.8"
 
-"@volar/language-service@2.0.4", "@volar/language-service@~2.0.3":
+"@volar/language-service@2.0.4", "@volar/language-service@~2.0.4":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@volar/language-service/-/language-service-2.0.4.tgz#15a67537f2fdde69c45abc687ce7e9d660abef17"
   integrity sha512-DoanyU9I9Nl85lUytDl8jgyk+nrUDR5CFNVMrxWXGXclP4WTqBayBgSFAeF1L/5AwP3MywmWoK4GLAEVvl8D+Q==
@@ -2369,7 +2369,7 @@
   dependencies:
     muggle-string "^0.4.0"
 
-"@volar/typescript@2.0.4", "@volar/typescript@~2.0.3":
+"@volar/typescript@2.0.4", "@volar/typescript@~2.0.4":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@volar/typescript/-/typescript-2.0.4.tgz#dcc851bec2737ae69e0ecb8f43c9302172fc9ffc"
   integrity sha512-KF7yh7GIo4iWuAQOKf/ONeFHdQA+wFriitW8LtGZB4iOOT6MdlRlYNsRL8do7XxmXvsBKcs4jTMtGn+uZRwlWg==
