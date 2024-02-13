@@ -4,7 +4,7 @@ import {
 	PythonPlain,
 	PhpPlain,
 	CsharpOriginal,
-	RustPlain,
+	RustOriginal,
 	JavascriptOriginal,
 	TypescriptOriginal
 } from "devicons-react";
@@ -23,7 +23,8 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 		TypeScript: <TypescriptOriginal size={20} />,
 		CSharp: <CsharpOriginal size={24} />,
 		PHP: <PhpPlain size={20} />,
-		Rust: <RustPlain size={24} />
+		Rust: <RustOriginal  size={24} />
+
 	};
 
 	const languageIconsList =
