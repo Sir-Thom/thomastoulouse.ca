@@ -12,15 +12,12 @@ const {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.thomastoulouse.ca",
-  integrations: [tailwind(), react()],
-  output: "hybrid",
-  adapter: netlify(),
-  server: {
-    host: "127.0.0.1",
-    port: 8080
-  },
-  env: {
-    DOWNLOAD_URL: DOWNLOAD_URL
-  }
+	site: "https://www.thomastoulouse.ca",
+	integrations: [tailwind(), react()],
+	output: "hybrid",
+	adapter: netlify(),
+	env: {
+		DOWNLOAD_URL: DOWNLOAD_URL,
+	}
 });
+
