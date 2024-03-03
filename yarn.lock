@@ -1931,9 +1931,9 @@
     zustand "^3.7.1"
 
 "@react-three/fiber@^8.15.12":
-  version "8.15.18"
-  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.15.18.tgz#be62be3a3250ca77e4d399b98cf1fc9423c43b6d"
-  integrity sha512-pIleSKDi1oPF0BICCOKpptxDJBQ4v37aHSJnhoHrPlMnbWvDTqP8DgWRGKRvl+fDzvO3xljyvCUEbzTF5VfxtA==
+  version "8.15.19"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.15.19.tgz#7b0ebf204e67c46a7028bc2ad197133b3b808c4a"
+  integrity sha512-WbFU7T6485v8Onnp+JJnrzKFvvGP7OFyJmHlqXiXc2RcXl9Sax+ykJxiNwEXWjGjcgF9/KTfv0+pAVkP0vZlKg==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/react-reconciler" "^0.26.7"
