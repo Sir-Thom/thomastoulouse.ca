@@ -1904,9 +1904,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.92.7":
-  version "9.99.5"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.99.5.tgz#20021a2f8db8bfd2dc1508d057c5e6d0dee919c8"
-  integrity sha512-9gqzYvuyd1Wtvv/+s+FdSogQdehDXUvZmhqKXw8EeBbqZaySpjvMcTf1B2hHNVVkgKl/zQHRf2z+240UsrrPXg==
+  version "9.101.0"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.101.0.tgz#7ef573495879667f8947e0fad3540195c5422a12"
+  integrity sha512-JuU8CKT0rbf7LP2XbDCqAEOdSSq5U3pk/BlxAlxZszRd7tByKhWZAEKY1QCZ/2pxBiIc0pWWR0rv8Me8BAQ6AQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.8"
@@ -7205,9 +7205,9 @@ stack-utils@^2.0.3:
     escape-string-regexp "^2.0.0"
 
 stats-gl@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/stats-gl/-/stats-gl-2.0.1.tgz#4626a1575af00f0c5daba41ebc8f8e29a0a1998a"
-  integrity sha512-EhFm1AxoSBK3MflkFawZ4jmOX1dWu0nBAtCpvGxGsondEvCpsohbpRpM8pi8UAcxG5eRsDsCiRcxdH20j3Rp9A==
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/stats-gl/-/stats-gl-2.2.2.tgz#534acb012b2f609aac7dfbbdd1ff1068930f9c56"
+  integrity sha512-1RQSqf5fV/p0SDmfHVcIT8sgCxPv70KfviIdFIUYDGHWEsRtYxavP7JcMRSS50NKRgn4L81zxoOm6ejWwV/KiQ==
 
 stats.js@^0.17.0:
   version "0.17.0"
@@ -8359,9 +8359,9 @@ zustand@^3.7.1:
   integrity sha512-PIJDIZKtokhof+9+60cpockVOq05sJzHCriyvaLBmEJixseQ1a5Kdov6fWZfWOu5SK9c+FhH1jU0tntLxRJYMA==
 
 zustand@^4.3.2:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/zustand/-/zustand-4.5.1.tgz#2088956ee454759fb8b866ca335a2373e76736c5"
-  integrity sha512-XlauQmH64xXSC1qGYNv00ODaQ3B+tNPoy22jv2diYiP4eoDKr9LA+Bh5Bc3gplTrFdb6JVI+N4kc1DZ/tbtfPg==
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-4.5.2.tgz#fddbe7cac1e71d45413b3682cdb47b48034c3848"
+  integrity sha512-2cN1tPkDVkwCy5ickKrI7vijSjPksFRfqS6237NzT0vqSsztTNnQdHw9mmN7uBdk3gceVXU0a+21jFzFzAc9+g==
   dependencies:
     use-sync-external-store "1.2.0"
 
