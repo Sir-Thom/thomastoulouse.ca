@@ -1891,9 +1891,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.92.7":
-  version "9.102.3"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.102.3.tgz#a704089f701e52cf55ea90e03230e1bab6c47b72"
-  integrity sha512-VQrzfEtoS7qOntbWN3XytplN11FnrQt2h02+I68wIpiE5SS4hfquBlytwQ5tLwkF6lRBl9SgeEe7XMy8QcZCUw==
+  version "9.102.6"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.102.6.tgz#bf705868a2b8f72004a0bec682520f1e3651c515"
+  integrity sha512-FUR7Ea3GLsxFmAGv8byVPgkhEB84VveiT23gIJMqTb/xCBkSHXvHGCiFgZOiiTScAT+GR8txrlX7dA8nbXJDKg==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.8"
@@ -7191,9 +7191,9 @@ stack-utils@^2.0.3:
     escape-string-regexp "^2.0.0"
 
 stats-gl@^2.0.0:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/stats-gl/-/stats-gl-2.2.2.tgz#534acb012b2f609aac7dfbbdd1ff1068930f9c56"
-  integrity sha512-1RQSqf5fV/p0SDmfHVcIT8sgCxPv70KfviIdFIUYDGHWEsRtYxavP7JcMRSS50NKRgn4L81zxoOm6ejWwV/KiQ==
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/stats-gl/-/stats-gl-2.2.7.tgz#9b605f7dfcd3289f1d7791bda5094b8031b35c60"
+  integrity sha512-3EjvpmVgUic2YxCM+dxwg68B0tzWqMCAmflmdbqEKuqwZL+huYieqV14crm80NB7r2F4mWaYcLLlcpbhteEagw==
 
 stats.js@^0.17.0:
   version "0.17.0"
