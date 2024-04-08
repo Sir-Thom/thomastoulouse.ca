@@ -35,7 +35,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.0",
     "tailwindcss": "^3.4.0",
-    "three": "^0.162.0",
+    "three": "^0.163.0",
     "three-stdlib": "^2.28.9",
     "typescript": "^5.3.3",
     "vite": "^5.1.1"
@@ -49,7 +49,7 @@
     "@types/jest": "^29.5.11",
     "@types/react": "^18.2.70",
     "@types/react-dom": "^18.2.18",
-    "@types/three": "^0.162.0",
+    "@types/three": "^0.163.0",
     "dompurify": "^3.0.6",
     "dotenv-webpack": "^8.0.1",
     "gltfjsx": "^6.2.16",
