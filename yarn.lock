@@ -2092,9 +2092,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.92.7":
-  version "9.105.3"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.105.3.tgz#232c27b4945f6b523e41a3cbe62255ca2622ee44"
-  integrity sha512-evX61+LEer9u+3CY6UDUku7+zRSc9Mz4mlfWYgbwrV3XlvimFR0OP21kW2riCcU1t040WOUgPomJPjbZNc03DQ==
+  version "9.105.4"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.105.4.tgz#7c692a6be286b8c4940646d44372b205f2ef4ac7"
+  integrity sha512-pBZQmaV4yuBXP/TMcWJc5RNm3v9CykOqQDg2tyjZHijV4aa8jf38ae7WyQa5zDjuZcrHlQd2IGMX0Ia2UTHEUA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.8"
@@ -7448,9 +7448,9 @@ thenify-all@^1.0.0:
     any-promise "^1.0.0"
 
 three-mesh-bvh@^0.7.0:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.7.3.tgz#91f2d7e26f230288b5b0a6bdf41bdd9620348945"
-  integrity sha512-3W6KjzmupjfE89GuHPT31kxKWZ4YGZPEZJNysJpiOZfQRsBQQgmK7v/VJPpjG6syhAvTnY+5Fr77EvIkTLpGSw==
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.7.4.tgz#a5c799856a3f26f73537a73b6ec632c30f712ba8"
+  integrity sha512-flxe0A4uflTPR6elgq/Y8VrLoljDNS899i422SxQcU3EtMj6o8z4kZRyqZqGWzR0qMf1InTZzY1/0xZl/rnvVw==
 
 three-stdlib@^2.28.7, three-stdlib@^2.28.9, three-stdlib@^2.29.4:
   version "2.29.6"
