@@ -123,12 +123,12 @@
     prismjs "^1.29.0"
 
 "@astrojs/react@^3.0.9":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/react/-/react-3.3.0.tgz#0caf6432a26d1398a89eb4c4064e16fe26081d35"
-  integrity sha512-IKHizDgYPTl9TTKcEB+PwmqHqYgCwD3jqd9hGBRITYiMmeiHVMRr2zNNXSmOOv0uWL3/EwsISsrUnjwuxIVZUA==
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/react/-/react-3.3.1.tgz#cd5e05addf6ee761e42419af81f2246c596c5b4e"
+  integrity sha512-dwN6B+C0hQ1jpeQ5EckICpqv76t6RxEslldCP0UQ/ospolNk8GjqL11X/xQSbftiQvGWRMT0Tj5f0Xk17k5qJQ==
   dependencies:
-    "@vitejs/plugin-react" "^4.2.0"
-    ultrahtml "^1.3.0"
+    "@vitejs/plugin-react" "^4.2.1"
+    ultrahtml "^1.5.3"
 
 "@astrojs/tailwind@^5.1.0":
   version "5.1.0"
@@ -2580,7 +2580,7 @@
   dependencies:
     "@use-gesture/core" "10.3.1"
 
-"@vitejs/plugin-react@^4.2.0":
+"@vitejs/plugin-react@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-4.2.1.tgz#744d8e4fcb120fc3dbaa471dadd3483f5a304bb9"
   integrity sha512-oojO9IDc4nCUUi8qIR11KoQm0XFFLIwsRBwHRR4d/88IWghn1y6ckz/bJ8GHDCsYEJee8mDzqtJxh15/cisJNQ==
@@ -7646,7 +7646,7 @@ typescript@^5.3.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.5.tgz#42ccef2c571fdbd0f6718b1d1f5e6e5ef006f611"
   integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
 
-ultrahtml@^1.3.0:
+ultrahtml@^1.5.3:
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/ultrahtml/-/ultrahtml-1.5.3.tgz#e7a903a4b28a0e49b71b0801b444050bb0a369c7"
   integrity sha512-GykOvZwgDWZlTQMtp5jrD4BVL+gNn2NVlVafjcFUJ7taY20tqYdwdoWBFy6GBJsNTZe1GkGPkSl5knQAjtgceg==
