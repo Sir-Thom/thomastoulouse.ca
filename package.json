@@ -52,7 +52,7 @@
     "@types/three": "^0.165.0",
     "dompurify": "^3.0.6",
     "dotenv-webpack": "^8.0.1",
-    "gltfjsx": "^6.2.16",
+    "gltfjsx": "^6.2.18",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jsdom": "^24.0.0",

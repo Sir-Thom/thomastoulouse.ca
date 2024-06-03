@@ -4471,10 +4471,10 @@ glsl-noise@^0.0.0:
   resolved "https://registry.yarnpkg.com/glsl-noise/-/glsl-noise-0.0.0.tgz#367745f3a33382c0eeec4cb54b7e99cfc1d7670b"
   integrity sha512-b/ZCF6amfAUb7dJM/MxRs7AetQEahYzJ8PtgfrmEdtw6uyGOr+ZSGtgjFm6mfsBkxJ4d2W7kg+Nlqzqvn3Bc0w==
 
-gltfjsx@^6.2.16:
-  version "6.2.17"
-  resolved "https://registry.yarnpkg.com/gltfjsx/-/gltfjsx-6.2.17.tgz#c6dd61c8bd260000d1cc383de7ec457b2a19b267"
-  integrity sha512-J6tSKNJEbb4Q8sVUbFnOm8Ezpi5BwoCwlENXYihaDTX94fMQ49Wyh4na1pYX8ogoiiNxwiwJtbXeTt1AJvbPaQ==
+gltfjsx@^6.2.18:
+  version "6.2.18"
+  resolved "https://registry.yarnpkg.com/gltfjsx/-/gltfjsx-6.2.18.tgz#3e4ff2b47ca369e2a70031c12113c0b0b71a3a38"
+  integrity sha512-VGleecCK4d2cgA+zQ1q3mcsCrOrNYm7py+ba9yGDE4wc99slSl5wM9P1cZ4ynCILxrSWhAG3jGQz0jyoXasV9Q==
   dependencies:
     "@gltf-transform/core" "3.10.0"
     "@gltf-transform/extensions" "3.10.0"
