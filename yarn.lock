@@ -6739,9 +6739,9 @@ prettier-plugin-astro@^0.14.0:
     sass-formatter "^0.7.6"
 
 prettier-plugin-tailwindcss@^0.6.0:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.6.1.tgz#6cb1f5f3e1a8d8b5ea3f97d19be516d9ce9931bf"
-  integrity sha512-AnbeYZu0WGj+QgKciUgdMnRxrqcxltleZPgdwfA5104BHM3siBLONN/HLW1yS2HvzSNkzpQ/JAj+LN0jcJO+0w==
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.6.3.tgz#3f44a6656133b1c96455e3d17dd0e45d6220f1be"
+  integrity sha512-GeJ9bqXN4APAP0V5T2a1J/o6a50MWevEUCPWxijpdXFDQkBCoAfz4pQfv+YMXSqZ5GXLMDYio0mUOfrYL7gf4w==
 
 prettier@3.1.1:
   version "3.1.1"
