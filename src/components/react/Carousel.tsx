@@ -68,14 +68,14 @@ function Carousel(CarouselProps: IContent) {
 			<div className="flex justify-center sm:w-32 lg:w-[42rem]">
 				<button
 					aria-label="Previous card"
-					className="absolute left-0 top-1/2  mr-4 -translate-y-1/2 transform rounded-full  transition-all duration-300 hover:scale-110 active:scale-90"
+					className="absolute left-0 top-1/2 mr-4 -translate-y-1/2 transform rounded-full transition-all duration-300 hover:scale-110 active:scale-90"
 					onClick={handlePrev}
 				>
-					<MdOutlineNavigateBefore size={48} className="stroke-current  left--4 mr-4" />
+					<MdOutlineNavigateBefore size={48} className="stroke-current left--4 mr-4" />
 				</button>
 				<button
 					aria-label="Next card"
-					className="absolute right-0 top-1/2 mr-4 -translate-y-1/2 transform rounded-full   transition-all duration-300 hover:scale-110 active:scale-90"
+					className="absolute right-0 top-1/2 mr-4 -translate-y-1/2 transform rounded-full transition-all duration-300 hover:scale-110 active:scale-90"
 					onClick={handleNext}
 				>
 					<MdOutlineNavigateNext
