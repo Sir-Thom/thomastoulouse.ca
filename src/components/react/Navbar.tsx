@@ -36,7 +36,7 @@ export default function Navbar(props: IENVProps) {
 				<div className="ml-auto lg:hidden">
 					<ThemeToggle />
 				</div>
-				<div className=" lg:hidden">
+				<div className="lg:hidden">
 					<LanguagesSelector />
 				</div>
 
@@ -83,7 +83,7 @@ export default function Navbar(props: IENVProps) {
 							<LazyContactMe />
 						</Suspense>
 					</div>
-					<div className="hidden  sm:hidden md:hidden lg:block">
+					<div className="hidden sm:hidden md:hidden lg:block">
 						<ThemeToggle />
 					</div>
 					<div className="divide-x"> </div>
