@@ -21,37 +21,37 @@
     "@jridgewell/trace-mapping" "^0.3.24"
 
 "@astrojs/check@^0.8.0":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/check/-/check-0.8.1.tgz#db1ea900fba5d8bd35317f677a74cf681e09e008"
-  integrity sha512-QTzCuiBWll3SLSe7OsWtWyZRbwChXwxM4Y0Jb84jdPOdYobzHad9ubU7V23qmK3Y0BNwgzCbEP5C5FPVitb31Q==
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/check/-/check-0.8.2.tgz#e88b404d19a7e65743a2389692341340b0e60906"
+  integrity sha512-L0V9dGb2PGvK9Mf3kby99Y+qm7EqxaC9tN1MVCvaqp/3pPPZBadR4XAySHipxXqQsxwJS25WQow8/1kMl1e25g==
   dependencies:
-    "@astrojs/language-server" "^2.11.1"
+    "@astrojs/language-server" "^2.12.1"
     chokidar "^3.5.3"
     fast-glob "^3.3.1"
     kleur "^4.1.5"
     yargs "^17.7.2"
 
-"@astrojs/compiler@^2.7.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-2.8.0.tgz#acbe2abbf640c238cbfe6c9d886a4d0c6921f172"
-  integrity sha512-yrpD1WRGqsJwANaDIdtHo+YVjvIOFAjC83lu5qENIgrafwZcJgSXDuwVMXOgok4tFzpeKLsFQ6c3FoUdloLWBQ==
-
-"@astrojs/compiler@^2.8.2", "@astrojs/compiler@^2.9.1":
+"@astrojs/compiler@^2.8.2":
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-2.9.1.tgz#3c23198f52094c73c23717a76c5fb2719bbe74e5"
   integrity sha512-s8Ge2lWHx/s3kl4UoerjL/iPtwdtogNM/BLOaGCwQA6crMOVYpphy5wUkYlKyuh8GAeGYH/5haLAFBsgNy9AQQ==
+
+"@astrojs/compiler@^2.9.1":
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-2.9.2.tgz#c01dcdb14dc938758e66f9856934b83b6cd986d1"
+  integrity sha512-Vpu0Ffsj8SoV+N0DFHlxxOMKHwSC9059Xy/OlG1t6uFYSoJXxkBC2WyF6igO7x10V+8uJrhOxaXr3nA90kJXow==
 
 "@astrojs/internal-helpers@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@astrojs/internal-helpers/-/internal-helpers-0.4.1.tgz#ceb5de49346dbdbfb6cba1b683c07fef7df56e1c"
   integrity sha512-bMf9jFihO8YP940uD70SI/RDzIhUHJAolWVcO1v5PUivxGKvfLZTLTVVxEYzGYyPsA3ivdLNqMnL5VgmQySa+g==
 
-"@astrojs/language-server@^2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.11.1.tgz#3f617f031cb479a7af9be16ecc3469e301b662da"
-  integrity sha512-WSIBBUK9lSeVD4KhPiZk2u3wsXdj7WEYvYPPs8ZsgbSVIOzUJWAKVcITHiXmcXlzZB5ubK44YUN/Hq+f2GeMyQ==
+"@astrojs/language-server@^2.12.1":
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.12.1.tgz#799e8eed7626a7263b8e2c38e98a73f4ed111028"
+  integrity sha512-CCibE6XwSmrZEKlPDr48LZJN7NWxOurOJK1yOzqZFMNV8Y6DIqF6s1e60gbNNHMZkthWYBNTPno4Ni/XyviinQ==
   dependencies:
-    "@astrojs/compiler" "^2.7.0"
+    "@astrojs/compiler" "^2.9.1"
     "@jridgewell/sourcemap-codec" "^1.4.15"
     "@volar/kit" "~2.4.0-alpha.15"
     "@volar/language-core" "~2.4.0-alpha.15"
@@ -7109,12 +7109,12 @@ semver@^6.0.0, semver@^6.3.0, semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.3.5, semver@^7.6.0, semver@^7.6.2:
+semver@^7.3.5, semver@^7.3.8, semver@^7.6.0, semver@^7.6.2:
   version "7.6.3"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.3.tgz#980f7b5550bc175fb4dc09403085627f9eb33143"
   integrity sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==
 
-semver@^7.3.8, semver@^7.5.3, semver@^7.5.4:
+semver@^7.5.3, semver@^7.5.4:
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.2.tgz#1e3b34759f896e8f14d6134732ce798aeb0c6e13"
   integrity sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==
@@ -8017,17 +8017,7 @@ vscode-css-languageservice@^6.3.0:
     vscode-languageserver-types "3.17.5"
     vscode-uri "^3.0.8"
 
-vscode-html-languageservice@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/vscode-html-languageservice/-/vscode-html-languageservice-5.2.0.tgz#5b36f9131acc073cebaa2074dc8ff53e84c80f31"
-  integrity sha512-cdNMhyw57/SQzgUUGSIMQ66jikqEN6nBNyhx5YuOyj9310+eY9zw8Q0cXpiKzDX8aHYFewQEXRnigl06j/TVwQ==
-  dependencies:
-    "@vscode/l10n" "^0.0.18"
-    vscode-languageserver-textdocument "^1.0.11"
-    vscode-languageserver-types "^3.17.5"
-    vscode-uri "^3.0.8"
-
-vscode-html-languageservice@^5.3.0:
+vscode-html-languageservice@^5.2.0, vscode-html-languageservice@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/vscode-html-languageservice/-/vscode-html-languageservice-5.3.0.tgz#298ae5600c6749cbb95838975d07f449c44cb478"
   integrity sha512-C4Z3KsP5Ih+fjHpiBc5jxmvCl+4iEwvXegIrzu2F5pktbWvQaBT3YkVPk8N+QlSSMk8oCG6PKtZ/Sq2YHb5e8g==
