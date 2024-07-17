@@ -3,8 +3,8 @@
 	"compilerOptions": {
 	  "jsx": "react-jsx",
 	  "target": "esnext",
-	  "module": "esnext",
-	  "moduleResolution": "Node16", // Set this to "esnext"
+	  "module": "Preserve",
+	"moduleResolution": "Bundler",
 	  "resolveJsonModule": true,
 	  "strict": true,
 	  "esModuleInterop": true,
@@ -14,10 +14,14 @@
 	  "outDir": "./dist",
 	  "baseUrl": "./src",
 	  "paths": {
-		"*": ["node_modules/*", "src/types/*"]
-	  }
+		"*": ["node_modules/*", "src/types/*"],
+		"@components/*": ["src/components/*"],
+		"@assets/*": ["src/assets/*"]
+	  },
+	  "moduleDetection": "auto",
 	},
 	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],
 	"exclude": ["**/*.spec.ts"]
+	
   }
   

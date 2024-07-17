@@ -37,7 +37,7 @@ export default function LanguageSelector() {
 							aria-label={label}
 							key={lang}
 							value={lang}
-							className=" rounded-xl bg-light-400 text-black dark:bg-dark-600 dark:text-white"
+							className="rounded-xl bg-light-400 text-black dark:bg-dark-600 dark:text-white"
 							dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(lang) }} // Sanitize the label
 						/>
 					))

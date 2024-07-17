@@ -23,8 +23,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 		TypeScript: <TypescriptOriginal size={20} />,
 		CSharp: <CsharpOriginal size={24} />,
 		PHP: <PhpPlain size={20} />,
-		Rust: <RustOriginal  size={24} />
-
+		Rust: <RustOriginal size={24} />
 	};
 
 	const languageIconsList =
@@ -54,7 +53,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 			<h2 className="mb-2 text-xl font-semibold">{title}</h2>
 			<p className="text-gray-600">{description}</p>
 
-			<div className="rounded-mdl absolute bottom-0  right-0 m-2 p-2   text-white">
+			<div className="rounded-mdl absolute bottom-0 right-0 m-2 p-2 text-white">
 				<div className="text-xxl flex font-semibold text-white">{languageIconsList}</div>
 			</div>
 

@@ -6,7 +6,7 @@
 		@apply bg-gradient-to-b from-dark-900 to-dark-700 text-white;
 	}
 	.underline-gradiant {
-		@apply rounded-md bg-gradient-to-r from-accent-1 to-accent-2 bg-[length:100%_6px] bg-bottom bg-no-repeat bg-blend-multiply  shadow-md;
+		@apply rounded-md bg-gradient-to-r from-accent-1 to-accent-2 bg-[length:100%_6px] bg-bottom bg-no-repeat bg-blend-multiply shadow-md;
 	}
 	@media (prefers-color-scheme: light) {
 		:root {

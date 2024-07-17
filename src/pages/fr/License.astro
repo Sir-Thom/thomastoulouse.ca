@@ -8,7 +8,6 @@ const t = useTranslationsLicense(lang);
 ---
 
 <Layout title="License Thomas Toulouse">
-	<ViewTransitions />
 	<main
 		transition:animate="slide"
 		class="bg-gradient-to-b from-light-100 to-light-400 bg-center text-black dark:bg-gradient-to-b dark:from-dark-900 dark:to-dark-700 dark:text-white"
@@ -41,4 +40,5 @@ const t = useTranslationsLicense(lang);
 			</p>
 		</div>
 	</main>
+	<ViewTransitions fallback="animate" />
 </Layout>
