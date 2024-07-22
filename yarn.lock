@@ -2285,9 +2285,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.92.7":
-  version "9.108.4"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.108.4.tgz#d3eb3cedc35df8523b99467a84af52250b724960"
-  integrity sha512-YyPVG7+np6G8CJRVVdEfgK+bou7cvp8v9R7k4NSHsoi5EokFPG03tkCjniRiz5SzQyN+E8kCiMogI9oZaop5+g==
+  version "9.109.1"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.109.1.tgz#8f82d5f6d41de918580d3fc8b0e18deee3c17fe5"
+  integrity sha512-tkZW1lpkGW0jg4bb3yiaQgM9gkpf6b2osleQnQu55VC8UFDDMIX+fNB8TTQ9fqhA/lpQ7UszM7XSUGak1xYjvg==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.8"
@@ -3756,9 +3756,9 @@ dequal@^2.0.0, dequal@^2.0.3:
   integrity sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
 
 detect-gpu@^5.0.28:
-  version "5.0.38"
-  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.38.tgz#1c05ce728ea1229d16db15b865631609bf0d6952"
-  integrity sha512-36QeGHSXYcJ/RfrnPEScR8GDprbXFG4ZhXsfVNVHztZr38+fRxgHnJl3CjYXXjbeRUhu3ZZBJh6Lg0A9v0Qd8A==
+  version "5.0.40"
+  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.40.tgz#626d41aa55341858ab547c260726a4afbac7dd95"
+  integrity sha512-5v4jDN/ERdZZitD29UiLjV9Q9+lDfw2OhEJACIqnvdWulVZCy2K6EwonZ/VKyo4YMqvSIzGIDmojX3jGL3dLpA==
   dependencies:
     webgl-constants "^1.1.1"
 
