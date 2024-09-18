@@ -96,9 +96,9 @@
     vfile "^6.0.2"
 
 "@astrojs/netlify@^5.1.1":
-  version "5.5.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/netlify/-/netlify-5.5.2.tgz#50f4dba0ed4a65fdeb4d55038d128d6a2a883863"
-  integrity sha512-J8a5Uz04156i8WN38iLQSLKAUKNJH+cGNbizRLoVdqRcfHY5cTwnZzXSSjjrvNNmErk0wsHlmJEA3SYXqCqXEw==
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/@astrojs/netlify/-/netlify-5.5.3.tgz#d440db76359812918b61b4cae9355acb5cbb178c"
+  integrity sha512-MDbbJY/Qp02WY9TFusXGA9TFSfaRwc/nlyYhk0YZ2ll2KW2DKrXLCJLC17kdhGqKDyg6w4P6juOOgbcGEpfaUw==
   dependencies:
     "@astrojs/internal-helpers" "0.4.1"
     "@astrojs/underscore-redirects" "^0.3.4"
@@ -8210,21 +8210,10 @@ vfile@^6.0.0, vfile@^6.0.2, vfile@^6.0.3:
     "@types/unist" "^3.0.0"
     vfile-message "^4.0.0"
 
-vite@^5.1.1, vite@^5.4.3:
+vite@^5.1.1, vite@^5.4.2, vite@^5.4.3:
   version "5.4.6"
   resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.6.tgz#85a93a1228a7fb5a723ca1743e337a2588ed008f"
   integrity sha512-IeL5f8OO5nylsgzd9tq4qD2QqI0k2CQLGrWD0rCN0EQJZpBK5vJAx0I+GDkMOXxQX/OfFHMuLIx6ddAxGX/k+Q==
-  dependencies:
-    esbuild "^0.21.3"
-    postcss "^8.4.43"
-    rollup "^4.20.0"
-  optionalDependencies:
-    fsevents "~2.3.3"
-
-vite@^5.4.2:
-  version "5.4.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.5.tgz#e4ab27709de46ff29bd8db52b0c51606acba893b"
-  integrity sha512-pXqR0qtb2bTwLkev4SE3r4abCNioP3GkjvIDLlzziPpXtHgiJIjuKl+1GN6ESOT3wMjG3JTeARopj2SwYaHTOA==
   dependencies:
     esbuild "^0.21.3"
     postcss "^8.4.43"
