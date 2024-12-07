@@ -2231,9 +2231,9 @@
   integrity sha512-CZWV/q6TTe8ta61cZXjfnnHsfWIdFhms03M9T7Cnd5y2mdpylJM0rF1qRq+wsQVRMLz1OYPVEBU9ph2Bx8cxrg==
 
 "@monogrid/gainmap-js@^3.0.6":
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/@monogrid/gainmap-js/-/gainmap-js-3.0.6.tgz#21e4a7188ce9845527a480e8c7ac7894323095bc"
-  integrity sha512-ireqJg7cw0tUn/JePDG8rAL7RyXgUKSDbjYdiygkrnye1WuKGLAWDBwF/ICwCwJ9iZBAF5caU8gSu+c34HLGdQ==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@monogrid/gainmap-js/-/gainmap-js-3.1.0.tgz#4ac1f88abd6affdf0b51d79318109183b499c502"
+  integrity sha512-Obb0/gEd/HReTlg8ttaYk+0m62gQJmCblMOjHSMHRrBP2zdfKMHLCRbh/6ex9fSUJMKdjjIEiohwkbGD3wj2Nw==
   dependencies:
     promise-worker-transferable "^1.0.4"
 
@@ -2346,9 +2346,9 @@
   integrity sha512-HVj7LrZ4ReHWBimBvu2SKND3cDVUPWKLqRTmWe/fNY6o1owGOX0cAHbdPDTMelgBlVbrTKrre6lFkhqGZErK/g==
 
 "@react-three/drei@^9.92.7":
-  version "9.118.0"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.118.0.tgz#e05e82a9e88c739afc8af45a89a1f24013bef7f8"
-  integrity sha512-/teOuiiIT7PsNSB71Onl+0SeI2rf0AF3DnD/dBWYMAVsmubun8tzhfsIGSxFMvTda9E178+fYe/jLRe4SnBOvg==
+  version "9.120.3"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.120.3.tgz#7b893828cfbce60afbbdf443e36a32ea2cc8c7e1"
+  integrity sha512-EbevbBf5OQX5oJZO8Pvj5k0hj4GMt666+6AOr86xJfQJHcWci053J5RJNDHA9/3JVvpZ4cOybZNc4/KDY2jXaw==
   dependencies:
     "@babel/runtime" "^7.26.0"
     "@mediapipe/tasks-vision" "0.10.17"
@@ -3897,9 +3897,9 @@ dequal@^2.0.0:
   integrity sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
 
 detect-gpu@^5.0.56:
-  version "5.0.58"
-  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.58.tgz#b0dd0b722c4e30d82fe3639c80f963850eba4d31"
-  integrity sha512-LvGBf1NeLMEQhUAHkL+tQPVUxFLU4NWiPWEj35GB9GozOeIc+o9kCj5Zg/sSc795J5TpDty5DVc51y13RI5zkg==
+  version "5.0.59"
+  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.59.tgz#1cb449b59c47606677434fb1af732bd046af19c2"
+  integrity sha512-tBS01N6Lu7D2T6nmoA5or39u12PqtmO4RPCSfgvbgcOUGPhExU8RDiyUiT3iVxCKX9XTxIM1k+mVaeirLv6pwA==
   dependencies:
     webgl-constants "^1.1.1"
 
@@ -8695,9 +8695,9 @@ zustand@^4.3.2:
     use-sync-external-store "1.2.2"
 
 zustand@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/zustand/-/zustand-5.0.1.tgz#2bdca5e4be172539558ce3974fe783174a48fdcf"
-  integrity sha512-pRET7Lao2z+n5R/HduXMio35TncTlSW68WsYBq2Lg1ASspsNGjpwLAsij3RpouyV6+kHMwwwzP0bZPD70/Jx/w==
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-5.0.2.tgz#f7595ada55a565f1fd6464f002a91e701ee0cfca"
+  integrity sha512-8qNdnJVJlHlrKXi50LDqqUNmUbuBjoKLrYQBnoChIbVph7vni+sY+YpvdjXG9YLd/Bxr6scMcR+rm5H3aSqPaw==
 
 zwitch@^2.0.0, zwitch@^2.0.4:
   version "2.0.4"
