@@ -1,4 +1,5 @@
-import { defineConfig ,envField,loadEnv} from "astro/config";
+import { defineConfig ,envField} from "astro/config";
+import { loadEnv } from "vite";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import netlify from "@astrojs/netlify";
