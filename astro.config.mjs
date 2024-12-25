@@ -1,23 +1,23 @@
-import { defineConfig } from "astro/config";
+import { defineConfig ,envField,loadEnv} from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
-import { loadEnv } from "vite";
-import dotenv from "dotenv";
 import netlify from "@astrojs/netlify";
-dotenv.config();
-const {
-  DOWNLOAD_URL
-} = loadEnv(import.meta.env.DOWNLOAD_URL, process.cwd(), "");
+
+const { DOWNLOAD_URL } = loadEnv(process.env.NODE_ENV, process.cwd(), "");
+
 
 
 // https://astro.build/config
 export default defineConfig({
+	env: {  
+		schema: {
+			DOWNLOAD_URL: envField.string({ context: "server", access: "secret" , default: DOWNLOAD_URL}),
+		}
+	  },
 	site: "https://www.thomastoulouse.ca",
 	integrations: [tailwind(), react()],
-	output: "hybrid",
+	output: "server",
 	adapter: netlify(),
-	env: {
-		DOWNLOAD_URL: DOWNLOAD_URL,
-	}
+
 });
 

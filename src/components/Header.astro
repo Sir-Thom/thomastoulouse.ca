@@ -1,7 +1,8 @@
 ---
 import Navbar from "./react/Navbar";
+import { DOWNLOAD_URL } from "astro:env/server";
 ---
 
 <header>
-	<Navbar DOWNLOAD_URL={import.meta.env.DOWNLOAD_URL} client:only="react" />
+	<Navbar DOWNLOAD_URL={`${DOWNLOAD_URL}`} client:only="react" />
 </header>
