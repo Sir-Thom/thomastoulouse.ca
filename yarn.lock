@@ -4047,9 +4047,9 @@ devalue@^5.1.1:
   integrity sha512-maua5KUiapvEwiEAe+XnlZ3Rh0GD+qI1J/nb9vrJc3muPXvcF/8gXYTWF76+5DAqHyDUtOIImEuo0YKE9mshVw==
 
 devicons-react@^1.2.6:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/devicons-react/-/devicons-react-1.3.0.tgz#e7bb6deb142bd1bdcf3f7b28fc83003a39c4a68b"
-  integrity sha512-uNrT0+t19A9iAxIidx1kj1rNF12TOh0cZ3A/JxrLuk19YBqo/M0TaMggwoaibLjNVP/VT+9nxGyYKbKAg0bgWA==
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/devicons-react/-/devicons-react-1.4.0.tgz#c5ed0b0cc0b4063f0cbc4c773c8e0f30e646fc61"
+  integrity sha512-RePDf19W/x66OA6GciO9rcNakbbXCvo3z8QN5WfoZ38ahPTPTZehhIyxxoBd4UDit0U6j8Szq7G11ZKRAEogSg==
 
 devlop@^1.0.0, devlop@^1.1.0:
   version "1.1.0"
