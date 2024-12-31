@@ -4,13 +4,11 @@ import { useTranslations, getURLFormReact } from "../../i18n/utils";
 import "../../global.css";
 import ThemeToggle from "./ToggleTheme";
 import LanguagesSelector from "./LanguagesSelector";
-import type { IENVProps } from "../../interfaces/IEnv";
+
 
 const lang = getURLFormReact();
 
-export default function Navbar(props: IENVProps) {
-	const { DOWNLOAD_URL } = props;
-
+export default function Navbar() {
 	const [isMenuOpen, setMenuOpen] = useState(false);
 
 	const toggleMenu = () => {
@@ -79,7 +77,7 @@ export default function Navbar(props: IENVProps) {
 							{t("project.title")}
 						</a>
 						<Suspense fallback={<div>Loading...</div>}>
-							<LazyDownloadButton DOWNLOAD_URL={DOWNLOAD_URL} />
+							<LazyDownloadButton  />
 							<LazyContactMe />
 						</Suspense>
 					</div>

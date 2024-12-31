@@ -5,6 +5,7 @@ export interface Props {
 
 import Carousel from "../components/react/Carousel";
 import { getLangFromUrl } from "../i18n/utils";
+import TalentGrid from "../components/react/TalentGrid";
 import TalentsJson from "../data/ui.json";
 
 const lang = getLangFromUrl(Astro.url).toString();
@@ -17,7 +18,7 @@ const { href } = Astro.props;
 	<div id={href} class="mb-8 py-40 font-futura-pt text-black dark:text-white">
 		<div class="container mx-auto px-4">
 			<div class="flex flex-col items-center">
-				<Carousel client:only="react" content={sortedTalents} />
+				<TalentGrid client:only="react" content={sortedTalents} />
 			</div>
 		</div>
 	</div>
