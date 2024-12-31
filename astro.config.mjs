@@ -13,7 +13,7 @@ export default defineConfig({
 	env: {  
 		schema: {
 			DOWNLOAD_URL: envField.string({ context: "server", access: "secret" , default: DOWNLOAD_URL}),
-			UPLOADTHING_SECRET: envField.string({ context: "client", access: "public" , default: UPLOADTHING_SECRET}),
+			UPLOADTHING_SECRET: envField.string({ context:  "server", access: "secret"  , default: UPLOADTHING_SECRET}),
 		}
 	  },
 	site: "https://www.thomastoulouse.ca",
