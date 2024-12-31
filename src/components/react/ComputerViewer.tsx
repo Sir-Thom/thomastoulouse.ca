@@ -1,8 +1,7 @@
-import React, { Suspense, useRef } from "react";
+import { Suspense, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Instances, Model } from "./Computer";
-import Loader from "./Loader";
 export default function Viewer() {
 	const ref: any | undefined = useRef();
 	return (

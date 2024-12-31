@@ -42,7 +42,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 			className="mb-2 scale-100 rounded-lg bg-light-400 p-6 shadow-lg shadow-LapisLazuli-800 transition-all hover:bg-light-500 active:scale-90 dark:bg-dark-600 hover:dark:bg-dark-700"
 		>
 			<img
-				src={imageUrlSmall}
+				src={imageUrl}
 				srcSet={`${imageUrlSmall} 480w, ${imageUrl} 800w`}
 				sizes="(max-width: 480px) 480px, 800px"
 				alt={title}

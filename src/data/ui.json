@@ -51,6 +51,15 @@
 					"imageUrlSmall": "/assets/images/projets/rustyfetch-small.webp",
 					"url": "https://github.com/Sir-Thom/rustyFetch",
 					"languages": ["Rust"]
+				},
+				{
+					"id": 6,
+					"title": "Proximity Chat",
+					"description": "A mobile chat application that allows you to talk with people near you. over a certain distance on the map.",
+					"imageUrl": "/assets/images/projets/proximity-chat.webp",
+					"imageUrlSmall": "/assets/images/projets/proximity-chat-small.webp",
+					"url": "https://github.com/Sir-Thom/proximity-chat",
+					"languages": ["TypeScript"]
 				}
 			]
 		},
@@ -186,9 +195,18 @@
 					"title": "Rustyfetch",
 					"description": "Une Application console qui affiche des informations sur le système d'opération. (neofetch clone) ",
 					"imageUrl": "/assets/images/projets/rustyfetch.webp",
-					"imageUrlSmall": "/assets/images/projets/mgt-lite-small.webp",
+					"imageUrlSmall": "/assets/images/projets/rustyfetch-small.webp",
 					"url": "https://github.com/Sir-Thom/rustyFetch",
 					"languages": ["Rust"]
+				},
+				{
+					"id": 6,
+					"title": "Proximity Chat",
+					"description": "Une application mobile de chat qui permet de parler avec des gens proche de vous. sur une certaine distance sur la carte.",
+					"imageUrl": "/assets/images/projets/proximity-chat.webp",
+					"imageUrlSmall": "/assets/images/projets/proximity-chat-small.webp",
+					"url": "https://github.com/Sir-Thom/proximity-chat",
+					"languages": ["TypeScript"]
 				}
 			]
 		},

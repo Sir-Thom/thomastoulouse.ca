@@ -1,10 +1,9 @@
-import { createUploadthing, UTApi, type FileRouter } from "uploadthing/server";
+import { createUploadthing, type FileRouter } from "uploadthing/server";
 
 const f = createUploadthing();
 
-const auth = (req: Request) => ({ id: "fakeId" }); // Fake auth function
+const auth = (req: Request) => ({ id: "fakeId" });
 
-// FileRouter for your app, can contain multiple FileRoutes
 export const ourFileRouter = {
 	PdfGetter: f({
 		pdf: {

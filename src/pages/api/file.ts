@@ -1,16 +1,13 @@
-// src/pages/api/file.ts
 import { APIRoute } from "astro";
 
 export const POST: APIRoute = async ({ request }) => {
-	const { lang } = await request.json(); // Get the language from the request body
-
+	const { lang } = await request.json(); 
 	try {
-		// Make the API request to Uploadthing to get file details
 		const cvUrl = await fetch("https://api.uploadthing.com/v6/listFiles", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
-				"X-Uploadthing-Api-Key": `${import.meta.env.UPLOADTHING_SECRET}` // Ensure the secret key is available
+				"X-Uploadthing-Api-Key": `${import.meta.env.UPLOADTHING_SECRET}` 
 			},
 			body: JSON.stringify({})
 		});
@@ -20,13 +17,11 @@ export const POST: APIRoute = async ({ request }) => {
 		if (data.files && data.files.length > 0) {
 			let fileKey;
 
-			// Adjust the file selection based on the language
 			if (lang === "en") {
-				fileKey = data.files[1]?.key; // Select the second file for English
+				fileKey = data.files[1]?.key; 
 			} else if (lang === "fr") {
-				fileKey = data.files[0]?.key; // Select the first file for French
+				fileKey = data.files[0]?.key; 
 			} else {
-				// Default fallback to the first file if the language is not recognized
 				fileKey = data.files[0]?.key;
 			}
 

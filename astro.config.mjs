@@ -10,6 +10,7 @@ const { UPLOADTHING_SECRET } = loadEnv(process.env.NODE_ENV, process.cwd(), "");
 
 // https://astro.build/config
 export default defineConfig({
+
 	env: {  
 		schema: {
 			DOWNLOAD_URL: envField.string({ context: "server", access: "secret" , default: DOWNLOAD_URL}),
@@ -21,5 +22,12 @@ export default defineConfig({
 	output: "server",
 	output: "server",
 	adapter: netlify(),
+	vite: {
+		build: {
+		  rollupOptions: {
+			external: ['uploadthing/server'], // Exclude the server-side module
+		  },
+		},
+	  },
 });
 

@@ -2,7 +2,6 @@ import { createRouteHandler } from "uploadthing/server";
 
 import { ourFileRouter } from "../../server/uploadthing";
 
-// Export routes for Next App Router
 const handlers = createRouteHandler({
 	router: ourFileRouter,
 	config: {
