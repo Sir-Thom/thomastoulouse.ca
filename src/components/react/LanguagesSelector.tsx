@@ -5,7 +5,7 @@ import DOMPurify from "dompurify";
 
 export default function LanguageSelector() {
 	const url = new URL(window.location.href);
-	const currentLanguage: any = getLangFromUrl(url) || "fr"; // Ensure currentLanguage is a string
+	const currentLanguage: any = getLangFromUrl(url) || "fr"; 
 
 	const handleLanguageChange = (event: { target: { value: any } }) => {
 		const selectedLanguageCode = event.target.value;
@@ -16,7 +16,6 @@ export default function LanguageSelector() {
 
 		const newUrl = `${url.origin}${newPathname}${currentHash}`;
 
-		// Redirect the user to the new URL
 		window.location.href = newUrl;
 	};
 
@@ -29,7 +28,7 @@ export default function LanguageSelector() {
 				name="languages"
 				id="lang"
 				onChange={handleLanguageChange}
-				value={currentLanguage} // Ensure currentLanguage is a string
+				value={currentLanguage} 
 			>
 				{Object.entries(languages)
 					.map(([lang, label]) => (

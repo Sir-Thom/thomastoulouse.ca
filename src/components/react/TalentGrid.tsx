@@ -1,8 +1,4 @@
-import { getURLFormReact, useTranslations } from "../../i18n/utils";
-const lang = getURLFormReact();
-const t = useTranslations(lang);
 import type { IContent } from "../../interfaces/ICard";
-import React, { useMemo, useState } from "react";
 
 interface TalentGridProps {
 	content: IContent[];
