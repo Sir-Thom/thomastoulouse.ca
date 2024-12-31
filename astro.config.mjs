@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig ,envField} from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import { loadEnv } from "vite";
@@ -18,10 +18,7 @@ export default defineConfig({
 	  },
 	site: "https://www.thomastoulouse.ca",
 	integrations: [tailwind(), react()],
-	output: "hybrid",
+	output: "server",
 	adapter: netlify(),
-	env: {
-		DOWNLOAD_URL: DOWNLOAD_URL,
-	}
 });
 

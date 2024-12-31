@@ -1,5 +1,4 @@
 import { useState, lazy, Suspense } from "react";
-import { useState, lazy, Suspense } from "react";
 import { FaBars } from "react-icons/fa";
 import { useTranslations, getURLFormReact } from "../../i18n/utils";
 import "../../global.css";
@@ -11,15 +10,6 @@ const lang = getURLFormReact();
 export default function Navbar() {
 	const [isMenuOpen, setMenuOpen] = useState(false);
 
-	const toggleMenu = () => {
-		setMenuOpen(!isMenuOpen);
-	};
-
-	// Memoize the translations function
-	const t = useTranslations(lang);
-
-	const LazyDownloadButton = lazy(() => import("./DownloadButton"));
-	const LazyContactMe = lazy(() => import("./ContactMe"));
 	const toggleMenu = () => {
 		setMenuOpen(!isMenuOpen);
 	};

@@ -3,7 +3,6 @@ import Layout from "../../layouts/Layout.astro";
 
 export const prerender = true;
 import { getLangFromUrl, useTranslationsLicense } from "../../i18n/utils";
-import { ViewTransitions } from "astro:transitions";
 const lang: any = getLangFromUrl(Astro.url);
 const t = useTranslationsLicense(lang);
 ---
@@ -41,5 +40,4 @@ const t = useTranslationsLicense(lang);
 			</p>
 		</div>
 	</main>
-	<ViewTransitions fallback="animate" />
 </Layout>
