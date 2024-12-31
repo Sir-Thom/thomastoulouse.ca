@@ -60,6 +60,15 @@
 					"imageUrlSmall": "/assets/images/projets/proximity-chat-small.webp",
 					"url": "https://github.com/Sir-Thom/proximity-chat",
 					"languages": ["TypeScript"]
+				},
+				{
+					"id": 7,
+					"title": "Will it end",
+					"description": "A fps like Call of duty zombie a made with my team.",
+					"imageUrl": "/assets/images/projets/Will-it-end.webp",
+					"imageUrlSmall": "/assets/images/projets/Will-it-end.webp",
+					"url": "https://utfs.io/f/EVAGqxivDphLr4qNtQCs0u1laY8qFTchELjDeZXpOznw6SfG",
+					"languages": ["CSharp"]
 				}
 			]
 		},
@@ -207,6 +216,15 @@
 					"imageUrlSmall": "/assets/images/projets/proximity-chat-small.webp",
 					"url": "https://github.com/Sir-Thom/proximity-chat",
 					"languages": ["TypeScript"]
+				},
+				{
+					"id": 7,
+					"title": "Will it end",
+					"description": "Un fps comme Call of duty zombie que j'ai faite avec mon équipe.",
+					"imageUrl": "/assets/images/projets/proximity-chat.webp",
+					"imageUrlSmall": "/assets/images/projets/proximity-chat-small.webp",
+					"url": "https://utfs.io/f/EVAGqxivDphLr4qNtQCs0u1laY8qFTchELjDeZXpOznw6SfG",
+					"languages": ["CSharp"]
 				}
 			]
 		},

@@ -18,11 +18,11 @@ export const POST: APIRoute = async ({ request }) => {
 			let fileKey;
 
 			if (lang === "en") {
-				fileKey = data.files[1]?.key; 
+				fileKey = data.files[2]?.key; 
 			} else if (lang === "fr") {
-				fileKey = data.files[0]?.key; 
+				fileKey = data.files[1]?.key; 
 			} else {
-				fileKey = data.files[0]?.key;
+				fileKey = data.files[2]?.key;
 			}
 
 			const fileUrl = `https://utfs.io/f/${fileKey}`;
