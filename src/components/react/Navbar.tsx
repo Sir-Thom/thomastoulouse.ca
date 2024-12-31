@@ -5,7 +5,6 @@ import "../../global.css";
 import ThemeToggle from "./ToggleTheme";
 import LanguagesSelector from "./LanguagesSelector";
 
-
 const lang = getURLFormReact();
 
 export default function Navbar() {
@@ -77,7 +76,7 @@ export default function Navbar() {
 							{t("project.title")}
 						</a>
 						<Suspense fallback={<div>Loading...</div>}>
-							<LazyDownloadButton  />
+							<LazyDownloadButton />
 							<LazyContactMe />
 						</Suspense>
 					</div>

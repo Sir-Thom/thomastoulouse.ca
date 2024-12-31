@@ -5,8 +5,8 @@ export interface ICard {
 }
 
 export interface IContent {
-    image: string | undefined;
-    title: string | undefined;
+	image: string | undefined;
+	title: string | undefined;
 	content: ICard[];
 }
 export interface ICardProps {
