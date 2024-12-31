@@ -1,59 +1,50 @@
 import { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
-import type { IENVProps } from "../../interfaces/IEnv";
 import { getURLFormReact, useTranslations } from "../../i18n/utils";
 
-function DownloadButton(props: IENVProps) {
-	const { DOWNLOAD_URL } = props;
-
+function DownloadButton() {
 	const lang = getURLFormReact();
 	const t = useTranslations(lang);
 
 	const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
-	// improve performance by prefetching the download url
+
 	useEffect(() => {
 		const getDownloadUrl = async () => {
-			if (lang === "en") {
-				const cvUrl = DOWNLOAD_URL + "cv-EN.docx";
-				setDownloadUrl(cvUrl);
-				return;
-			} else if (lang === "fr") {
-				const cvUrl = DOWNLOAD_URL + "cv-FR.docx";
-				setDownloadUrl(cvUrl);
+			try {
+				// Send the current language to the server when making the request
+				const response = await fetch("/api/file", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({ lang }) // Send language to the server
+				});
+
+				const data = await response.json();
+				if (data.fileUrl) {
+					setDownloadUrl(data.fileUrl);
+				} else {
+					console.error("No download URL found.");
+				}
+			} catch (error) {
+				console.error("Error fetching download URL:", error);
 			}
 		};
 
 		getDownloadUrl();
-	}, []);
-
-	useEffect(() => {
-		const getDownloadUrl = async () => {
-			if (lang === "en") {
-				const cvUrl = DOWNLOAD_URL + "cv-EN.docx";
-				setDownloadUrl(cvUrl);
-				return;
-			} else if (lang === "fr") {
-				const cvUrl = DOWNLOAD_URL + "cv-FR.docx";
-				setDownloadUrl(cvUrl);
-			}
-		};
-
-		getDownloadUrl();
-		if (downloadUrl) {
-			const prefetchLink = document.createElement("link");
-			prefetchLink.href = downloadUrl;
-			prefetchLink.rel = "prefetch";
-			document.head.appendChild(prefetchLink);
-		}
-	}, [downloadUrl]);
+	}, [lang]); // Run when the language changes
 
 	const handleDownload = () => {
+		if (!downloadUrl) {
+			return;
+		}
+
 		const link = document.createElement("a");
-		link.href = downloadUrl!;
-		link.setAttribute("download", "cv.docx");
+		link.href = downloadUrl;
+		link.setAttribute("download", "cv.pdf"); // Adjust filename if needed
 		link.style.display = "none";
 		document.body.appendChild(link);
-		link?.click();
+		link.click();
 		document.body.removeChild(link);
 	};
 
