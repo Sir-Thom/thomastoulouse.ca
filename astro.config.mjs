@@ -19,6 +19,7 @@ export default defineConfig({
 	site: "https://www.thomastoulouse.ca",
 	integrations: [tailwind(), react()],
 	output: "server",
+	output: "server",
 	adapter: netlify(),
 });
 
