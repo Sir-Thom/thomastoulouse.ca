@@ -5,7 +5,7 @@ import DOMPurify from "dompurify";
 
 export default function LanguageSelector() {
 	const url = new URL(window.location.href);
-	const currentLanguage: any = getLangFromUrl(url) || "fr"; 
+	const currentLanguage: any = getLangFromUrl(url) || "fr";
 
 	const handleLanguageChange = (event: { target: { value: any } }) => {
 		const selectedLanguageCode = event.target.value;
@@ -28,7 +28,7 @@ export default function LanguageSelector() {
 				name="languages"
 				id="lang"
 				onChange={handleLanguageChange}
-				value={currentLanguage} 
+				value={currentLanguage}
 			>
 				{Object.entries(languages)
 					.map(([lang, label]) => (
