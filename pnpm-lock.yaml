@@ -13,7 +13,7 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3)
       '@astrojs/netlify':
         specifier: ^6.0.1
-        version: 6.0.1(@types/node@22.10.2)(astro@5.1.6(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.30.0)(terser@5.37.0)(typescript@5.7.3)(yaml@2.6.1))(jiti@1.21.7)(rollup@4.30.0)(terser@5.37.0)(yaml@2.6.1)
+        version: 6.1.0(@types/node@22.10.2)(astro@5.1.6(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.30.0)(terser@5.37.0)(typescript@5.7.3)(yaml@2.6.1))(jiti@1.21.7)(rollup@4.30.0)(terser@5.37.0)(yaml@2.6.1)
       '@astrojs/react':
         specifier: ^4.1.2
         version: 4.1.4(@types/node@22.10.2)(@types/react-dom@19.0.3(@types/react@19.0.7))(@types/react@19.0.7)(jiti@1.21.7)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(terser@5.37.0)(yaml@2.6.1)
@@ -164,9 +164,6 @@ packages:
   '@astrojs/compiler@2.10.3':
     resolution: {integrity: sha512-bL/O7YBxsFt55YHU021oL+xz+B/9HvGNId3F9xURN16aeqDK9juHGktdkCSXz+U4nqFACq6ZFvWomOzhV+zfPw==}
 
-  '@astrojs/internal-helpers@0.4.1':
-    resolution: {integrity: sha512-bMf9jFihO8YP940uD70SI/RDzIhUHJAolWVcO1v5PUivxGKvfLZTLTVVxEYzGYyPsA3ivdLNqMnL5VgmQySa+g==}
-
   '@astrojs/internal-helpers@0.4.2':
     resolution: {integrity: sha512-EdDWkC3JJVcpGpqJAU/5hSk2LKXyG3mNGkzGoAuyK+xoPHbaVdSuIWoN1QTnmK3N/gGfaaAfM8gO2KDCAW7S3w==}
 
@@ -185,8 +182,8 @@ packages:
   '@astrojs/markdown-remark@6.0.1':
     resolution: {integrity: sha512-CTSYijj25NfxgZi15TU3CwPwgyD1/7yA3FcdcNmB9p94nydupiUbrIiq3IqeTp2m5kCVzxbPZeC7fTwEOaNyGw==}
 
-  '@astrojs/netlify@6.0.1':
-    resolution: {integrity: sha512-Y8rsMVClPp6cJuAClL0BAr4p8FtNtvaOhODy8YHUfe8QsaNSrnUTJ6Np+RbTBKBTQ9JkRKGe5F0f0LaAD21euw==}
+  '@astrojs/netlify@6.1.0':
+    resolution: {integrity: sha512-k8pRjWU6vK3MiHvXfbSL2+u0ML2ATTUdqGsAxFz9HEUJdMb3d/AmAyvIgOI6x/u2ugqBQJWePq14iPnQ8qFKDA==}
     peerDependencies:
       astro: ^5.0.0
 
@@ -213,8 +210,8 @@ packages:
     resolution: {integrity: sha512-wxhSKRfKugLwLlr4OFfcqovk+LIFtKwLyGPqMsv+9/ibqqnW3Gv7tBhtKEb0gAyUAC4G9BTVQeQahqnQAhd6IQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
 
-  '@astrojs/underscore-redirects@0.4.0':
-    resolution: {integrity: sha512-Urt32++4ql0IFTTNejnRIN7LPJ6YzU9QXLcc4RXm5or1RLPnQBKVrLvmDxKx3eT72l7ZAi6W4L5E7pcbWbYDRA==}
+  '@astrojs/underscore-redirects@0.6.0':
+    resolution: {integrity: sha512-dnJgFpaM955IFNIkEEmMaaIdWXRdeZs1ID6mlGBqdjh6NiCXfKmOdq7L4fd9Dd/tr18fkLrOJ25IUJSxRAEhjQ==}
 
   '@astrojs/yaml2ts@0.2.2':
     resolution: {integrity: sha512-GOfvSr5Nqy2z5XiwqTouBBpy5FyI6DEe+/g/Mk5am9SjILN1S5fOEvYK0GuWHg98yS/dobP4m8qyqw/URW35fQ==}
@@ -1861,9 +1858,9 @@ packages:
     peerDependencies:
       react: '>= 16.8.0'
 
-  '@vercel/nft@0.27.10':
-    resolution: {integrity: sha512-zbaF9Wp/NsZtKLE4uVmL3FyfFwlpDyuymQM1kPbeT0mVOHKDQQNjnnfslB3REg3oZprmNFJuh3pkHBk2qAaizg==}
-    engines: {node: '>=16'}
+  '@vercel/nft@0.29.0':
+    resolution: {integrity: sha512-LAkWyznNySxZ57ibqEGKnWFPqiRxyLvewFyB9iCHFfMsZlVyiu8MNFbjrGk3eV0vuyim5HzBloqlvSrG4BpZ7g==}
+    engines: {node: '>=18'}
     hasBin: true
 
   '@vitejs/plugin-react@4.3.4':
@@ -2327,10 +2324,6 @@ packages:
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
-
-  consola@3.3.3:
-    resolution: {integrity: sha512-Qil5KwghMzlqd51UXM0b6fyaGHtOC22scxrwrz4A2882LyUMwQjnvaedN1HAeXzphspQ6CpHkzMAWxBTUruDLg==}
-    engines: {node: ^14.18.0 || >=16.10.0}
 
   consola@3.4.0:
     resolution: {integrity: sha512-EiPU8G6dQG0GFHNR8ljnZFki/8a+cQwEQ+7wpxdChl02Q8HXlwEZWD5lqAF8vC2sEC3Tehr8hy7vErz88LHyUA==}
@@ -5188,8 +5181,6 @@ snapshots:
 
   '@astrojs/compiler@2.10.3': {}
 
-  '@astrojs/internal-helpers@0.4.1': {}
-
   '@astrojs/internal-helpers@0.4.2': {}
 
   '@astrojs/language-server@2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3)':
@@ -5242,12 +5233,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/netlify@6.0.1(@types/node@22.10.2)(astro@5.1.6(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.30.0)(terser@5.37.0)(typescript@5.7.3)(yaml@2.6.1))(jiti@1.21.7)(rollup@4.30.0)(terser@5.37.0)(yaml@2.6.1)':
+  '@astrojs/netlify@6.1.0(@types/node@22.10.2)(astro@5.1.6(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.30.0)(terser@5.37.0)(typescript@5.7.3)(yaml@2.6.1))(jiti@1.21.7)(rollup@4.30.0)(terser@5.37.0)(yaml@2.6.1)':
     dependencies:
-      '@astrojs/internal-helpers': 0.4.1
-      '@astrojs/underscore-redirects': 0.4.0
+      '@astrojs/internal-helpers': 0.4.2
+      '@astrojs/underscore-redirects': 0.6.0
       '@netlify/functions': 2.8.2
-      '@vercel/nft': 0.27.10(rollup@4.30.0)
+      '@vercel/nft': 0.29.0(rollup@4.30.0)
       astro: 5.1.6(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.30.0)(terser@5.37.0)(typescript@5.7.3)(yaml@2.6.1)
       esbuild: 0.24.2
       vite: 6.0.7(@types/node@22.10.2)(jiti@1.21.7)(terser@5.37.0)(yaml@2.6.1)
@@ -5316,7 +5307,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/underscore-redirects@0.4.0': {}
+  '@astrojs/underscore-redirects@0.6.0': {}
 
   '@astrojs/yaml2ts@0.2.2':
     dependencies:
@@ -6638,7 +6629,7 @@ snapshots:
 
   '@mapbox/node-pre-gyp@2.0.0-rc.0':
     dependencies:
-      consola: 3.3.3
+      consola: 3.4.0
       detect-libc: 2.0.3
       https-proxy-agent: 7.0.6
       node-fetch: 2.7.0
@@ -7087,7 +7078,7 @@ snapshots:
       '@use-gesture/core': 10.3.1
       react: 19.0.0
 
-  '@vercel/nft@0.27.10(rollup@4.30.0)':
+  '@vercel/nft@0.29.0(rollup@4.30.0)':
     dependencies:
       '@mapbox/node-pre-gyp': 2.0.0-rc.0
       '@rollup/pluginutils': 5.1.4(rollup@4.30.0)
@@ -7722,8 +7713,6 @@ snapshots:
   common-ancestor-path@1.0.1: {}
 
   concat-map@0.0.1: {}
-
-  consola@3.3.3: {}
 
   consola@3.4.0: {}
 
