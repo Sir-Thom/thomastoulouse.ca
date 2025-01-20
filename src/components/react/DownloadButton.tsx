@@ -16,7 +16,7 @@ function DownloadButton() {
 					headers: {
 						"Content-Type": "application/json"
 					},
-					body: JSON.stringify({ lang }) 
+					body: JSON.stringify({ lang })
 				});
 
 				const data = await response.json();
@@ -31,20 +31,20 @@ function DownloadButton() {
 		};
 
 		getDownloadUrl();
-	}, [lang]); 
+	}, [lang]);
 
 	const handleDownload = () => {
 		if (!downloadUrl) {
 			console.error("No download URL available");
 			return;
-		  }
-	  
-		  const link = document.createElement("a");
-		  link.href = downloadUrl;
-		  link.setAttribute("download", lang === "en" ? "cv-EN.pdf" : "cv-FR.pdf"); 
-		  document.body.appendChild(link);
-		  link.click();
-		  document.body.removeChild(link);
+		}
+
+		const link = document.createElement("a");
+		link.href = downloadUrl;
+		link.setAttribute("download", lang === "en" ? "cv-EN.pdf" : "cv-FR.pdf");
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
 	};
 
 	return (
