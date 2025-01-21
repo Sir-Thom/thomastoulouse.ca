@@ -21,10 +21,11 @@ const { title, href } = Astro.props;
 					{title}
 				</h1>
 				<div class="flex flex-wrap justify-center gap-8">
-					<Card title={education[0].title} description={education[0].description} />
-					<Card title={education[1].title} description={education[1].description} />
-					<Card title={education[2].title} description={education[2].description} />
+					{education.map((edu) => (
+						<Card title={edu.title} description={edu.description} />
+					))}
 				</div>
+	
 			</div>
 		</div>
 	</div>

@@ -26,7 +26,7 @@ export default function LanguageSelector() {
 				className="ml-2 rounded-xl bg-transparent py-2 dark:bg-transparent"
 				aria-label="languages"
 				name="languages"
-				id="lang"
+				id={"lang-"+currentLanguage}
 				onChange={handleLanguageChange}
 				value={currentLanguage}
 			>

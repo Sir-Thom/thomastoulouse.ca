@@ -67,7 +67,7 @@
 					"description": "A fps like Call of duty zombie a made with my team.",
 					"imageUrl": "/assets/images/projets/Will-it-end.webp",
 					"imageUrlSmall": "/assets/images/projets/Will-it-end.webp",
-					"url": "https://utfs.io/f/EVAGqxivDphLr4qNtQCs0u1laY8qFTchELjDeZXpOznw6SfG",
+					"url": "https://lvarp02scy.ufs.sh/f/EVAGqxivDphLJIJAA2U4zQLf5aci7yWAosDMgUxJeCnBHVO9",
 					"languages": ["CSharp"]
 				}
 			]
@@ -88,10 +88,6 @@
 		"education": {
 			"title": "Education",
 			"educationsList": [
-				{
-					"title": "High School Diploma",
-					"description": "Polyvalente Saint-Georges | 2017-2021"
-				},
 				{
 					"title": "DEC in computer science",
 					"description": "Cégep Beauce Appalaches | 2021-2024"
@@ -227,7 +223,7 @@
 					"description": "Un fps comme Call of duty zombie que j'ai faite avec mon équipe.",
 					"imageUrl": "/assets/images/projets/Will-it-end.webp",
 					"imageUrlSmall": "/assets/images/projets/Will-it-end.webp",
-					"url": "https://utfs.io/f/EVAGqxivDphLr4qNtQCs0u1laY8qFTchELjDeZXpOznw6SfG",
+					"url": "https://lvarp02scy.ufs.sh/f/EVAGqxivDphLJIJAA2U4zQLf5aci7yWAosDMgUxJeCnBHVO9",
 					"languages": ["CSharp"]
 				}
 			]
@@ -248,10 +244,6 @@
 		"education": {
 			"title": "Éducation",
 			"educationsList": [
-				{
-					"title": "Diplôme d'étude secondaire",
-					"description": "Polyvalente Saint-Georges | 2017-2021"
-				},
 				{
 					"title": "DEC en informatique",
 					"description": "Cégep Beauce Appalaches | 2021-2024"
