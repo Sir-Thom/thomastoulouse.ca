@@ -19,7 +19,7 @@ importers:
         version: 4.2.1(@types/node@22.10.2)(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(jiti@1.21.7)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(terser@5.39.0)(yaml@2.7.0)
       '@astrojs/tailwind':
         specifier: ^5.1.4
-        version: 5.1.5(astro@5.5.2(@netlify/blobs@8.1.1)(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.35.0)(terser@5.39.0)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@4.0.0)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))
+        version: 5.1.5(astro@5.5.2(@netlify/blobs@8.1.1)(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.35.0)(terser@5.39.0)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@4.0.14)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))
       '@babel/preset-env':
         specifier: ^7.26.0
         version: 7.26.9(@babel/core@7.26.0)
@@ -70,7 +70,7 @@ importers:
         version: 5.4.0(react@19.0.0)
       tailwindcss:
         specifier: ^4.0.0
-        version: 4.0.0
+        version: 4.0.14
       three:
         specifier: ^0.174.0
         version: 0.174.0
@@ -4414,8 +4414,8 @@ packages:
   symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
 
-  tailwindcss@4.0.0:
-    resolution: {integrity: sha512-ULRPI3A+e39T7pSaf1xoi58AqqJxVCLg8F/uM5A3FadUbnyDTgltVnXJvdkTjwCOGA6NazqHVcwPJC5h2vRYVQ==}
+  tailwindcss@4.0.14:
+    resolution: {integrity: sha512-92YT2dpt671tFiHH/e1ok9D987N9fHD5VWoly1CdPD/Cd1HMglvZwP3nx2yTj2lbXDAHt8QssZkxTLCCTNL+xw==}
 
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
@@ -5341,13 +5341,13 @@ snapshots:
       - tsx
       - yaml
 
-  '@astrojs/tailwind@5.1.5(astro@5.5.2(@netlify/blobs@8.1.1)(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.35.0)(terser@5.39.0)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@4.0.0)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))':
+  '@astrojs/tailwind@5.1.5(astro@5.5.2(@netlify/blobs@8.1.1)(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.35.0)(terser@5.39.0)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@4.0.14)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))':
     dependencies:
       astro: 5.5.2(@netlify/blobs@8.1.1)(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.35.0)(terser@5.39.0)(typescript@5.7.3)(yaml@2.7.0)
       autoprefixer: 10.4.20(postcss@8.5.1)
       postcss: 8.5.1
       postcss-load-config: 4.0.2(postcss@8.5.1)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))
-      tailwindcss: 4.0.0
+      tailwindcss: 4.0.14
     transitivePeerDependencies:
       - ts-node
 
@@ -10286,7 +10286,7 @@ snapshots:
 
   symbol-tree@3.2.4: {}
 
-  tailwindcss@4.0.0: {}
+  tailwindcss@4.0.14: {}
 
   tapable@2.2.1: {}
 
