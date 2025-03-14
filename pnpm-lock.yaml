@@ -18,8 +18,8 @@ importers:
         specifier: ^4.1.2
         version: 4.2.1(@types/node@22.10.2)(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(jiti@1.21.7)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(terser@5.39.0)(yaml@2.7.0)
       '@astrojs/tailwind':
-        specifier: ^5.1.4
-        version: 5.1.5(astro@5.5.2(@netlify/blobs@8.1.1)(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.35.0)(terser@5.39.0)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@4.0.14)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))
+        specifier: ^6.0.0
+        version: 6.0.0(astro@5.5.2(@netlify/blobs@8.1.1)(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.35.0)(terser@5.39.0)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@4.0.14)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))
       '@babel/preset-env':
         specifier: ^7.26.0
         version: 7.26.9(@babel/core@7.26.0)
@@ -199,8 +199,8 @@ packages:
       react: ^17.0.2 || ^18.0.0 || ^19.0.0
       react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0
 
-  '@astrojs/tailwind@5.1.5':
-    resolution: {integrity: sha512-1diguZEau7FZ9vIjzE4BwavGdhD3+JkdS8zmibl1ene+EHgIU5hI0NMgRYG3yea+Niaf7cyMwjeWeLvzq/maxg==}
+  '@astrojs/tailwind@6.0.0':
+    resolution: {integrity: sha512-GbEK2/h0nvY8i6g1GZT5ddHAgj71lQIf34/j7+jPLhUti3xDxKcWElApDe2jWvqAaKl2oKEh045ITSm8mU9BVQ==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0
       tailwindcss: ^3.0.24
@@ -2312,9 +2312,6 @@ packages:
     resolution: {integrity: sha512-vBQ5Daxv4KRsn07U/VqkPxoqD8U+S++0oq5NLf4HevMuh/BDta3rg49e/P564AMzFPBePQeXDKOkiIezRgyDwg==}
     peerDependencies:
       three: '>=0.126.1'
-
-  caniuse-lite@1.0.30001695:
-    resolution: {integrity: sha512-vHyLade6wTgI2u1ec3WQBxv+2BrTERV28UXQu9LO6lZ9pYeMk34vjXFLOxo1A4UBA8XTL4njRQZdno/yYaSmWw==}
 
   caniuse-lite@1.0.30001704:
     resolution: {integrity: sha512-+L2IgBbV6gXB4ETf0keSvLr7JUrRVbIaB/lrQ1+z8mRcQiisG5k+lG6O4n6Y5q6f5EuNfaYXKgymucphlEXQew==}
@@ -5341,12 +5338,12 @@ snapshots:
       - tsx
       - yaml
 
-  '@astrojs/tailwind@5.1.5(astro@5.5.2(@netlify/blobs@8.1.1)(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.35.0)(terser@5.39.0)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@4.0.14)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))':
+  '@astrojs/tailwind@6.0.0(astro@5.5.2(@netlify/blobs@8.1.1)(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.35.0)(terser@5.39.0)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@4.0.14)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))':
     dependencies:
       astro: 5.5.2(@netlify/blobs@8.1.1)(@types/node@22.10.2)(jiti@1.21.7)(rollup@4.35.0)(terser@5.39.0)(typescript@5.7.3)(yaml@2.7.0)
-      autoprefixer: 10.4.20(postcss@8.5.1)
-      postcss: 8.5.1
-      postcss-load-config: 4.0.2(postcss@8.5.1)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))
+      autoprefixer: 10.4.20(postcss@8.5.3)
+      postcss: 8.5.3
+      postcss-load-config: 4.0.2(postcss@8.5.3)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3))
       tailwindcss: 4.0.14
     transitivePeerDependencies:
       - ts-node
@@ -7584,14 +7581,14 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  autoprefixer@10.4.20(postcss@8.5.1):
+  autoprefixer@10.4.20(postcss@8.5.3):
     dependencies:
       browserslist: 4.24.4
-      caniuse-lite: 1.0.30001695
+      caniuse-lite: 1.0.30001704
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.1
-      postcss: 8.5.1
+      postcss: 8.5.3
       postcss-value-parser: 4.2.0
 
   axobject-query@4.1.0: {}
@@ -7748,8 +7745,6 @@ snapshots:
   camera-controls@2.10.0(three@0.174.0):
     dependencies:
       three: 0.174.0
-
-  caniuse-lite@1.0.30001695: {}
 
   caniuse-lite@1.0.30001704: {}
 
@@ -9703,12 +9698,12 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.2
 
-  postcss-load-config@4.0.2(postcss@8.5.1)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3)):
+  postcss-load-config@4.0.2(postcss@8.5.3)(ts-node@10.9.2(@types/node@22.10.2)(typescript@5.7.3)):
     dependencies:
       lilconfig: 3.1.3
       yaml: 2.7.0
     optionalDependencies:
-      postcss: 8.5.1
+      postcss: 8.5.3
       ts-node: 10.9.2(@types/node@22.10.2)(typescript@5.7.3)
 
   postcss-value-parser@4.2.0: {}
