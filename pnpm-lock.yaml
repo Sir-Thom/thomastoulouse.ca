@@ -28,10 +28,10 @@ importers:
         version: 7.26.3(@babel/core@7.26.10)
       '@react-three/drei':
         specifier: ^10.0.0
-        version: 10.0.5(@react-three/fiber@9.1.0(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.0.12)(@types/three@0.175.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
+        version: 10.0.5(@react-three/fiber@9.1.1(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.0.12)(@types/three@0.175.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
       '@react-three/fiber':
-        specifier: 9.1.0
-        version: 9.1.0(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
+        specifier: 9.1.1
+        version: 9.1.1(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
       astro:
         specifier: ^5.0.0
         version: 5.5.6(@netlify/blobs@8.1.2)(@types/node@22.13.16)(rollup@4.38.0)(terser@5.39.0)(typescript@5.8.2)(yaml@2.7.1)
@@ -1316,8 +1316,8 @@ packages:
       react-dom:
         optional: true
 
-  '@react-three/fiber@9.1.0':
-    resolution: {integrity: sha512-r/a0dpqdz5ci17yMIWE+70WwxiTScGFEyvtDj0o4isZ7YUvPu0k78Zl7cJGL+KhheKXCzbNNxEz4+lFan6atyg==}
+  '@react-three/fiber@9.1.1':
+    resolution: {integrity: sha512-S0De6e7xnlZd2QmnBm2rZVXxlknynCSAoCW1M8fF2yH93Q/cra3xwH8rAq4CMqNARsotbZSU/eNPGY/rdQaAhA==}
     peerDependencies:
       expo: '>=43.0'
       expo-asset: '>=8.4'
@@ -6230,12 +6230,12 @@ snapshots:
     dependencies:
       playwright: 1.51.1
 
-  '@react-three/drei@10.0.5(@react-three/fiber@9.1.0(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.0.12)(@types/three@0.175.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)':
+  '@react-three/drei@10.0.5(@react-three/fiber@9.1.1(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.0.12)(@types/three@0.175.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@mediapipe/tasks-vision': 0.10.17
       '@monogrid/gainmap-js': 3.1.0(three@0.175.0)
-      '@react-three/fiber': 9.1.0(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
+      '@react-three/fiber': 9.1.1(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
       '@use-gesture/react': 10.3.1(react@19.1.0)
       camera-controls: 2.10.0(three@0.175.0)
       cross-env: 7.0.3
@@ -6263,7 +6263,7 @@ snapshots:
       - '@types/three'
       - immer
 
-  '@react-three/fiber@9.1.0(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)':
+  '@react-three/fiber@9.1.1(@types/react@19.0.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@types/react-reconciler': 0.28.9(@types/react@19.0.12)
