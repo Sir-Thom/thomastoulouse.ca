@@ -1,16 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+	--color-dark-50: #4b4b4b;
+	--color-dark-100: #454545;
+	--color-dark-200: #404040;
+	--color-dark-300: #3b3b3b;
+	--color-dark-400: #353535;
+	--color-dark-500: #303030;
+	--color-dark-600: #2b2b2b;
+	--color-dark-700: #252525;
+	--color-dark-800: #212121;
+	--color-dark-900: #1c1c1c;
+
+	--color-light-50: #ffffff;
+	--color-light-100: #fdfdfd;
+	--color-light-200: #fcfcfc;
+	--color-light-300: #fafafa;
+	--color-light-400: #f5f5f5;
+	--color-light-500: #d9d9d9;
+	--color-light-600: #bfbfbf;
+	--color-light-700: #a6a6a6;
+	--color-light-800: #8c8c8c;
+	--color-light-900: #737373;
+
+	--color-accent-1: #663399;
+	--color-accent-2: #993366;
+	--color-accent-3: #669933;
+}
+
 @layer components {
 	:root {
-		@apply bg-gradient-to-b from-dark-900 to-dark-700 text-white;
+		@apply from-dark-900 to-dark-700 bg-gradient-to-b text-white;
 	}
-	.underline-gradiant {
-		@apply rounded-md bg-gradient-to-r from-accent-1 to-accent-2 bg-[length:100%_6px] bg-bottom bg-no-repeat bg-blend-multiply shadow-md;
+	.underline-gradient {
+		@apply from-accent-1 to-accent-2 rounded-md bg-gradient-to-r bg-[length:100%_6px] bg-bottom bg-no-repeat bg-blend-multiply shadow-md;
 	}
 	@media (prefers-color-scheme: light) {
 		:root {
-			@apply bg-gradient-to-b from-light-100 to-light-400 text-black;
+			@apply from-light-100 to-light-400 bg-gradient-to-b text-black;
 		}
 	}
 }
