@@ -28,7 +28,7 @@ importers:
         version: 7.26.3(@babel/core@7.26.10)
       '@react-three/drei':
         specifier: ^10.0.5
-        version: 10.0.5(@react-three/fiber@9.1.1(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(@types/three@0.175.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
+        version: 10.0.6(@react-three/fiber@9.1.1(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(@types/three@0.175.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
       '@react-three/fiber':
         specifier: 9.1.1
         version: 9.1.1(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
@@ -1318,8 +1318,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@react-three/drei@10.0.5':
-    resolution: {integrity: sha512-zK1QOm5g46RANYUKlf6qZQg+n+qyBWT1sOUfHNwXf6L2Cn4cgxMpJV4Lue7IyytAZXUCzhGAgPiG13D0hKH1Gg==}
+  '@react-three/drei@10.0.6':
+    resolution: {integrity: sha512-QtiAv/a1BaP+ZYfp8BphV8BMSO0O1BNhIPye3Zqm5iDqgX6JeiknPR6f2UmzUdBfPLwjZEaqjfULgJFvTUWgkg==}
     peerDependencies:
       '@react-three/fiber': ^9.0.0
       react: ^19
@@ -2730,8 +2730,8 @@ packages:
   hastscript@9.0.1:
     resolution: {integrity: sha512-g7df9rMFX/SPi34tyGCyUBREQoKkapwdY/T04Qn9TDWfHhAYt4/I0gMVirzK5wEzeUqIjEB+LXC/ypb7Aqno5w==}
 
-  hls.js@1.6.0:
-    resolution: {integrity: sha512-AlW8ymcDKZuKtzXCUmEy4nOcHRkebnShH6t6hC2+QJQP0WXlTUSSO9Kp22uSEYdCgpwkXEJsfOhqxrgO2tDctQ==}
+  hls.js@1.6.1:
+    resolution: {integrity: sha512-7GOkcqn0Y9EqU2OJZlzkwxj9Uynuln7URvr7dRjgqNJNZ5UbbjL/v1BjAvQogy57Psdd/ek1u2s6IDEFYlabrA==}
 
   hosted-git-info@7.0.2:
     resolution: {integrity: sha512-puUZAUKT5m8Zzvs72XWy3HtvVbTWljRE66cP60bxJzAqf2DgICo7lYTY2IHUmLnNpjYvw5bvmoHvPc0QO2a62w==}
@@ -4327,13 +4327,13 @@ packages:
   trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
 
-  troika-three-text@0.52.3:
-    resolution: {integrity: sha512-jLhiwgV8kEkwWjvK12f2fHVpbOC75p7SgPQ0cgcz+IMtN5Bdyg4EuFdwuTOVu9ga8UeYdKBpzd1AxviyixtYTQ==}
+  troika-three-text@0.52.4:
+    resolution: {integrity: sha512-V50EwcYGruV5rUZ9F4aNsrytGdKcXKALjEtQXIOBfhVoZU9VAqZNIoGQ3TMiooVqFAbR1w15T+f+8gkzoFzawg==}
     peerDependencies:
       three: '>=0.125.0'
 
-  troika-three-utils@0.52.0:
-    resolution: {integrity: sha512-00oxqIIehtEKInOTQekgyknBuRUj1POfOUE2q1OmL+Xlpp4gIu+S0oA0schTyXsDS4d9DkR04iqCdD40rF5R6w==}
+  troika-three-utils@0.52.4:
+    resolution: {integrity: sha512-NORAStSVa/BDiG52Mfudk4j1FG4jC4ILutB3foPnfGbOeIs9+G5vZLa0pnmnaftZUGm4UwSoqEpWdqvC7zms3A==}
     peerDependencies:
       three: '>=0.125.0'
 
@@ -6394,7 +6394,7 @@ snapshots:
     dependencies:
       playwright: 1.51.1
 
-  '@react-three/drei@10.0.5(@react-three/fiber@9.1.1(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(@types/three@0.175.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)':
+  '@react-three/drei@10.0.6(@react-three/fiber@9.1.1(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(@types/three@0.175.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.175.0)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@mediapipe/tasks-vision': 0.10.17
@@ -6405,7 +6405,7 @@ snapshots:
       cross-env: 7.0.3
       detect-gpu: 5.0.70
       glsl-noise: 0.0.0
-      hls.js: 1.6.0
+      hls.js: 1.6.1
       maath: 0.10.8(@types/three@0.175.0)(three@0.175.0)
       meshline: 3.3.1(three@0.175.0)
       react: 19.1.0
@@ -6415,7 +6415,7 @@ snapshots:
       three: 0.175.0
       three-mesh-bvh: 0.8.3(three@0.175.0)
       three-stdlib: 2.35.14(three@0.175.0)
-      troika-three-text: 0.52.3(three@0.175.0)
+      troika-three-text: 0.52.4(three@0.175.0)
       tunnel-rat: 0.1.2(@types/react@19.1.0)(react@19.1.0)
       use-sync-external-store: 1.5.0(react@19.1.0)
       utility-types: 3.11.0
@@ -8012,7 +8012,7 @@ snapshots:
       property-information: 7.0.0
       space-separated-tokens: 2.0.2
 
-  hls.js@1.6.0: {}
+  hls.js@1.6.1: {}
 
   hosted-git-info@7.0.2:
     dependencies:
@@ -9975,15 +9975,15 @@ snapshots:
 
   trim-lines@3.0.1: {}
 
-  troika-three-text@0.52.3(three@0.175.0):
+  troika-three-text@0.52.4(three@0.175.0):
     dependencies:
       bidi-js: 1.0.3
       three: 0.175.0
-      troika-three-utils: 0.52.0(three@0.175.0)
+      troika-three-utils: 0.52.4(three@0.175.0)
       troika-worker-utils: 0.52.0
       webgl-sdf-generator: 1.1.1
 
-  troika-three-utils@0.52.0(three@0.175.0):
+  troika-three-utils@0.52.4(three@0.175.0):
     dependencies:
       three: 0.175.0
 
