@@ -20,7 +20,7 @@ export default function LanguageSelector() {
 	};
 
 	return (
-		<div className="flex items-center rounded-xl bg-transparent dark:bg-transparent">
+		<div className="flex items-center  font-sans rounded-xl bg-transparent dark:bg-transparent">
 			<AiOutlineGlobal size={24} />
 			<select
 				className="ml-2 rounded-xl bg-transparent py-2 dark:bg-transparent"

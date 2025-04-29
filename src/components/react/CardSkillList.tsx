@@ -4,7 +4,7 @@ import React from "react";
 
 function CardList({ cards, currentCard }: ICardProps) {
 	return (
-		<div className="bg-light-400 shadow-LapisLazuli-800 dark:border-dark-50 dark:bg-dark-600 flex h-auto flex-grow items-center justify-between gap-4 rounded-lg border-2 p-6 shadow-lg">
+		<div className="bg-light-400 shadow-lapis-lazuli-800 dark:border-dark-50 dark:bg-dark-600 flex h-auto flex-grow items-center justify-between gap-4 rounded-lg border-2 p-6 shadow-lg">
 			{cards.map((card, index) => (
 				<motion.div
 					key={index}
