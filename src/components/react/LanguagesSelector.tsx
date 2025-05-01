@@ -9,6 +9,13 @@ export default function LanguageSelector() {
 
 	const handleLanguageChange = (event: { target: { value: any } }) => {
 		const selectedLanguageCode = event.target.value;
+		
+		// Validate the selected language code
+		if (!Object.keys(languages).includes(selectedLanguageCode)) {
+			console.warn(`Invalid language code: ${selectedLanguageCode}`);
+			return; // Exit the function if the value is invalid
+		}
+
 		const currentPathname = url.pathname;
 		const currentHash = url.hash;
 		// some big ball regex skill flexing there :D
