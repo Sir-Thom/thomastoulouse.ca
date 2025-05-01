@@ -54,7 +54,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 			<p className="text-gray-200">{description}</p>
 
 			<div className="rounded-mdl absolute right-0 bottom-0 m-2 p-2 text-white">
-				<div className="text-xxl flex font-semibold font-sans  text-white">{languageIconsList}</div>
+				<div className="text-xxl flex font-sans font-semibold text-white">{languageIconsList}</div>
 			</div>
 			{!showGithubIcon && (
 				<svg
