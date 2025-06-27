@@ -27,7 +27,7 @@
 		"babel-jest": "^30.0.0",
 		"devicons-react": "^1.4.1",
 		"dompurify": "^3.2.5",
-		"dotenv": "^16.5.0",
+		"dotenv": "^17.0.0",
 		"framer-motion": "^12.9.4",
 		"prettier": "^3.5.3",
 		"prettier-plugin-astro": "^0.14.1",
