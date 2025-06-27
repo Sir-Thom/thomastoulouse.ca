@@ -116,7 +116,7 @@ importers:
         version: 0.177.0
       dotenv-webpack:
         specifier: ^8.1.0
-        version: 8.1.0(webpack@5.99.9)
+        version: 8.1.1(webpack@5.99.9)
       gltfjsx:
         specifier: ^6.5.3
         version: 6.5.3
@@ -2848,8 +2848,8 @@ packages:
   dotenv-defaults@2.0.2:
     resolution: {integrity: sha512-iOIzovWfsUHU91L5i8bJce3NYK5JXeAwH50Jh6+ARUdLiiGlYWfGw6UkzsYqaXZH/hjE/eCd/PlfM/qqyK0AMg==}
 
-  dotenv-webpack@8.1.0:
-    resolution: {integrity: sha512-owK1JcsPkIobeqjVrk6h7jPED/W6ZpdFsMPR+5ursB7/SdgDyO+VzAU+szK8C8u3qUhtENyYnj8eyXMR5kkGag==}
+  dotenv-webpack@8.1.1:
+    resolution: {integrity: sha512-+TY/AJ2k9bU2EML3mxgLmaAvEcqs1Wbv6deCIUSI3eW3Xeo8LBQumYib6puyaSwbjC9JCzg/y5Pwjd/lePX04w==}
     engines: {node: '>=10'}
     peerDependencies:
       webpack: ^4 || ^5
@@ -9037,7 +9037,7 @@ snapshots:
     dependencies:
       dotenv: 8.6.0
 
-  dotenv-webpack@8.1.0(webpack@5.99.9):
+  dotenv-webpack@8.1.1(webpack@5.99.9):
     dependencies:
       dotenv-defaults: 2.0.2
       webpack: 5.99.9
