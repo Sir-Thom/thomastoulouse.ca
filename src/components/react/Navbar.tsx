@@ -21,12 +21,12 @@ export default function Navbar() {
 	const LazyContactMe = lazy(() => import("./ContactMe"));
 
 	return (
-		<nav className="bg-LapisLazuli-400 font-futura-pt fixed top-0 z-30 flex w-full flex-wrap items-center justify-between py-2 text-white lg:flex-wrap lg:justify-start lg:py-4">
+		<nav className="bg-LapisLazuli-400 font-sans fixed top-0 z-30 flex w-full flex-wrap items-center justify-between py-2 text-white lg:flex-wrap lg:justify-start lg:py-4">
 			<div className="flex w-full flex-wrap items-center justify-between px-3">
 				<a
 					rel="prefetch-intent"
 					href={`/${lang}/`}
-					className="hover:underline-gradiant font-futura-pt justify-center text-center text-xl font-bold transition-all duration-300 hover:scale-110 active:scale-90 dark:text-white"
+					className="hover:underline-gradiant font-sans justify-center text-center text-xl font-bold transition-all duration-300 hover:scale-110 active:scale-90 dark:text-white"
 				>
 					Thomas Toulouse
 				</a>
@@ -47,31 +47,31 @@ export default function Navbar() {
 					<div className="h-fit w-fit justify-center lg:flex-grow">
 						<a
 							href={`#apropos`}
-							className="hover:underline-gradiant font-futura-pt mt-4 mr-4 block font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
+							className="hover:underline-gradiant font-sans mt-4 mr-4 block font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("about.title")}
 						</a>
 						<a
 							href={`#skillSection`}
-							className="hover:underline-gradiant font-futura-pt mt-4 mr-4 block font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
+							className="hover:underline-gradiant font-sans mt-4 mr-4 block font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("skills.title")}
 						</a>
 						<a
 							href={`#experienceSection`}
-							className="hover:underline-gradiant font-futura-pt mt-4 mr-4 block font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
+							className="hover:underline-gradiant font-sans mt-4 mr-4 block font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("experience.title")}
 						</a>
 						<a
 							href={`#educationSection`}
-							className="hover:underline-gradiant font-futura-pt mt-4 mr-4 block font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
+							className="hover:underline-gradiant font-sans mt-4 mr-4 block font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("education.title")}
 						</a>
 						<a
 							href={`#projectSection`}
-							className="hover:underline-gradiant font-futura-pt mt-4 mr-4 block font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
+							className="hover:underline-gradiant font-sans mt-4 mr-4 block font-semibold transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0 lg:inline-block"
 						>
 							{t("project.title")}
 						</a>
