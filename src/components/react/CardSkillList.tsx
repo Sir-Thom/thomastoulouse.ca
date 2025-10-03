@@ -4,7 +4,7 @@ import React from "react";
 
 function CardList({ cards, currentCard }: ICardProps) {
 	return (
-		<div className="flex h-auto flex-grow items-center justify-between gap-4 rounded-lg border-2 bg-light-400 p-6 shadow-lg shadow-LapisLazuli-800 dark:border-dark-50 dark:bg-dark-600">
+		<div className="bg-light-400 shadow-LapisLazuli-800 dark:border-dark-50 dark:bg-dark-600 flex h-auto flex-grow items-center justify-between gap-4 rounded-lg border-2 p-6 shadow-lg">
 			{cards.map((card, index) => (
 				<motion.div
 					key={index}
@@ -24,10 +24,10 @@ function CardList({ cards, currentCard }: ICardProps) {
 							loading="lazy"
 							decoding="async"
 						/>
-						<h2 className="ml-5 mt-2 text-xl font-semibold text-black dark:text-white">
+						<h2 className="mt-2 ml-5 text-xl font-semibold text-black dark:text-white">
 							{card.title}
 						</h2>
-						<p className="ml-5 mr-5 mt-10 break-after-left text-lg text-black dark:text-white">
+						<p className="mt-10 mr-5 ml-5 break-after-left text-lg text-black dark:text-white">
 							{card.description}
 						</p>
 					</div>

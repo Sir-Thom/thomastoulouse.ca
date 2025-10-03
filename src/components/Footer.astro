@@ -29,14 +29,14 @@ const lang: any = getLangFromUrl(Astro.url).toString();
 const licenseURL = getLicenseURL(lang);
 ---
 
-<footer class="h-auto bg-light-500 py-10 text-black dark:bg-dark-800 dark:text-white">
+<footer class="bg-light-500 dark:bg-dark-800 h-auto py-10 text-black dark:text-white">
 	<div class="container mx-auto px-4">
 		<div class="flex flex-col items-center justify-between md:flex-row">
 			<div class="mb-4 md:mb-0">
 				<span class="justify-center text-center text-2xl font-bold text-black dark:text-white"
 					>{title}</span
 				>
-				<div class="mb-4 mt-2 flex items-center text-center">
+				<div class="mt-2 mb-4 flex items-center text-center">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						height="1em"
@@ -49,12 +49,12 @@ const licenseURL = getLicenseURL(lang);
 					>
 					<a
 						href={licenseURL}
-						class="ml-2 text-center text-sm italic text-black decoration-LapisLazuli-500 decoration-2 hover:underline dark:text-white"
+						class="decoration-LapisLazuli-500 ml-2 text-center text-sm text-black italic decoration-2 hover:underline dark:text-white"
 					>
 						{license}
 					</a>
 				</div>
-				<div class="mb-4 mt-2 flex flex-none items-center text-base">
+				<div class="mt-2 mb-4 flex flex-none items-center text-base">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						height="1em"
@@ -68,39 +68,39 @@ const licenseURL = getLicenseURL(lang);
 					</svg>
 					<a
 						href={source}
-						class="ml-2 text-sm italic text-black decoration-LapisLazuli-500 decoration-2 hover:underline dark:text-white"
+						class="decoration-LapisLazuli-500 ml-2 text-sm text-black italic decoration-2 hover:underline dark:text-white"
 						>{source}</a
 					>
 				</div>
 			</div>
-			<div class="mx-4 mb-4 mt-4 inline-flex flex-wrap md:mt-0">
+			<div class="mx-4 mt-4 mb-4 inline-flex flex-wrap md:mt-0">
 				<a
 					href={`/${lang}#apropos`}
-					class="hover:underline-gradiant px-3 py-2 text-black hover:text-LapisLazuli-400 dark:text-white"
+					class="hover:underline-gradiant hover:text-LapisLazuli-400 px-3 py-2 text-black dark:text-white"
 					>{subtitle1}</a
 				>
 				<a
 					href={`/${lang}#skillSection`}
-					class="hover:underline-gradiant px-3 py-2 text-black hover:text-LapisLazuli-400 dark:text-white"
+					class="hover:underline-gradiant hover:text-LapisLazuli-400 px-3 py-2 text-black dark:text-white"
 					>{subtitle2}</a
 				>
 				<a
 					href={`/${lang}#experienceSection`}
-					class="hover:underline-gradiant px-3 py-2 text-black hover:text-LapisLazuli-400 dark:text-white"
+					class="hover:underline-gradiant hover:text-LapisLazuli-400 px-3 py-2 text-black dark:text-white"
 					>{subtitle3}</a
 				>
 				<a
 					href={`/${lang}#educationSection`}
-					class="hover:underline-gradiant px-3 py-2 text-black hover:text-LapisLazuli-400 dark:text-white"
+					class="hover:underline-gradiant hover:text-LapisLazuli-400 px-3 py-2 text-black dark:text-white"
 					>{subtitle4}</a
 				>
 				<a
 					href={`/${lang}#projectSection`}
-					class="hover:underline-gradiant px-3 py-2 text-black hover:text-LapisLazuli-400 dark:text-white"
+					class="hover:underline-gradiant hover:text-LapisLazuli-400 px-3 py-2 text-black dark:text-white"
 					>{subtitle5}</a
 				>
 			</div>
-			<div class="mb-2 mt-2 flex items-center">
+			<div class="mt-2 mb-2 flex items-center">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					height="1em"
@@ -113,7 +113,7 @@ const licenseURL = getLicenseURL(lang);
 				>
 				<span class="ml-2 text-black dark:text-white">{phone}</span>
 			</div>
-			<div class="mx-4 mb-2 mt-2 flex flex-grow items-center">
+			<div class="mx-4 mt-2 mb-2 flex flex-grow items-center">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					height="1em"
@@ -127,7 +127,7 @@ const licenseURL = getLicenseURL(lang);
 				</svg>
 				<a
 					href=`mailto:${email}?subject=Offre de stage/Emplois`
-					class="ml-4 mr-2 whitespace-nowrap decoration-LapisLazuli-500 decoration-2 hover:underline"
+					class="decoration-LapisLazuli-500 mr-2 ml-4 whitespace-nowrap decoration-2 hover:underline"
 					>{email}</a
 				>
 			</div>

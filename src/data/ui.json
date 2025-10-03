@@ -2,7 +2,7 @@
 	"en": {
 		"hero": {
 			"titleMain": "Hello, my name is",
-			"body": "I am a first-year computer science student at the university of Sherbrooke. I consider myself to be disciplined, curious, and punctual. I am eager to learn new technologies and enhance my skills with your company. Moreover, I am someone who can be completely trusted. I am hardworking, and I believe I can be an effective employee for your company."
+			"body": "I am a second-year student in Management Information Systems at the University of Sherbrooke, passionate about software development and emerging technologies. Rigorous, curious, and reliable, I am looking to deepen my technical skills while contributing to real-world projects."
 		},
 		"project": {
 			"title": "Projects",
@@ -72,19 +72,36 @@
 				}
 			]
 		},
-		"experience": {
-			"title": "Experience",
-			"experiencesList": [
-				{
-					"title": "CDID",
-					"description": "Intern programmer analyst | 2024/01/08-2024/05/20"
-				},
-				{
-					"title": "Walmart",
-					"description": "shopping cart Attendant | 09/2020-today"
-				}
-			]
-		},
+"experience": {
+  "title": "Experience",
+  "experiencesList": [
+    {
+      "title": "Walmart",
+      "role": "Shopping cart attendant",
+      "period": "09/2020-Today",
+      "tasks": [
+        "Managing colleagues and ensuring cart availability",
+        "Collecting shopping carts from the parking lot"
+      ]
+    },
+	    {
+      "title": "CDID",
+      "role": "Intern programmer analyst",
+      "period": "2024/01/08-2024/05/20",
+      "tasks": [
+        "Development and improvement of applications in ASP",
+        "Collaboration with an agile team to analyze and solve technical problems",
+        "Code optimization to improve application performance"
+      ],
+      "project": [
+        "Creation of widgets such as a clock with different styles",
+        "Creation of a suggestion list widget",
+        "Creation of a markdown-enabled notepad widget"
+      ]
+    }
+  ]
+},
+
 		"education": {
 			"title": "Education",
 			"educationsList": [
@@ -144,6 +161,26 @@
 				{
 					"title": "C ++",
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/cpp_logo.webp"
+				},
+					{
+					"title": "Docker",
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/docker-mark-blue.svg"
+				},
+				{
+					"title": "Git",
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/Git-Icon.svg"
+				},
+				{
+					"title":"Go",
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/Go-Logo_Blue.svg"
+				},
+				{
+					"title":"TypeScript",
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/ts-logo-128.svg"
+				},
+				{
+					"title":"VB.NET",
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/VB.NET_Logo.svg"
 				}
 			]
 		},
@@ -158,7 +195,7 @@
 	"fr": {
 		"hero": {
 			"titleMain": "Bonjour je m'appelle",
-			"body": "Je suis un étudiant de première année en informatique de gestion à l'université de Sherbrooke. Je me considère comme étant quelqu’un de discipliné, curieux et ponctuel. Je suis prêt à apprendre plein de nouvelles technologies et à améliorer mes compétences avec votre entreprise. De plus, Je suis quelqu'un en qui on peut avoir totalement confiance. Je suis très travaillant et je suis persuadé que je peux être un employé efficace pour votre compagnie."
+			"body": "Je suis un étudiant en deuxième année de baccalauréat en informatique de gestion à l’Université de Sherbrooke, passionné par le développement logiciel et les nouvelles technologies. Rigoureux, curieux et fiable, je cherche à approfondir mes compétences techniques tout en contribuant à des projets concrets."
 		},
 		"project": {
 			"title": "Projets",
@@ -229,18 +266,35 @@
 			]
 		},
 		"experience": {
-			"title": "Expérience",
-			"experiencesList": [
-				{
-					"title": "CDID",
-					"description": "Stagiaire programmeur-analyste | 2024/01/08-2024/05/20"
-				},
-				{
-					"title": "Walmart",
-					"description": "Préposé aux paniers | 09/2020-aujourd'hui"
-				}
-			]
-		},
+  "title": "Expérience",
+  "experiencesList": [
+  
+    {
+      "title": "Walmart",
+      "role": "Préposé aux paniers",
+      "period": "09/2020-Aujourd'hui",
+      "tasks": [
+        "Gérer les collègues aux paniers",
+        "Ramasser les paniers dans le stationnement"
+      ]
+    },  
+	{
+      "title": "CDID",
+      "role": "Stagiaire programmeur-analyste",
+      "period": "2024/01/08-2024/05/20",
+      "tasks": [
+        "Développement et amélioration d’applications en ASP",
+        "Collaboration avec une équipe agile pour analyser et résoudre des problématiques techniques",
+        "Optimisation du code pour améliorer la performance des applications"
+      ],
+      "project": [
+        "Création de widgets tel qu’une horloge avec différents styles",
+        "Création d’un widget pour lister des suggestions",
+        "Création d’un widget bloc-notes prenant en compte le Markdown"
+      ]
+    }
+  ]
+},
 		"education": {
 			"title": "Éducation",
 			"educationsList": [
@@ -300,6 +354,26 @@
 				{
 					"title": "C ++",
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/cpp_logo.webp"
+				},
+				{
+					"title": "Docker",
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/docker-mark-blue.svg"
+				},
+				{
+					"title": "Git",
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/Git-Icon.svg"
+				},
+				{
+					"title":"Go",
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/Go-Logo_Blue.svg"
+				},
+				{
+					"title":"TypeScript",
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/ts-logo-128.svg"
+				},
+				{
+					"title":"VB.NET",
+					"image": "/assets/icons/ProgrammingLanguagesAndTool/VB.NET_Logo.svg"
 				}
 			]
 		},

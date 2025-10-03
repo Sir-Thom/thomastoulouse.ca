@@ -3,14 +3,14 @@
 @tailwind utilities;
 @layer components {
 	:root {
-		@apply bg-gradient-to-b from-dark-900 to-dark-700 text-white;
+		@apply from-dark-900 to-dark-700 bg-gradient-to-b text-white;
 	}
 	.underline-gradiant {
-		@apply rounded-md bg-gradient-to-r from-accent-1 to-accent-2 bg-[length:100%_6px] bg-bottom bg-no-repeat bg-blend-multiply shadow-md;
+		@apply from-accent-1 to-accent-2 rounded-md bg-gradient-to-r bg-[length:100%_6px] bg-bottom bg-no-repeat bg-blend-multiply shadow-md;
 	}
 	@media (prefers-color-scheme: light) {
 		:root {
-			@apply bg-gradient-to-b from-light-100 to-light-400 text-black;
+			@apply from-light-100 to-light-400 bg-gradient-to-b text-black;
 		}
 	}
 }
