@@ -21,7 +21,7 @@ const { title, href } = Astro.props;
 					{title}
 				</h1>
 				<div class="flex flex-wrap justify-center gap-8">
-					{education.map((edu) => <Card title={edu.title} description={edu.description} />)}
+					{education.map((edu) => <Card title={edu.title} period={edu.period} description={edu.description} />)}
 				</div>
 			</div>
 		</div>

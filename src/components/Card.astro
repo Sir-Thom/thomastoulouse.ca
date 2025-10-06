@@ -1,9 +1,13 @@
 ---
 export interface Props {
-	title: string;
-	description: string;
+	title: string;            // ex: "Stagiaire programmeur-analyste, CDID, Saint-George"
+	period: string;           // ex: "Janvier 2024 — Mai 2024"
+	description?: string;     // phrase d'intro si tu veux
+	tasks?: string[];         // liste de responsabilités
+	project?: string[];       // liste de réalisations de projet
 }
-const { title, description } = Astro.props;
+
+const { title, period, description, tasks = [], project = [] } = Astro.props;
 ---
 
 <div
@@ -12,7 +16,28 @@ const { title, description } = Astro.props;
 	<h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
 		{title}
 	</h2>
-	<p class="text-gray-700 dark:text-gray-400">
-		{description}
-	</p>
+	<p class="text-gray-500 dark:text-gray-400 text-sm mb-3">{period}</p>
+
+	{description && (
+		<p class="text-gray-700 dark:text-gray-300 mb-3">{description}</p>
+	)}
+
+	{tasks.length > 0 && (
+		<ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 mb-3">
+			{tasks.map((task) => (
+				<li>{task}</li>
+			))}
+		</ul>
+	)}
+
+	{project.length > 0 && (
+		<div class="mt-2">
+			<h3 class="text-gray-900 dark:text-gray-100 font-semibold mb-1">Projet de stage :</h3>
+			<ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+				{project.map((item) => (
+					<li>{item}</li>
+				))}
+			</ul>
+		</div>
+	)}
 </div>

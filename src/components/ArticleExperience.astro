@@ -19,9 +19,18 @@ const { title, href } = Astro.props;
 				<h1 class="mb-6 text-4xl font-bold tracking-tight md:text-6xl">
 					{title}
 				</h1>
-				<div data-astro-prefetch="hover" class="flex flex-wrap justify-center gap-8">
-					<Card title={experiences[0].title} description={experiences[0].description} />
-					<Card title={experiences[1].title} description={experiences[1].description} />
+				<div
+					data-astro-prefetch="hover"
+					class="flex flex-wrap justify-center gap-8"
+				>
+					{experiences.map((exp) => (
+						<Card
+							title={`${exp.title} - ${exp.role}`}
+							description={exp.period}
+							tasks={exp.tasks}
+							project={exp.project}
+						/>
+					))}
 				</div>
 			</div>
 		</div>
