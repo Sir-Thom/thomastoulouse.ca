@@ -10,7 +10,7 @@ export default function ContactMe() {
 	return (
 		<>
 			<button
-				className="bg-IlluminatingEmerald-normal hover:bg-IlluminatingEmerald-hover active:bg-IlluminatingEmerald-pressed mt-4 mr-4 flex items-center rounded px-4 py-2 font-semibold transition-all duration-300 hover:scale-110 hover:text-white active:scale-90 lg:mt-0 lg:inline-flex"
+				className="bg-illuminating-emerald-normal hover:bg-illuminating-emerald-hover active:bg-illuminating-emerald-pressed mt-4 mr-4 flex items-center rounded px-4 py-2 font-sans font-semibold transition-all duration-300 hover:scale-110 hover:text-white active:scale-90 lg:mt-0 lg:inline-flex"
 				onClick={EmailMe}
 			>
 				{t("btn.contactme")}

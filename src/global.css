@@ -1,16 +1,113 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer components {
+/* global.css */
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	/* Base colors */
+	--color-black: #000;
+	--color-white: #fff;
+	--color-transparent: transparent;
+	--color-current: currentColor;
+
+	/* Neutral */
+	--color-neutral-200: #cdced0;
+
+	/* Accent colors */
+	--color-accent-1: #663399;
+	--color-accent-2: #993366;
+	--color-accent-3: #669933;
+
+	/* Dark palette */
+	--color-dark-50: #4b4b4b;
+	--color-dark-100: #454545;
+	--color-dark-200: #404040;
+	--color-dark-300: #3b3b3b;
+	--color-dark-400: #353535;
+	--color-dark-500: #303030;
+	--color-dark-600: #2b2b2b;
+	--color-dark-700: #252525;
+	--color-dark-800: #212121;
+	--color-dark-900: #1c1c1c;
+
+	/* Light palette */
+	--color-light-50: #ffffff;
+	--color-light-100: #fdfdfd;
+	--color-light-200: #fcfcfc;
+	--color-light-300: #fafafa;
+	--color-light-400: #f5f5f5;
+	--color-light-500: #d9d9d9;
+	--color-light-600: #bfbfbf;
+	--color-light-700: #a6a6a6;
+	--color-light-800: #8c8c8c;
+	--color-light-900: #737373;
+
+	/* Special colors */
+	--color-illuminating-emerald-pressed: #246b47;
+	--color-illuminating-emerald-normal: #339966;
+	--color-illuminating-emerald-hover: #297a52;
+	--color-amaranth-deep-purple: #990033;
+	--color-blue-magenta-violet: #483399;
+	--color-winter-wizard: #a4d8fc;
+	--color-baby-blue-eye: #99ccff;
+	--color-moon-light: #cccc99;
+
+	/* Lapis Lazuli */
+	--color-lapis-lazuli-50: #5b748c;
+	--color-lapis-lazuli-100: #527190;
+	--color-lapis-lazuli-200: #486e93;
+	--color-lapis-lazuli-300: #3f6b96;
+	--color-lapis-lazuli-400: #336699;
+	--color-lapis-lazuli-500: #23629f;
+	--color-lapis-lazuli-600: #1c4e7f;
+	--color-lapis-lazuli-700: #19456f;
+	--color-lapis-lazuli-800: #153b5f;
+	--color-lapis-lazuli-900: #123150;
+
+	/* Digital Ocean Blue */
+	--color-digital-ocean-blue-50: #1a80e6;
+	--color-digital-ocean-blue-100: #0080ff;
+	--color-digital-ocean-blue-200: #0066cc;
+	--color-digital-ocean-blue-300: #005ab3;
+	--color-digital-ocean-blue-400: #004d99;
+	--color-digital-ocean-blue-500: #004080;
+	--color-digital-ocean-blue-600: #003366;
+	--color-digital-ocean-blue-700: #00264d;
+	--color-digital-ocean-blue-800: #001a33;
+	--color-digital-ocean-blue-900: #000d1a;
+
+	/* Font family */
+	--font-sans: InterVariable, sans-serif;
+}
+
+@layer base {
 	:root {
-		@apply from-dark-900 to-dark-700 bg-gradient-to-b text-white;
+		font-family: var(--font-family-interVariable, sans-serif);
 	}
-	.underline-gradiant {
-		@apply from-accent-1 to-accent-2 rounded-md bg-gradient-to-r bg-[length:100%_6px] bg-bottom bg-no-repeat bg-blend-multiply shadow-md;
+}
+
+@layer components {
+	.gradient-radial {
+		background-image: radial-gradient(var(--tw-gradient-stops));
 	}
-	@media (prefers-color-scheme: light) {
-		:root {
-			@apply from-light-100 to-light-400 bg-gradient-to-b text-black;
-		}
+
+	.underline-gradient {
+		background-image: linear-gradient(to right, var(--color-accent-1), var(--color-accent-2));
+		background-size: 100% 2px;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		padding-bottom: 0.2rem;
+		transition: background-size 0.3s ease;
+	}
+	.underline-gradient-hover {
+		background-image: linear-gradient(to right, var(--color-accent-1), var(--color-accent-2));
+		background-size: 0% 2px; /* Initially set the background size to 0 */
+		background-position: bottom;
+		background-repeat: no-repeat;
+		padding-bottom: 0.2rem;
+		transition: background-size 0.3s ease; /* Keep the transition for a smooth effect */
+	}
+
+	.underline-gradient-hover:hover {
+		background-size: 100% 2px; /* Expand the background size on hover */
 	}
 }

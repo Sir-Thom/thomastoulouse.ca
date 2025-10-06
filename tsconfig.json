@@ -1,7 +1,8 @@
 {
 	"extends": "astro/tsconfigs/base",
 	"compilerOptions": {
-	  "jsx": "react-jsx",
+			"jsx": "react-jsx",
+			"jsxImportSource": "react",
 	  "target": "esnext",
 	  "module": "Preserve",
 	"moduleResolution": "Bundler",

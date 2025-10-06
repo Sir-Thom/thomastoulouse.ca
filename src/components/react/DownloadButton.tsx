@@ -49,13 +49,12 @@ function DownloadButton() {
 
 	return (
 		<button
-			className="bg-IlluminatingEmerald-normal hover:bg-IlluminatingEmerald-hover active:bg-IlluminatingEmerald-pressed mt-4 mr-4 flex items-center rounded px-6 py-2 font-semibold transition-all duration-300 hover:scale-110 hover:text-white active:scale-90 lg:mt-0 lg:inline-flex"
+			className="bg-illuminating-emerald-normal hover:bg-illuminating-emerald-hover active:bg-illuminating-emerald-pressed mt-4 mr-4 inline-flex items-center rounded px-6 py-2 font-sans font-semibold text-white transition-all duration-300 hover:scale-110 active:scale-90 lg:mt-0"
 			onClick={handleDownload}
+			aria-label={t("btn.downloadcv")}
 		>
 			{t("btn.downloadcv")}
-			<span className="ml-2">
-				<FiDownload />
-			</span>
+			<FiDownload className="ml-2 size-4" />
 		</button>
 	);
 }

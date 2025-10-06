@@ -39,7 +39,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 			href={Url}
 			target="_blank"
 			rel="noopener noreferrer"
-			className="bg-light-400 shadow-LapisLazuli-800 hover:bg-light-500 dark:bg-dark-600 hover:dark:bg-dark-700 mb-2 scale-100 rounded-lg p-6 shadow-lg transition-all active:scale-90"
+			className="bg-light-400 shadow-lapis-lazuli-800 hover:bg-light-500 dark:bg-dark-600 hover:dark:bg-dark-700 mb-2 scale-100 rounded-lg p-6 shadow-lg transition-all active:scale-90"
 		>
 			<img
 				src={imageUrl}
@@ -51,10 +51,10 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
 				className="mb-4 h-fit w-fit rounded-md object-cover"
 			/>
 			<h2 className="mb-2 text-xl font-semibold">{title}</h2>
-			<p className="text-gray-600">{description}</p>
+			<p className="text-gray-200">{description}</p>
 
 			<div className="rounded-mdl absolute right-0 bottom-0 m-2 p-2 text-white">
-				<div className="text-xxl flex font-semibold text-white">{languageIconsList}</div>
+				<div className="text-xxl flex font-sans font-semibold text-white">{languageIconsList}</div>
 			</div>
 			{!showGithubIcon && (
 				<svg
