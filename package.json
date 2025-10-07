@@ -39,7 +39,7 @@
 		"tailwindcss": "^4.1.14",
 		"three-stdlib": "^2.36.0",
 		"typescript": "^5.9.3",
-		"vite": "^6.3.6"
+		"vite": "^7.0.0"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.56.0",
