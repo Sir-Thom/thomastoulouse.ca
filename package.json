@@ -18,6 +18,7 @@
 		"@astrojs/internal-helpers": "^0.8.0",
 		"@astrojs/netlify": "^7.0.6",
 		"@astrojs/react": "^5.0.2",
+		"@astrojs/sitemap": "^3.7.2",
 		"@astrojs/tailwind": "^6.0.2",
 		"@babel/preset-env": "^7.29.2",
 		"@babel/preset-react": "^7.28.5",
