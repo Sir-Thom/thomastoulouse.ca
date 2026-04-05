@@ -11,7 +11,8 @@
 		"astro": "astro",
 		"test": "jest",
 		"E2E": "playwright test",
-		"run": "dotenv -e .env astro dev"
+		"run": "dotenv -e .env astro dev",
+		"deploy": "pnpm build && netlify deploy --prod"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.8",
