@@ -9,7 +9,7 @@ export default function LanguageSelector() {
 
 	const handleLanguageChange = (event: { target: { value: any } }) => {
 		const selectedLanguageCode = event.target.value;
-		
+
 		// Validate the selected language code
 		if (!Object.keys(languages).includes(selectedLanguageCode)) {
 			console.warn(`Invalid language code: ${selectedLanguageCode}`);

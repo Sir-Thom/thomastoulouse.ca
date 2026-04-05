@@ -9,7 +9,7 @@ import { getLangFromUrl } from "../i18n/utils";
 import ProjectList from "../components/react/ProjectList";
 import projectsJson from "../data/ui.json";
 
-const lang = getLangFromUrl(Astro.url).toString();
+const lang = getLangFromUrl(Astro.url).toString() as keyof typeof projectsJson;
 const { title, href } = Astro.props;
 const projects: Array<IProject> = projectsJson[lang].project.projectsList;
 ---
