@@ -1,28 +1,27 @@
 {
 	"extends": "astro/tsconfigs/base",
-	"compilerOptions": {
+		"compilerOptions": {
 			"jsx": "react-jsx",
 			"jsxImportSource": "react",
-	  "target": "esnext",
-	  "module": "Preserve",
-	"moduleResolution": "Bundler",
-	  "resolveJsonModule": true,
-	  "strict": true,
-	  "esModuleInterop": true,
-	  "skipLibCheck": true,
-	  "verbatimModuleSyntax": false,
-	  "forceConsistentCasingInFileNames": true,
-	  "outDir": "./dist",
-	  "baseUrl": "./src",
-	  "paths": {
-		"*": ["node_modules/*", "src/types/*"],
-		"@components/*": ["src/components/*"],
-		"@assets/*": ["src/assets/*"]
-	  },
-	  "moduleDetection": "auto",
-	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],
-	"exclude": ["**/*.spec.ts"]
+			"target": "esnext",
+			"module": "Preserve",
+			"moduleResolution": "Bundler",
+			"resolveJsonModule": true,
+			"strict": true,
+			"esModuleInterop": true,
+			"skipLibCheck": true,
+			"verbatimModuleSyntax": false,
+			"forceConsistentCasingInFileNames": true,
+			"outDir": "./dist",
+			// Use project root as baseUrl so tools don't prepend `src/` to module resolution.
+			"baseUrl": ".",
+			"paths": {
+				"@components/*": ["src/components/*"],
+				"@assets/*": ["src/assets/*"]
+			},
+			"moduleDetection": "auto"
+		},
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx",".astro/types.d.ts", "**/*"],
+	"exclude": ["**/*.spec.ts","dist"]
 	
   }
-  

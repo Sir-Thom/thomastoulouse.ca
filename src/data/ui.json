@@ -72,35 +72,35 @@
 				}
 			]
 		},
-"experience": {
-  "title": "Experience",
-  "experiencesList": [
-    {
-      "title": "Walmart",
-      "role": "Shopping cart attendant",
-      "period": "09/2020-Today",
-      "tasks": [
-        "Managing colleagues and ensuring cart availability",
-        "Collecting shopping carts from the parking lot"
-      ]
-    },
-	    {
-      "title": "CDID",
-      "role": "Intern programmer analyst",
-      "period": "2024/01/08-2024/05/20",
-      "tasks": [
-        "Development and improvement of applications in ASP",
-        "Collaboration with an agile team to analyze and solve technical problems",
-        "Code optimization to improve application performance"
-      ],
-      "project": [
-        "Creation of widgets such as a clock with different styles",
-        "Creation of a suggestion list widget",
-        "Creation of a markdown-enabled notepad widget"
-      ]
-    }
-  ]
-},
+		"experience": {
+			"title": "Experience",
+			"experiencesList": [
+				{
+					"title": "Walmart",
+					"role": "Shopping cart attendant",
+					"period": "09/2020-Today",
+					"tasks": [
+						"Managing colleagues and ensuring cart availability",
+						"Collecting shopping carts from the parking lot"
+					]
+				},
+				{
+					"title": "CDID",
+					"role": "Intern programmer analyst",
+					"period": "2024/01/08-2024/05/20",
+					"tasks": [
+						"Development and improvement of applications in ASP",
+						"Collaboration with an agile team to analyze and solve technical problems",
+						"Code optimization to improve application performance"
+					],
+					"project": [
+						"Creation of widgets such as a clock with different styles",
+						"Creation of a suggestion list widget",
+						"Creation of a markdown-enabled notepad widget"
+					]
+				}
+			]
+		},
 
 		"education": {
 			"title": "Education",
@@ -162,7 +162,7 @@
 					"title": "C ++",
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/cpp_logo.webp"
 				},
-					{
+				{
 					"title": "Docker",
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/docker-mark-blue.svg"
 				},
@@ -171,15 +171,15 @@
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/Git-Icon.svg"
 				},
 				{
-					"title":"Go",
+					"title": "Go",
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/Go-Logo_Blue.svg"
 				},
 				{
-					"title":"TypeScript",
+					"title": "TypeScript",
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/ts-logo-128.svg"
 				},
 				{
-					"title":"VB.NET",
+					"title": "VB.NET",
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/VB.NET_Logo.svg"
 				}
 			]
@@ -266,35 +266,31 @@
 			]
 		},
 		"experience": {
-  "title": "Expérience",
-  "experiencesList": [
-  
-    {
-      "title": "Walmart",
-      "role": "Préposé aux paniers",
-      "period": "09/2020-Aujourd'hui",
-      "tasks": [
-        "Gérer les collègues aux paniers",
-        "Ramasser les paniers dans le stationnement"
-      ]
-    },  
-	{
-      "title": "CDID",
-      "role": "Stagiaire programmeur-analyste",
-      "period": "2024/01/08-2024/05/20",
-      "tasks": [
-        "Développement et amélioration d’applications en ASP",
-        "Collaboration avec une équipe agile pour analyser et résoudre des problématiques techniques",
-        "Optimisation du code pour améliorer la performance des applications"
-      ],
-      "project": [
-        "Création de widgets tel qu’une horloge avec différents styles",
-        "Création d’un widget pour lister des suggestions",
-        "Création d’un widget bloc-notes prenant en compte le Markdown"
-      ]
-    }
-  ]
-},
+			"title": "Expérience",
+			"experiencesList": [
+				{
+					"title": "Walmart",
+					"role": "Préposé aux paniers",
+					"period": "09/2020-Aujourd'hui",
+					"tasks": ["Gérer les collègues aux paniers", "Ramasser les paniers dans le stationnement"]
+				},
+				{
+					"title": "CDID",
+					"role": "Stagiaire programmeur-analyste",
+					"period": "2024/01/08-2024/05/20",
+					"tasks": [
+						"Développement et amélioration d’applications en ASP",
+						"Collaboration avec une équipe agile pour analyser et résoudre des problématiques techniques",
+						"Optimisation du code pour améliorer la performance des applications"
+					],
+					"project": [
+						"Création de widgets tel qu’une horloge avec différents styles",
+						"Création d’un widget pour lister des suggestions",
+						"Création d’un widget bloc-notes prenant en compte le Markdown"
+					]
+				}
+			]
+		},
 		"education": {
 			"title": "Éducation",
 			"educationsList": [
@@ -364,15 +360,15 @@
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/Git-Icon.svg"
 				},
 				{
-					"title":"Go",
+					"title": "Go",
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/Go-Logo_Blue.svg"
 				},
 				{
-					"title":"TypeScript",
+					"title": "TypeScript",
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/ts-logo-128.svg"
 				},
 				{
-					"title":"VB.NET",
+					"title": "VB.NET",
 					"image": "/assets/icons/ProgrammingLanguagesAndTool/VB.NET_Logo.svg"
 				}
 			]
