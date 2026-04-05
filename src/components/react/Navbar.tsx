@@ -1,10 +1,12 @@
-import { useState, lazy, Suspense } from "react";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { useTranslations, getURLFormReact } from "../../i18n/utils";
 import "../../global.css";
 
 import ThemeToggle from "./ToggleTheme";
 import LanguagesSelector from "./LanguagesSelector";
+import DownloadButton from "./DownloadButton";
+import ContactMe from "./ContactMe";
 
 const lang = getURLFormReact();
 
@@ -16,9 +18,6 @@ export default function Navbar() {
 	};
 
 	const t = useTranslations(lang);
-
-	const LazyDownloadButton = lazy(() => import("./DownloadButton"));
-	const LazyContactMe = lazy(() => import("./ContactMe"));
 
 	return (
 		<nav className="bg-lapis-lazuli-400 fixed top-0 z-30 flex w-full flex-wrap items-center justify-between py-2 font-sans text-white lg:flex-wrap lg:justify-start lg:py-4">
@@ -75,12 +74,8 @@ export default function Navbar() {
 						>
 							{t("project.title")}
 						</a>
-						<Suspense fallback={<div>Loading...</div>}>
-							<LazyDownloadButton />
-						</Suspense>
-						<Suspense fallback={<div>Loading...</div>}>
-							<LazyContactMe />
-						</Suspense>
+						<DownloadButton client:load />
+						<ContactMe client:load />
 					</div>
 					<div className="hidden lg:block">
 						<ThemeToggle />
