@@ -55,7 +55,7 @@
 		"@types/react-dom": "^19.2.3",
 		"@types/three": "^0.183.1",
 		"dompurify": "^3.0.6",
-		"dotenv-webpack": "^8.1.1",
+		"dotenv-webpack": "^9.0.0",
 		"gltfjsx": "^6.5.3",
 		"jest": "^30.3.0",
 		"jest-environment-jsdom": "^30.3.0",
