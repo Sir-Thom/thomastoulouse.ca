@@ -42,7 +42,7 @@
 		"tailwindcss": "^4.2.2",
 		"three": "^0.183.2",
 		"three-stdlib": "^2.36.1",
-		"typescript": "^5.9.3"
+		"typescript": "^6.0.0"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.59.1",
