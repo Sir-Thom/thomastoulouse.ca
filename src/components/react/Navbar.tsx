@@ -77,6 +77,8 @@ export default function Navbar() {
 						</a>
 						<Suspense fallback={<div>Loading...</div>}>
 							<LazyDownloadButton />
+						</Suspense>
+						<Suspense fallback={<div>Loading...</div>}>
 							<LazyContactMe />
 						</Suspense>
 					</div>
