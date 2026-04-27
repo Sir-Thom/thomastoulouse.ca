@@ -2,6 +2,7 @@ import { defineConfig, envField } from "astro/config";
 import react from "@astrojs/react";
 import netlify from "@astrojs/netlify";
 import sitemap from "@astrojs/sitemap";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   env: {
@@ -25,9 +26,10 @@ export default defineConfig({
     enabled: false
   },
 
-  integrations: [react(), sitemap()], 
+  integrations: [react(),sitemap()], 
   
   vite: {
+    plugins: [tailwindcss()],
     ssr: {
       // 3. This is the "Safety Net": force Vite to handle cookie as external
       external: ['cookie'],
