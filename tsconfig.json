@@ -1,6 +1,7 @@
 {
 	"extends": "astro/tsconfigs/base",
 		"compilerOptions": {
+			"rootDir": ".",
 			"jsx": "react-jsx",
 			"jsxImportSource": "react",
 			"target": "esnext",
@@ -19,6 +20,7 @@
 				"@components/*": ["src/components/*"],
 				"@assets/*": ["src/assets/*"]
 			},
+			"ignoreDeprecations": "6.0",
 			"moduleDetection": "auto"
 		},
 	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx",".astro/types.d.ts", "**/*"],

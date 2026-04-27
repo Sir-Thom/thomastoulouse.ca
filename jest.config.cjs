@@ -2,35 +2,27 @@
 module.exports = {
 	preset: "ts-jest",
 	testEnvironment: "jsdom",
-	
-       // Ignore error code 1343 related to import.meta
-      
-		
 	testPathIgnorePatterns: ["/node_modules/", "/dist/", "/tests/"],
-
-	// Jest transformations -- this adds support for TypeScript
-
-	// using ts-jest
-
 	transform: {
-		"^.+\\.tsx?$": "ts-jest"
+		"^.+\\.tsx?$": [
+			"ts-jest",
+			{
+				tsconfig: {
+					// Use modern module resolution for tests
+					moduleResolution: "bundler",
+					// Other options to ensure compatibility
+					jsx: "react-jsx",
+					esModuleInterop: true
+				}
+			}
+		]
 	},
-
-	// Runs special logic, such as cleaning up components
-
-	// when using React Testing Library and adds special
-
-	// extended assertions to Jest
-
-	//setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
-
-	// Test spec file resolution pattern
-
-	// Matches parent folder `__tests__` and filename
-
-	// should contain `test` or `spec`.
-	testRegex: "(/src/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
-	// Module file extensions for importing
-
+	// Add moduleNameMapper to handle path aliases
+	moduleNameMapper: {
+		"^@components/(.*)$": "<rootDir>/src/components/$1",
+		"^@assets/(.*)$": "<rootDir>/src/assets/$1",
+		"../../i18n/utils": "<rootDir>/src/i18n/utils.ts"
+	},
+	testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
 	moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"]
 };
