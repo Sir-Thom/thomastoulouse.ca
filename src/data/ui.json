@@ -98,10 +98,7 @@
 						"Developed and improved applications in JavaScript and TypeScript",
 						"Collaborated with an agile team to resolve technical issues."
 					],
-					"project": [
-						"Updated the system to Node 24",
-						"Bug Fixes"
-					]
+					"project": ["Updated the system to Node 24", "Bug Fixes"]
 				}
 			]
 		},
@@ -295,10 +292,7 @@
 						"Développement et amélioration d’applications en JavaScript et TypeScript",
 						"Collaboration avec une équipe agile pour résoudre des problématiques techniques."
 					],
-					"project": [
-						"Mise à jour du système vers Node 24",
-						"Corrections de bogues"
-					]
+					"project": ["Mise à jour du système vers Node 24", "Corrections de bogues"]
 				}
 			]
 		},
