@@ -76,15 +76,6 @@
 			"title": "Experience",
 			"experiencesList": [
 				{
-					"title": "Walmart",
-					"role": "Shopping cart attendant",
-					"period": "09/2020-Today",
-					"tasks": [
-						"Managing colleagues and ensuring cart availability",
-						"Collecting shopping carts from the parking lot"
-					]
-				},
-				{
 					"title": "CDID",
 					"role": "Intern programmer analyst",
 					"period": "2024/01/08-2024/05/20",
@@ -97,6 +88,19 @@
 						"Creation of widgets such as a clock with different styles",
 						"Creation of a suggestion list widget",
 						"Creation of a markdown-enabled notepad widget"
+					]
+				},
+				{
+					"title": "Borealis",
+					"role": "Full-Stack Developer",
+					"period": "2026/01-2026/04",
+					"tasks": [
+						"Developed and improved applications in JavaScript and TypeScript",
+						"Collaborated with an agile team to resolve technical issues."
+					],
+					"project": [
+						"Updated the system to Node 24",
+						"Bug Fixes"
 					]
 				}
 			]
@@ -269,12 +273,6 @@
 			"title": "Expérience",
 			"experiencesList": [
 				{
-					"title": "Walmart",
-					"role": "Préposé aux paniers",
-					"period": "09/2020-Aujourd'hui",
-					"tasks": ["Gérer les collègues aux paniers", "Ramasser les paniers dans le stationnement"]
-				},
-				{
 					"title": "CDID",
 					"role": "Stagiaire programmeur-analyste",
 					"period": "2024/01/08-2024/05/20",
@@ -287,6 +285,19 @@
 						"Création de widgets tel qu’une horloge avec différents styles",
 						"Création d’un widget pour lister des suggestions",
 						"Création d’un widget bloc-notes prenant en compte le Markdown"
+					]
+				},
+				{
+					"title": "Borealis",
+					"role": "Développeur Full-Stack",
+					"period": "2026/01-2026/04",
+					"tasks": [
+						"Développement et amélioration d’applications en JavaScript et TypeScript",
+						"Collaboration avec une équipe agile pour résoudre des problématiques techniques."
+					],
+					"project": [
+						"Mise à jour du système vers Node 24",
+						"Corrections de bogues"
 					]
 				}
 			]
