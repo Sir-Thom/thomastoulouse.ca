@@ -24,7 +24,7 @@
 		"@babel/preset-env": "^7.29.2",
 		"@babel/preset-react": "^7.28.5",
 		"@react-three/drei": "^10.7.7",
-		"@react-three/fiber": "9.5.0",
+		"@react-three/fiber": "9.6.1",
 		"@tailwindcss/vite": "^4.2.4",
 		"astro": "^6.1.9",
 		"babel-jest": "^30.3.0",
